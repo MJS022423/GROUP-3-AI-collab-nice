@@ -1,0 +1,11 @@
+[
+  {
+    "query": "who is [Person's Name]",
+    "plan": {
+      "tool_name": "get_person_profile",
+      "parameters": {
+        "person_name": "[Person's Name]"
+      }
+    }
+  }
+]

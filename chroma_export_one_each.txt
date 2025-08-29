@@ -1,0 +1,1063 @@
+=== Collection: curriculum_ccs_bsoffice ===
+
+Text:
+ACADEMIC CURRICULUM
+
+        PROGRAM INFORMATION:
+        Program: BSOFFICE
+        Year Level: 2nd Year
+        Department: CCS
+        Total Subjects: 12
+        Total Units: 34
+
+        CURRICULUM STRUCTURE:
+        
+1ST SEMESTER:
+  • OA201 - Office Procedures And Practices
+    Type: Major, Units: 3, Hours/Week: 3
+  • OA202 - Human Behavior In Organization
+    Type: Major, Units: 3, Hours/Week: 3
+  • GE106 - Ethics
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE107 - Art Appreciation
+    Type: General Education, Units: 3, Hours/Week: 3
+  • MATH201 - Business Mathematics
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE201 - Physical Education 3
+    Type: Physical Education, Units: 2, Hours/Week: 2
+
+2ND SEMESTER:
+  • OA203 - Records Management
+    Type: Major, Units: 3, Hours/Week: 3
+  • OA204 - Principles Of Accounting
+    Type: Major, Units: 3, Hours/Week: 3
+  • OA205 - Business Software Applications
+    Type: Major, Units: 3, Hours/Week: 3
+  • GE108 - Science, Technology And Society
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE109 - Life And Works Of Rizal
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE202 - Physical Education 4
+    Type: Physical Education, Units: 2, Hours/Week: 2
+
+SUBJECT DISTRIBUTION:
+• General Education: 5 subjects
+• Major: 5 subjects
+• Physical Education: 2 subjects
+
+Metadata: {'data_type': 'curriculum_excel', 'total_units': 34, 'curriculum_type': 'academic_program', 'subjects_by_year': "{'1': 12}", 'total_subjects': 12, 'department': 'CCS', 'program': 'BSOFFICE'}
+
+================================================================================
+
+=== Collection: faculty_maintenance_custodial_non_teaching ===
+
+Text:
+NON-TEACHING FACULTY RESUME
+
+            PERSONAL INFORMATION:
+            Surname: Neutron
+            First Name: Jimmy
+            Position: Maintenance Tech
+            Email: jimmy.neutron@example.com
+            Phone: (555) 987-6543
+            Address:  Retroville, ST
+            
+            EDUCATIONAL BACKGROUND:
+            Cert. Building Maintenance
+2014
+            
+            PROFESSIONAL EXPERIENCE:
+            Lead Maintenance Tech
+2017-Present
+Retroville School District
+- Supervised 5 staff
+- Reduced downtime 30%
+- Preventive maintenance program
+- Maintained 15 buildings
+Maintenance Assistant
+2014-2017
+Community College District
+- Routine building repairs
+- Emergency response
+- HVAC system upgrades
+            
+            CERTIFICATIONS:
+            EPA Universal Cert | OSHA 30-Hour | CMT Certified | Electrical Safety Cert
+
+Metadata: {'department': 'MAINTENANCE_CUSTODIAL', 'position': 'Maintenance Tech', 'data_type': 'non_teaching_faculty_resume_pdf', 'full_name': 'Neutron, Jimmy', 'surname': 'Neutron', 'address': ' Retroville, ST', 'first_name': 'Jimmy', 'phone': '(555) 987-6543', 'faculty_type': 'non_teaching', 'email': 'jimmy.neutron@example.com'}
+
+================================================================================
+
+=== Collection: faculty_ccs_teaching ===
+
+Text:
+TEACHING FACULTY INFORMATION
+
+    PERSONAL INFORMATION:
+    Surname: Lewis
+    First Name: Deborah K.
+    Date of Birth: 11/05/1960
+    Place of Birth: Micheletown, Philippines
+    Citizenship: Filipino
+    Sex: Female
+    Height: 178 Cm
+    Weight: 74 Kg
+    Blood Type: Ab+
+    Religion: Catholic
+    Civil Status: Married
+
+    CONTACT INFORMATION:
+    Address: 458 Wang Isle, Mayoshire
+    Zip Code: 61716
+    Phone: 09343614019
+    Email: deborah.lewis@teacher.edu.ph
+
+    PROFESSIONAL INFORMATION:
+    Position: Professor
+    Department: CCS
+    Employment Status: Contractual
+
+    GOVERNMENT IDs:
+    GSIS: 608495043343
+    PhilHealth: 35-062749247-8
+
+Metadata: {'position': 'Professor', 'data_type': 'teaching_faculty_excel', 'first_name': 'Deborah K.', 'surname': 'Lewis', 'employment_status': 'Contractual', 'email': 'deborah.lewis@teacher.edu.ph', 'faculty_type': 'teaching', 'department': 'CCS', 'full_name': 'Lewis, Deborah K.', 'phone': '09343614019'}
+
+================================================================================
+
+=== Collection: faculty_cba_teaching ===
+
+Text:
+TEACHING FACULTY INFORMATION
+
+    PERSONAL INFORMATION:
+    Surname: Harper
+    First Name: Mary Kimberly Jr.
+    Date of Birth: 11/19/1993
+    Place of Birth: East Staceyfort, Philippines
+    Citizenship: Filipino
+    Sex: Male
+    Height: 174 Cm
+    Weight: 78 Kg
+    Blood Type: O-
+    Religion: Christian
+    Civil Status: Widowed
+
+    CONTACT INFORMATION:
+    Address: 641 Jackson Meadow Suite 483, South Ruth
+    Zip Code: 64516
+    Phone: 09829668499
+    Email: mary.harper@faculty.edu.ph
+
+    PROFESSIONAL INFORMATION:
+    Position: Professor
+    Department: CBA
+    Employment Status: Full-Time
+
+    GOVERNMENT IDs:
+    GSIS: 204098993239
+    PhilHealth: 58-695136849-4
+
+Metadata: {'phone': '09829668499', 'surname': 'Harper', 'employment_status': 'Full-Time', 'faculty_type': 'teaching', 'first_name': 'Mary Kimberly Jr.', 'full_name': 'Harper, Mary Kimberly Jr.', 'position': 'Professor', 'department': 'CBA', 'email': 'mary.harper@faculty.edu.ph', 'data_type': 'teaching_faculty_excel'}
+
+================================================================================
+
+=== Collection: students_ccs_bsit_year1_seca_grades ===
+
+Text:
+STUDENT ACADEMIC RECORD
+
+    STUDENT INFORMATION:
+    Student Number: PDM-2025-1352
+    Student Name: Juan Villanueva
+    Course: BSIT
+    General Weighted Average (GWA): 2.62
+    Total Subjects: 10
+
+    ACADEMIC GRADES:
+    
+    Subject 1:
+    • Subject Code: IT101
+    • Subject Description: Intro To It
+    • Units: 3
+    • Grade: 2
+    • Remarks: PASSED
+    
+    Subject 2:
+    • Subject Code: IT102
+    • Subject Description: Programming 1
+    • Units: 3
+    • Grade: 5
+    • Remarks: FAILED
+    
+    Subject 3:
+    • Subject Code: IT103
+    • Subject Description: Discrete Math
+    • Units: 3
+    • Grade: 5
+    • Remarks: FAILED
+    
+    Subject 4:
+    • Subject Code: IT104
+    • Subject Description: Programming 2
+    • Units: 3
+    • Grade: 1
+    • Remarks: PASSED
+    
+    Subject 5:
+    • Subject Code: IT105
+    • Subject Description: Data Structures
+    • Units: 3
+    • Grade: 1.75
+    • Remarks: PASSED
+    
+    Subject 6:
+    • Subject Code: GE101
+    • Subject Description: Purposive Communication
+    • Units: 3
+    • Grade: 2.75
+    • Remarks: PASSED
+    
+    Subject 7:
+    • Subject Code: GE102
+    • Subject Description: Understanding The Self
+    • Units: 3
+    • Grade: 1.75
+    • Remarks: PASSED
+    
+    Subject 8:
+    • Subject Code: GE103
+    • Subject Description: Math In Modern World
+    • Units: 3
+    • Grade: 2.25
+    • Remarks: PASSED
+    
+    Subject 9:
+    • Subject Code: PE101
+    • Subject Description: Pe 1
+    • Units: 2
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 10:
+    • Subject Code: NSTP1
+    • Subject Description: Nstp 1
+    • Units: 3
+    • Grade: 3
+    • Remarks: PASSED
+    
+    ACADEMIC SUMMARY:
+    • Total Subjects Enrolled: 10
+    • Total Units: 29.0
+    • Passed Subjects: 8
+    • Failed Subjects: 2
+
+Metadata: {'student_number': 'PDM-2025-1352', 'student_name': 'Juan Villanueva', 'course': 'BSIT', 'total_subjects': 10, 'department': 'CCS', 'existing_collection': 'students_ccs_bsit_year1_seca', 'data_type': 'student_grades_excel', 'gwa': '2.62'}
+
+================================================================================
+
+=== Collection: curriculum_ccs_bscs ===
+
+Text:
+ACADEMIC CURRICULUM
+
+        PROGRAM INFORMATION:
+        Program: BSCS
+        Year Level: 1st Year
+        Department: CCS
+        Total Subjects: 14
+        Total Units: 40
+
+        CURRICULUM STRUCTURE:
+        
+1ST SEMESTER:
+  • CS101 - Introduction To Computing
+    Type: Major, Units: 3, Hours/Week: 3
+  • CS102 - Fundamentals Of Programming
+    Type: Major, Units: 3, Hours/Week: 3
+  • MATH101 - College Algebra
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE101 - Understanding The Self
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE102 - Purposive Communication
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE101 - Physical Education 1
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP101 - National Service Training Program 1
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+2ND SEMESTER:
+  • CS103 - Intermediate Programming
+    Type: Major, Units: 3, Hours/Week: 3
+  • CS104 - Computer Hardware Fundamentals
+    Type: Major, Units: 3, Hours/Week: 3
+  • MATH102 - Trigonometry
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE103 - Readings In Philippine History
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE104 - The Contemporary World
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE102 - Physical Education 2
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP102 - National Service Training Program 2
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+SUBJECT DISTRIBUTION:
+• General Education: 6 subjects
+• Major: 4 subjects
+• NSTP: 2 subjects
+• Physical Education: 2 subjects
+
+Metadata: {'department': 'CCS', 'subjects_by_year': "{'1': 14}", 'data_type': 'curriculum_excel', 'curriculum_type': 'academic_program', 'program': 'BSCS', 'total_units': 40, 'total_subjects': 14}
+
+================================================================================
+
+=== Collection: faculty_cba_schedule ===
+
+Text:
+TEACHING FACULTY CLASS SCHEDULE
+
+    FACULTY INFORMATION:
+    Name of Adviser: Harper, Mary Kimberly Jr.
+    Department: COLLEGE OF BUSINESS ADMINISTRATION
+
+    WEEKLY TEACHING SCHEDULE (33 scheduled classes):
+    
+MONDAY:
+  • 09:00 - 09:30 - BUS303 - Financial Management (Section: BUS303)
+  • 10:30 - 11:00 - BUS202 - Marketing (Section: BUS202)
+  • 02:30 - 03:00 - BUS101 - Principles of Management (Section: BUS101)
+  • 03:30 - 04:00 - BUS202 - Marketing (Section: BUS202)
+  • 04:00 - 04:30 - BUS303 - Financial Management (Section: BUS303)
+
+TUESDAY:
+  • 07:30 - 08:00 - BUS404 - Business Policy (Section: BUS404)
+  • 08:00 - 08:30 - BUS303 - Financial Management (Section: BUS303)
+  • 08:30 - 09:00 - BUS404 - Business Policy (Section: BUS404)
+  • 09:00 - 09:30 - BUS303 - Financial Management (Section: BUS303)
+  • 09:30 - 10:00 - BUS404 - Business Policy (Section: BUS404)
+  • 10:00 - 10:30 - BUS303 - Financial Management (Section: BUS303)
+  • 11:00 - 11:30 - BUS202 - Marketing (Section: BUS202)
+  • 02:30 - 03:00 - BUS101 - Principles of Management (Section: BUS101)
+  • 03:00 - 03:30 - BUS303 - Financial Management (Section: BUS303)
+  • 03:30 - 04:00 - BUS202 - Marketing (Section: BUS202)
+  • 04:30 - 05:00 - BUS404 - Business Policy (Section: BUS404)
+
+WEDNESDAY:
+  • 11:00 - 11:30 - BUS202 - Marketing (Section: BUS202)
+  • 01:00 - 01:30 - BUS404 - Business Policy (Section: BUS404)
+  • 02:00 - 02:30 - BUS101 - Principles of Management (Section: BUS101)
+  • 02:30 - 03:00 - BUS101 - Principles of Management (Section: BUS101)
+
+THURSDAY:
+  • 01:00 - 01:30 - BUS404 - Business Policy (Section: BUS404)
+  • 04:00 - 04:30 - BUS303 - Financial Management (Section: BUS303)
+  • 04:30 - 05:00 - BUS404 - Business Policy (Section: BUS404)
+
+FRIDAY:
+  • 09:00 - 09:30 - BUS303 - Financial Management (Section: BUS303)
+  • 10:30 - 11:00 - BUS202 - Marketing (Section: BUS202)
+  • 01:30 - 02:00 - BUS404 - Business Policy (Section: BUS404)
+  • 03:30 - 04:00 - BUS202 - Marketing (Section: BUS202)
+  • 04:00 - 04:30 - BUS303 - Financial Management (Section: BUS303)
+
+SATURDAY:
+  • 08:00 - 08:30 - BUS303 - Financial Management (Section: BUS303)
+  • 09:00 - 09:30 - BUS303 - Financial Management (Section: BUS303)
+  • 11:00 - 11:30 - BUS202 - Marketing (Section: BUS202)
+  • 11:30 - 12:00 - BUS404 - Business Policy (Section: BUS404)
+  • 04:00 - 04:30 - BUS303 - Financial Management (Section: BUS303)
+
+SUBJECTS TAUGHT (4 unique subjects):
+• BUS101 - Principles of Management (Sections: BUS101)
+• BUS202 - Marketing (Sections: BUS202)
+• BUS303 - Financial Management (Sections: BUS303)
+• BUS404 - Business Policy (Sections: BUS404)
+
+Metadata: {'full_name': 'Harper, Mary Kimberly Jr.', 'total_subjects': 33, 'adviser_name': 'Harper, Mary Kimberly Jr.', 'data_type': 'teaching_faculty_schedule_excel', 'department': 'CBA', 'faculty_type': 'schedule', 'days_teaching': 6}
+
+================================================================================
+
+=== Collection: schedules_ccs_newcourse_year2_seca ===
+
+Text:
+STUDENT CERTIFICATE OF REGISTRATION (COR)
+
+    STUDENT PROGRAM INFORMATION:
+    Program: BS Computer Science
+    Year Level: 2
+    Section: A
+    Adviser: Dr. Deborah
+    Total Units: 18
+
+    ENROLLED SUBJECTS (11 subjects):
+    
+    Subject 1:
+    - Subject Code: CS 201
+    - Description: DS1
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Monday 8:00 AM-9:30 AM
+    
+    Subject 2:
+    - Subject Code: CS 201
+    - Description: DS1
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Wednesday 8:00 AM-9:30 AM
+    
+    Subject 3:
+    - Subject Code: CS 201L
+    - Description: DS1
+    - Type: Laboratory
+    - Units: 1
+    - Schedule: Friday 1:00 PM-4:00 PM
+    
+    Subject 4:
+    - Subject Code: CS 202
+    - Description: DM1
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Tuesday 9:00 AM-10:30 AM
+    
+    Subject 5:
+    - Subject Code: CS 202
+    - Description: DM1
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Thursday 9:00 AM-10:30 AM
+    
+    Subject 6:
+    - Subject Code: CS 203
+    - Description: CO1
+    - Type: Lecture
+    - Units: 3
+    - Schedule: Monday 1:00 PM-4:00 PM
+    
+    Subject 7:
+    - Subject Code: CS 203L
+    - Description: CO1
+    - Type: Laboratory
+    - Units: 1
+    - Schedule: Wednesday 1:00 PM-4:00 PM
+    
+    Subject 8:
+    - Subject Code: CS 204
+    - Description: Algorithms
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Tuesday 10:30 AM-12:00 PM
+    
+    Subject 9:
+    - Subject Code: CS 204
+    - Description: Algorithms
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Friday 10:30 AM-12:00 PM
+    
+    Subject 10:
+    - Subject Code: CS 205
+    - Description: OOP1
+    - Type: Lecture
+    - Units: 3
+    - Schedule: Thursday 1:00 PM-4:00 PM
+    
+    Subject 11:
+    - Subject Code: CS 205L
+    - Description: OOP1
+    - Type: Laboratory
+    - Units: 1
+    - Schedule: Friday 8:00 AM-11:00 AM
+
+Metadata: {'adviser': 'Dr. Deborah', 'data_type': 'student_cor_pdf', 'total_units': '18', 'subject_count': 11, 'year_level': '2', 'subject_codes': 'CS 201, CS 201, CS 201L, CS 202, CS 202, CS 203, CS 203L, CS 204, CS 204, CS 205, CS 205L', 'section': 'A', 'department': 'CCS', 'course': 'BS Computer Science'}
+
+================================================================================
+
+=== Collection: faculty_ccs_schedule ===
+
+Text:
+TEACHING FACULTY CLASS SCHEDULE
+
+    FACULTY INFORMATION:
+    Name of Adviser: Hodges, Kathryn Julie
+    Department: INFORMATION TECHNOLOGY
+
+    WEEKLY TEACHING SCHEDULE (30 scheduled classes):
+    
+MONDAY:
+  • 01:00 - 01:30 - IT404 - Software Engineering (Section: IT404)
+  • 02:30 - 03:00 - IT404 - Software Engineering (Section: IT404)
+  • 03:30 - 04:00 - IT404 - Software Engineering (Section: IT404)
+  • 04:00 - 04:30 - IT101 - Programming 1 (Section: IT101)
+
+TUESDAY:
+  • 10:00 - 10:30 - IT404 - Software Engineering (Section: IT404)
+  • 11:30 - 12:00 - IT303 - Networking (Section: IT303)
+  • 03:30 - 04:00 - IT404 - Software Engineering (Section: IT404)
+  • 04:00 - 04:30 - IT101 - Programming 1 (Section: IT101)
+  • 04:30 - 05:00 - IT404 - Software Engineering (Section: IT404)
+
+WEDNESDAY:
+  • 08:00 - 08:30 - IT202 - Database Systems (Section: IT202)
+  • 08:30 - 09:00 - IT101 - Programming 1 (Section: IT101)
+  • 10:00 - 10:30 - IT404 - Software Engineering (Section: IT404)
+  • 11:00 - 11:30 - IT101 - Programming 1 (Section: IT101)
+  • 02:00 - 02:30 - IT101 - Programming 1 (Section: IT101)
+  • 02:30 - 03:00 - IT404 - Software Engineering (Section: IT404)
+  • 03:30 - 04:00 - IT404 - Software Engineering (Section: IT404)
+  • 04:30 - 05:00 - IT404 - Software Engineering (Section: IT404)
+
+THURSDAY:
+  • 08:00 - 08:30 - IT202 - Database Systems (Section: IT202)
+  • 09:00 - 09:30 - IT303 - Networking (Section: IT303)
+  • 10:00 - 10:30 - IT404 - Software Engineering (Section: IT404)
+  • 04:30 - 05:00 - IT404 - Software Engineering (Section: IT404)
+
+FRIDAY:
+  • 10:00 - 10:30 - IT404 - Software Engineering (Section: IT404)
+  • 11:00 - 11:30 - IT101 - Programming 1 (Section: IT101)
+  • 11:30 - 12:00 - IT303 - Networking (Section: IT303)
+  • 01:00 - 01:30 - IT404 - Software Engineering (Section: IT404)
+
+SATURDAY:
+  • 08:00 - 08:30 - IT202 - Database Systems (Section: IT202)
+  • 10:30 - 11:00 - IT101 - Programming 1 (Section: IT101)
+  • 11:30 - 12:00 - IT303 - Networking (Section: IT303)
+  • 02:30 - 03:00 - IT404 - Software Engineering (Section: IT404)
+  • 03:30 - 04:00 - IT404 - Software Engineering (Section: IT404)
+
+SUBJECTS TAUGHT (4 unique subjects):
+• IT101 - Programming 1 (Sections: IT101)
+• IT202 - Database Systems (Sections: IT202)
+• IT303 - Networking (Sections: IT303)
+• IT404 - Software Engineering (Sections: IT404)
+
+Metadata: {'days_teaching': 6, 'full_name': 'Hodges, Kathryn Julie', 'data_type': 'teaching_faculty_schedule_excel', 'faculty_type': 'schedule', 'total_subjects': 30, 'adviser_name': 'Hodges, Kathryn Julie', 'department': 'CCS'}
+
+================================================================================
+
+=== Collection: students_ccs_bscs_year2_seca ===
+
+Text:
+Student ID: PDM-2025-00031
+Full Name: Carpenter, Michael
+Surname: Carpenter
+First Name: Michael
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9211796807
+Guardian Name: Victor Martin
+Guardian Contact: 9294393815
+
+Metadata: {'first_name': 'Michael', 'surname': 'Carpenter', 'section': 'A', 'student_id': 'PDM-2025-00031', 'data_type': 'student_universal', 'full_name': 'Carpenter, Michael', 'department': 'CCS', 'course': 'BSCS', 'year_level': 2}
+
+================================================================================
+
+=== Collection: faculty_library_non_teaching ===
+
+Text:
+NON-TEACHING FACULTY INFORMATION
+
+        PERSONAL INFORMATION:
+        Surname: Clark
+        First Name: Trevor Q.
+        Date of Birth: 11/22/1993
+        Place of Birth: West Alexanderside, Philippines
+        Citizenship: Filipino
+        Sex: Male
+        Height: 164 Cm
+        Weight: 77 Kg
+        Blood Type: Ab-
+        Religion: Christian
+        Civil Status: Married
+
+        CONTACT INFORMATION:
+        Address: 660 Kathy Walk Suite 557, East Danaberg
+        Zip Code: 48920
+        Phone: 09191658792
+        Email: trevor.clark@teacher.edu.ph
+
+        PROFESSIONAL INFORMATION:
+        Position: Librarian
+        Department: LIBRARY
+        Employment Status: Permanent
+
+        GOVERNMENT IDs:
+        GSIS: 606735809337
+        PhilHealth: 80-679688238-9
+
+Metadata: {'position': 'Librarian', 'employment_status': 'Permanent', 'phone': '09191658792', 'faculty_type': 'non_teaching', 'full_name': 'Clark, Trevor Q.', 'first_name': 'Trevor Q.', 'data_type': 'non_teaching_faculty_excel', 'department': 'LIBRARY', 'email': 'trevor.clark@teacher.edu.ph', 'surname': 'Clark'}
+
+================================================================================
+
+=== Collection: faculty_school_admin_board_member ===
+
+Text:
+ADMINISTRATIVE STAFF INFORMATION
+
+        PERSONAL INFORMATION:
+        Surname: Roberts
+        First Name: Kari Miranda
+        Date of Birth: 08/04/1981
+        Place of Birth: Autumntown, Philippines
+        Citizenship: Filipino
+        Sex: Male
+        Height: 182 Cm
+        Weight: 53 Kg
+        Blood Type: Ab+
+        Religion: Iglesia Ni Cristo
+        Civil Status: Married
+
+        CONTACT INFORMATION:
+        Address: 30464 Avila Parks, Clarkville
+        Zip Code: 96442
+        Phone: 09965523374
+        Email: kari.roberts@teacher.edu.ph
+
+        ADMINISTRATIVE INFORMATION:
+        Position: Board Member
+        Admin Type: Board Member
+        Department: Administration
+        Employment Status: Permanent
+
+        GOVERNMENT IDs:
+        GSIS: 328415666574
+        PhilHealth: 02-247738250-0
+
+Metadata: {'full_name': 'Roberts, Kari Miranda', 'data_type': 'admin_excel', 'admin_type': 'Board Member', 'employment_status': 'Permanent', 'department': 'SCHOOL_ADMIN', 'first_name': 'Kari Miranda', 'surname': 'Roberts', 'position': 'Board Member', 'faculty_type': 'admin', 'email': 'kari.roberts@teacher.edu.ph', 'phone': '09965523374'}
+
+================================================================================
+
+=== Collection: students_ccs_bsit_year1_seca ===
+
+Text:
+Student ID: PDM-2025-1336
+Full Name: Catherine Santos
+Surname: Santos
+First Name: Catherine
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9142413168
+Guardian Name: Roberto Flores
+Guardian Contact: 9096098938
+
+Metadata: {'surname': 'Santos', 'student_id': 'PDM-2025-1336', 'department': 'CCS', 'full_name': 'Catherine Santos', 'year_level': 1, 'course': 'BSIT', 'section': 'A', 'first_name': 'Catherine', 'data_type': 'student_universal'}
+
+================================================================================
+
+=== Collection: schedules_ccs_newcourse_year1_seca ===
+
+Text:
+COR (Certificate of Registration) - Class Schedule
+
+    STUDENT INFORMATION:
+    Program: BS COMPUTER SCIENCE
+    Year Level: 1
+    Section: A
+    Adviser: Dr. Smith
+    Total Units: 17
+
+    ENROLLED SUBJECTS (10 subjects):
+    
+    Subject 1:
+    • Subject Code: CS 101
+    • Description: Introduction to Computing
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Monday 7:30 AM-9:00 AM
+    • Room: RM 301
+    
+    Subject 2:
+    • Subject Code: CS 101
+    • Description: Introduction to Computing
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Wednesday 7:30 AM-9:00 AM
+    • Room: RM 301
+    
+    Subject 3:
+    • Subject Code: CS 101L
+    • Description: Introduction to Computing Laboratory
+    • Type: Laboratory
+    • Units: 1
+    • Schedule: Friday 1:00 PM-4:00 PM
+    • Room: COM LAB 2
+    
+    Subject 4:
+    • Subject Code: MATH 101
+    • Description: College Algebra
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Tuesday 9:00 AM-10:30 AM
+    • Room: RM 202
+    
+    Subject 5:
+    • Subject Code: MATH 101
+    • Description: College Algebra
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Thursday 9:00 AM-10:30 AM
+    • Room: RM 202
+    
+    Subject 6:
+    • Subject Code: ENG 101
+    • Description: Communication Skills
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Monday 10:30 AM-12:00 PM
+    • Room: RM 105
+    
+    Subject 7:
+    • Subject Code: ENG 101
+    • Description: Communication Skills
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Thursday 10:30 AM-12:00 PM
+    • Room: RM 105
+    
+    Subject 8:
+    • Subject Code: SCI 101
+    • Description: Physical Science
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Tuesday 1:00 PM-4:00 PM
+    • Room: SCI LAB 1
+    
+    Subject 9:
+    • Subject Code: SCI 101L
+    • Description: Physical Science Laboratory
+    • Type: Laboratory
+    • Units: 1
+    • Schedule: Wednesday 8:00 AM-11:00 AM
+    • Room: SCI LAB 2
+    
+    Subject 10:
+    • Subject Code: FIL 101
+    • Description: Filipino
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Friday 9:00 AM-12:00 PM
+    • Room: RM 205
+
+Metadata: {'department': 'CCS', 'adviser': 'Dr. Smith', 'course': 'BS COMPUTER SCIENCE', 'subject_codes': 'CS 101, CS 101, CS 101L, MATH 101, MATH 101, ENG 101, ENG 101, SCI 101, SCI 101L, FIL 101', 'total_units': '17', 'data_type': 'cor_excel', 'section': 'A', 'year_level': '1', 'subject_count': 10}
+
+================================================================================
+
+=== Collection: students_ccs_bscs_year1_seca_grades ===
+
+Text:
+STUDENT ACADEMIC RECORD
+
+    STUDENT INFORMATION:
+    Student Number: PDM-2025-0001
+    Student Name: Daniel Gomez
+    Course: BSCS
+    General Weighted Average (GWA): 1.45
+    Total Subjects: 10
+
+    ACADEMIC GRADES:
+    
+    Subject 1:
+    • Subject Code: CS101
+    • Subject Description: Introduction To Computing
+    • Units: 1.5
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 2:
+    • Subject Code: CS101
+    • Subject Description: Introduction To Computing
+    • Units: 1.5
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 3:
+    • Subject Code: CS101L
+    • Subject Description: Introduction To Computing Laboratory
+    • Units: 1
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 4:
+    • Subject Code: MATH101
+    • Subject Description: College Algebra
+    • Units: 1.5
+    • Grade: 1.5
+    • Remarks: PASSED
+    
+    Subject 5:
+    • Subject Code: MATH101
+    • Subject Description: College Algebra
+    • Units: 1.5
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 6:
+    • Subject Code: ENG101
+    • Subject Description: Communication Skills
+    • Units: 1.5
+    • Grade: 1.5
+    • Remarks: PASSED
+    
+    Subject 7:
+    • Subject Code: ENG101
+    • Subject Description: Communication Skills
+    • Units: 1.5
+    • Grade: 2
+    • Remarks: PASSED
+    
+    Subject 8:
+    • Subject Code: SCI101
+    • Subject Description: Physical Science
+    • Units: 3
+    • Grade: 1.5
+    • Remarks: PASSED
+    
+    Subject 9:
+    • Subject Code: SCI101L
+    • Subject Description: Physical Science Laboratory
+    • Units: 1
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 10:
+    • Subject Code: FIL101
+    • Subject Description: Filipino
+    • Units: 3
+    • Grade: 1.5
+    • Remarks: PASSED
+    
+    ACADEMIC SUMMARY:
+    • Total Subjects Enrolled: 10
+    • Total Units: 17.0
+    • Passed Subjects: 10
+    • Failed Subjects: 0
+
+Metadata: {'existing_collection': 'students_ccs_bscs_year1_seca', 'department': 'CCS', 'gwa': '1.45', 'total_subjects': 10, 'data_type': 'student_grades_excel', 'student_name': 'Daniel Gomez', 'course': 'BSCS', 'student_number': 'PDM-2025-0001'}
+
+================================================================================
+
+=== Collection: curriculum_con_bsin ===
+
+Text:
+ACADEMIC CURRICULUM
+
+        PROGRAM INFORMATION:
+        Program: BSIN
+        Year Level: 1st Year
+        Department: CON
+        Total Subjects: 14
+        Total Units: 40
+
+        CURRICULUM STRUCTURE:
+        
+1ST SEMESTER:
+  • HM101 - Introduction To Hospitality Management
+    Type: Major, Units: 3, Hours/Week: 3
+  • HM102 - Principles Of Tourism
+    Type: Major, Units: 3, Hours/Week: 3
+  • GE101 - Understanding The Self
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE102 - Purposive Communication
+    Type: General Education, Units: 3, Hours/Week: 3
+  • MATH101 - College Algebra
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE101 - Physical Education 1
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP101 - National Service Training Program 1
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+2ND SEMESTER:
+  • HM103 - Food And Beverage Service Operations
+    Type: Major, Units: 3, Hours/Week: 3
+  • HM104 - Front Office Operations
+    Type: Major, Units: 3, Hours/Week: 3
+  • GE103 - Readings In Philippine History
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE104 - The Contemporary World
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE105 - Mathematics In The Modern World
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE102 - Physical Education 2
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP102 - National Service Training Program 2
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+SUBJECT DISTRIBUTION:
+• General Education: 6 subjects
+• Major: 4 subjects
+• NSTP: 2 subjects
+• Physical Education: 2 subjects
+
+Metadata: {'total_units': 40, 'subjects_by_year': "{'1': 14}", 'total_subjects': 14, 'department': 'CON', 'program': 'BSIN', 'data_type': 'curriculum_excel', 'curriculum_type': 'academic_program'}
+
+================================================================================
+
+=== Collection: faculty_library_non_teaching_schedule ===
+
+Text:
+NON-TEACHING FACULTY WORK SCHEDULE
+
+        STAFF INFORMATION:
+        Name of Staff: Clark Trevor
+        Department: LIBRARY
+
+        WEEKLY WORK SCHEDULE (11 scheduled assignments):
+        
+MONDAY:
+  • 08:00 - 08:30 - Task: Library (Assignment: Library)
+  • 11:30 - 12:00 - Task: Library (Assignment: Library)
+  • 03:00 - 03:30 - Task: Library (Assignment: Library)
+
+WEDNESDAY:
+  • 09:00 - 09:30 - Task: Library (Assignment: Library)
+  • 11:00 - 11:30 - Task: Library (Assignment: Library)
+  • 03:30 - 04:00 - Task: Library (Assignment: Library)
+
+FRIDAY:
+  • 10:30 - 11:00 - Task: Library (Assignment: Library)
+  • 01:00 - 01:30 - Task: Library (Assignment: Library)
+  • 02:30 - 03:00 - Task: Library (Assignment: Library)
+
+SATURDAY:
+  • 10:00 - 10:30 - Task: Library (Assignment: Library)
+  • 04:30 - 05:00 - Task: Library (Assignment: Library)
+
+DUTIES ASSIGNED (1 unique duties):
+• Task: Library (Assignments: Library)
+
+Metadata: {'department': 'LIBRARY', 'faculty_type': 'non_teaching_schedule', 'total_shifts': 11, 'full_name': 'Clark Trevor', 'days_working': 4, 'staff_name': 'Clark Trevor', 'data_type': 'non_teaching_faculty_schedule_excel'}
+
+================================================================================
+
+=== Collection: faculty_con_teaching ===
+
+Text:
+TEACHING FACULTY INFORMATION
+
+    PERSONAL INFORMATION:
+    Surname: Brown
+    First Name: Elizabeth Angela
+    Date of Birth: 08/07/1989
+    Place of Birth: Port Samantha, Philippines
+    Citizenship: Filipino
+    Sex: Female
+    Height: 152 Cm
+    Weight: 53 Kg
+    Blood Type: Ab+
+    Religion: Muslim
+    Civil Status: Single
+
+    CONTACT INFORMATION:
+    Address: 366 Tony Spring Apt. 947, Wardbury
+    Zip Code: 15703
+    Phone: 09378269658
+    Email: elizabeth.brown@faculty.edu.ph
+
+    PROFESSIONAL INFORMATION:
+    Position: Professor
+    Department: CON
+    Employment Status: Full-Time
+
+    GOVERNMENT IDs:
+    GSIS: 863806850389
+    PhilHealth: 81-350747407-6
+
+Metadata: {'phone': '09378269658', 'faculty_type': 'teaching', 'surname': 'Brown', 'employment_status': 'Full-Time', 'first_name': 'Elizabeth Angela', 'position': 'Professor', 'full_name': 'Brown, Elizabeth Angela', 'department': 'CON', 'email': 'elizabeth.brown@faculty.edu.ph', 'data_type': 'teaching_faculty_excel'}
+
+================================================================================
+
+=== Collection: students_ccs_bsit_year2_seca ===
+
+Text:
+Student ID: PDM-2025-1366
+Full Name: Maria Bautista
+Surname: Bautista
+First Name: Maria
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9771702384
+Guardian Name: Isabel Cruz
+Guardian Contact: 9165043529
+
+Metadata: {'surname': 'Bautista', 'year_level': 2, 'course': 'BSIT', 'student_id': 'PDM-2025-1366', 'full_name': 'Maria Bautista', 'first_name': 'Maria', 'department': 'CCS', 'section': 'A', 'data_type': 'student_universal'}
+
+================================================================================
+
+=== Collection: curriculum_con_bsinformation ===
+
+Text:
+ACADEMIC CURRICULUM
+
+        PROGRAM INFORMATION:
+        Program: BSINFORMATION
+        Year Level: 1st Year
+        Department: CON
+        Total Subjects: 14
+        Total Units: 40
+
+        CURRICULUM STRUCTURE:
+        
+1ST SEMESTER:
+  • IT101 - Introduction To Computing
+    Type: Major, Units: 3, Hours/Week: 3
+  • IT102 - Fundamentals Of Programming
+    Type: Major, Units: 3, Hours/Week: 3
+  • MATH101 - College Algebra
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE101 - Understanding The Self
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE102 - Purposive Communication
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE101 - Physical Education 1
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP101 - National Service Training Program 1
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+2ND SEMESTER:
+  • IT103 - Computer Programming 1
+    Type: Major, Units: 3, Hours/Week: 3
+  • IT104 - Computer Hardware Fundamentals
+    Type: Major, Units: 3, Hours/Week: 3
+  • MATH102 - Trigonometry
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE103 - Readings In Philippine History
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE104 - The Contemporary World
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE102 - Physical Education 2
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP102 - National Service Training Program 2
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+SUBJECT DISTRIBUTION:
+• General Education: 6 subjects
+• Major: 4 subjects
+• NSTP: 2 subjects
+• Physical Education: 2 subjects
+
+Metadata: {'subjects_by_year': "{'1': 14}", 'total_units': 40, 'curriculum_type': 'academic_program', 'program': 'BSINFORMATION', 'data_type': 'curriculum_excel', 'total_subjects': 14, 'department': 'CON'}
+
+================================================================================
+
+=== Collection: students_ccs_bscs_year1_seca ===
+
+Text:
+Student ID: PDM-2025-0001
+Full Name: Daniel Gomez
+Surname: Gomez
+First Name: Daniel
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09725334942
+Guardian Name: Carlos Reyes
+Guardian Contact: 09695521803
+
+Metadata: {'course': 'BSCS', 'surname': 'Gomez', 'department': 'CCS', 'year_level': 1, 'full_name': 'Daniel Gomez', 'data_type': 'student_universal', 'student_id': 'PDM-2025-0001', 'section': 'A', 'first_name': 'Daniel'}
+
+================================================================================
+
