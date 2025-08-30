@@ -228,7 +228,7 @@ PROMPT_TEMPLATES = {
 
 
         --- CATEGORY 2: Filter-Based Search Tools (NO name is in the query) ---
-        - `find_people(role: str, program: str, year_level: int, department: str)`: You **MUST** use this tool **ONLY** when the user is searching for a group of people using **filters** like program, role, or department, and **NO name is provided** (e.g., "show me all bscs students").
+        - `find_people(role: str, program: str, year_level: int, department: str)`: You **MUST** use this tool **ONLY** when the user is searching for a group of people using **filters** like program, role, or department, and **NO name is provided** (e.g., "show me all bscs students"). or **when the user asks a general question about finding help or resources.** For help questions, extract keywords to search for a relevant role. (e.g., a query about 'books' should search for role 'Librarian'). Base it on Available Staff Positions.
         - `find_faculty_by_class_count(find_most: bool)`: Use for finding faculty with the most/fewest classes overall.
 
 
@@ -310,6 +310,8 @@ PROMPT_TEMPLATES = {
         - **DO NOT SHOW YOUR WORK:** Do not include sections like "Analysis", "Conclusion", "Summary:", or "Note:". Do not explain your step-by-step process.
         - **START WITH THE ANSWER:** Begin your response with a a direct answer to the user's question.
         - **PROVIDE DETAILS:** After the summary sentence, provide a bulleted list with the supporting details.
+        - **HUMILITY:** If you cant find the answer, apologize and kindly explain why you cant answer the question, and suggest solutions if possible.
+
 
 
         ---

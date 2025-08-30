@@ -29258,6 +29258,176 @@
       "execution_time": 15.96915054321289,
       "timestamp": "2025-08-29T23:39:11.151901",
       "error_message": null
+    },
+    {
+      "query": "i need to find some books who can help me",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "subject_type": "books"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 139,
+      "execution_time": 4.111046314239502,
+      "timestamp": "2025-08-30T12:42:13.615640",
+      "error_message": null
+    },
+    {
+      "query": "i need to find some books, who can help me",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "LIBRARIAN"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 2.605616807937622,
+      "timestamp": "2025-08-30T12:50:13.802825",
+      "error_message": null
+    },
+    {
+      "query": "our classroom has trouble with electricity, what do i do",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "MAINTENANCE TECH"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 109,
+      "execution_time": 5.811144113540649,
+      "timestamp": "2025-08-30T12:50:34.657400",
+      "error_message": null
+    },
+    {
+      "query": "i need to find some books",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "LIBRARIAN"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.012031078338623,
+      "timestamp": "2025-08-30T12:52:52.847294",
+      "error_message": null
+    },
+    {
+      "query": "i need to find some books",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "LIBRARIAN"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 2.5591087341308594,
+      "timestamp": "2025-08-30T12:53:53.282468",
+      "error_message": null
+    },
+    {
+      "query": "our classroom fan broke,help",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "MAINTENANCE TECH"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 2.412391424179077,
+      "timestamp": "2025-08-30T12:54:20.609202",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": "",
+                "year_level": 0
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 3,
+      "execution_time": 3.2960081100463867,
+      "timestamp": "2025-08-30T12:55:14.781878",
+      "error_message": null
+    },
+    {
+      "query": "who is his adviser",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_adviser_info",
+              "parameters": {
+                "program": "BSCS",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.5877885818481445,
+      "timestamp": "2025-08-30T12:55:29.553059",
+      "error_message": null
     }
   ],
   "failed_queries": [
@@ -34536,27 +34706,27 @@
       ]
     },
     "year:False_prog:False_rand:False_multi:False": {
-      "successful": 598,
+      "successful": 606,
       "failed": 95,
       "examples": [
         {
-          "query": "who is daniel",
+          "query": "i need to find some books",
           "success": true
         },
         {
-          "query": "what is the grades of daniel gomez",
+          "query": "i need to find some books",
           "success": true
         },
         {
-          "query": "what is his schedule",
+          "query": "our classroom fan broke,help",
           "success": true
         },
         {
-          "query": "what is his profile",
+          "query": "who is the smartest student",
           "success": true
         },
         {
-          "query": "all the profs",
+          "query": "who is his adviser",
           "success": true
         }
       ]

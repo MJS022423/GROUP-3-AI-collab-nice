@@ -7,5 +7,14 @@
         "person_name": "[Person's Name]"
       }
     }
+  },
+  {
+    "query": "i need to find some books, who can help me",
+    "plan": {
+      "tool_name": "find_people",
+      "parameters": {
+        "role": "LIBRARIAN"
+      }
+    }
   }
 ]
