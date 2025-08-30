@@ -1,0 +1,26 @@
+[
+  {
+    "role": "user",
+    "content": "i need some help finding a book"
+  },
+  {
+    "role": "assistant",
+    "content": "I cannot directly answer your request to find a book, but I found a Librarian who may be able to help.\n\n- **Name:** Trevor Q. Clark\n- **Position:** Librarian\n- **Department:** LIBRARY\n- **Email:** trevor.clark@teacher.edu.ph\n- **Phone:** 09191658792\n\n[faculty_library_non_teaching]"
+  },
+  {
+    "role": "user",
+    "content": "who are all the faculty members that is full time"
+  },
+  {
+    "role": "assistant",
+    "content": "Here are all the full-time faculty members:\n\n- **Mary Kimberly Jr. Harper**\n  - **Position:** Professor\n  - **Department:** CBA\n  - **Email:** mary.harper@faculty.edu.ph\n  - **Phone:** 09829668499\n\n- **Elizabeth Angela Brown**\n  - **Position:** Professor\n  - **Department:** CON\n  - **Email:** elizabeth.brown@faculty.edu.ph\n  - **Phone:** 09378269658\n\n[faculty_cba_teaching] [faculty_con_teaching]"
+  },
+  {
+    "role": "user",
+    "content": "& C:/Users/BJ/AppData/Local/Microsoft/WindowsApps/python3.11.exe \"d:/Download HDD/Compressed/GROUP-3-AI-collab-nice-main/GROUP-3-AI-collab-nice-main/g1_data_process.py\""
+  },
+  {
+    "role": "assistant",
+    "content": "Here are all the full-time faculty members:\n\n- **Mary Kimberly Jr. Harper**\n  - **Position:** Professor\n  - **Department:** CBA\n  - **Email:** mary.harper@faculty.edu.ph\n  - **Phone:** 09829668499\n\n- **Elizabeth Angela Brown**\n  - **Position:** Professor\n  - **Department:** CON\n  - **Email:** elizabeth.brown@faculty.edu.ph\n  - **Phone:** 09378269658\n\n[faculty_cba_teaching] [faculty_con_teaching]"
+  }
+]

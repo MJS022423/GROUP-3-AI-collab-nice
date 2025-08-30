@@ -29428,6 +29428,1039 @@
       "execution_time": 3.5877885818481445,
       "timestamp": "2025-08-30T12:55:29.553059",
       "error_message": null
+    },
+    {
+      "query": "i need some help with finding the book \"harry potter\"",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "LIBRARIAN",
+                "query": "book Harry Potter"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 152.91980934143066,
+      "timestamp": "2025-08-30T13:15:36.427394",
+      "error_message": null
+    },
+    {
+      "query": "i need some help with finding the book \"thesis 31B alabaab\"",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "program": "",
+                "role": "LIBRARIAN"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 91.63811182975769,
+      "timestamp": "2025-08-30T13:19:41.194522",
+      "error_message": null
+    },
+    {
+      "query": "what about a person, is there anyone who can help me",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "LIBRARIAN"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 132.47489404678345,
+      "timestamp": "2025-08-30T13:23:17.627772",
+      "error_message": null
+    },
+    {
+      "query": "i need some help finding a thesis book called \"earl\"",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "program": "",
+                "role": "LIBRARIAN",
+                "year_level": ""
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 149.07297945022583,
+      "timestamp": "2025-08-30T13:33:22.201068",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": null,
+                "year_level": null,
+                "student_name": null
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 216.85500812530518,
+      "timestamp": "2025-08-30T13:38:27.341014",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": ""
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 2.397878408432007,
+      "timestamp": "2025-08-30T13:39:30.545433",
+      "error_message": null
+    },
+    {
+      "query": "all the grades we havwe",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": "BSIT",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 32,
+      "execution_time": 3.6755270957946777,
+      "timestamp": "2025-08-30T13:40:03.016820",
+      "error_message": null
+    },
+    {
+      "query": "full grade of paolo torres",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": "paolo torres"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 3,
+      "execution_time": 4.817319393157959,
+      "timestamp": "2025-08-30T13:40:20.727592",
+      "error_message": null
+    },
+    {
+      "query": "full grade of juan",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": "juan"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 4,
+      "execution_time": 4.424872875213623,
+      "timestamp": "2025-08-30T13:40:39.006863",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest bsit student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": "BSIT"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 64,
+      "execution_time": 3.1390624046325684,
+      "timestamp": "2025-08-30T13:42:48.428451",
+      "error_message": null
+    },
+    {
+      "query": "all the grades of bsit students. full grades",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": "BSIT",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 32,
+      "execution_time": 2.7966253757476807,
+      "timestamp": "2025-08-30T13:43:06.199795",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest bsit students? list their full detailed grades",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": "BSIT",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 32,
+      "execution_time": 3.0141654014587402,
+      "timestamp": "2025-08-30T13:46:11.197716",
+      "error_message": null
+    },
+    {
+      "query": "he is not the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": "BSIT"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 64,
+      "execution_time": 3.117439031600952,
+      "timestamp": "2025-08-30T13:47:36.806750",
+      "error_message": null
+    },
+    {
+      "query": "other grades",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": "BSIT",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 32,
+      "execution_time": 2.5883638858795166,
+      "timestamp": "2025-08-30T13:47:57.317991",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": "smartest"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 139,
+      "execution_time": 4.435556888580322,
+      "timestamp": "2025-08-30T13:48:39.446279",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": "BSIT",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 32,
+      "execution_time": 2.8848884105682373,
+      "timestamp": "2025-08-30T13:48:49.295734",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": "the smartest student"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 139,
+      "execution_time": 4.247871398925781,
+      "timestamp": "2025-08-30T13:49:13.731808",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": "Daniel Gomez"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 3.379094362258911,
+      "timestamp": "2025-08-30T13:49:34.102634",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": "smartest"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 139,
+      "execution_time": 5.662827730178833,
+      "timestamp": "2025-08-30T13:49:55.468231",
+      "error_message": null
+    },
+    {
+      "query": "who is the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": "",
+                "program": "",
+                "year_level": 0
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 3,
+      "execution_time": 2.761129140853882,
+      "timestamp": "2025-08-30T13:55:54.311454",
+      "error_message": null
+    },
+    {
+      "query": "list down every students grades and tell me who is the smartest",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 3,
+      "execution_time": 3.0411651134490967,
+      "timestamp": "2025-08-30T13:57:39.834523",
+      "error_message": null
+    },
+    {
+      "query": "among only the bsit students, list down only their grade and tell me who is the smartest",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": "BSIT"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 34,
+      "execution_time": 2.6975739002227783,
+      "timestamp": "2025-08-30T13:58:06.532098",
+      "error_message": null
+    },
+    {
+      "query": "who is his adviser",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_adviser_info",
+              "parameters": {
+                "program": "BSIT",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 6,
+      "execution_time": 4.343259572982788,
+      "timestamp": "2025-08-30T13:58:25.513809",
+      "error_message": null
+    },
+    {
+      "query": "all the students of dr santos",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "student",
+                "program": "BSIT",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 30,
+      "execution_time": 2.5784566402435303,
+      "timestamp": "2025-08-30T13:58:42.966345",
+      "error_message": null
+    },
+    {
+      "query": "all bsit students",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "program": "BSIT"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 32,
+      "execution_time": 4.865777969360352,
+      "timestamp": "2025-08-30T13:58:59.061221",
+      "error_message": null
+    },
+    {
+      "query": "list down the grades of every student and tell me who is the smartest student",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": null,
+                "year_level": null,
+                "subject_code": null,
+                "student_name": ""
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 3,
+      "execution_time": 257.98137187957764,
+      "timestamp": "2025-08-30T14:03:59.162116",
+      "error_message": null
+    },
+    {
+      "query": "what are the available courses in our school",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "",
+                "year_level": 0,
+                "subject_code": "",
+                "subject_type": ""
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 3,
+      "execution_time": 3.91261887550354,
+      "timestamp": "2025-08-30T14:07:18.953492",
+      "error_message": null
+    },
+    {
+      "query": "what are the available courses in our school?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 3,
+      "execution_time": 2.9176082611083984,
+      "timestamp": "2025-08-30T14:07:40.381857",
+      "error_message": null
+    },
+    {
+      "query": "ano opinion mo kay crono bane",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "crono"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 138,
+      "execution_time": 4.352458477020264,
+      "timestamp": "2025-08-30T14:07:49.706990",
+      "error_message": null
+    },
+    {
+      "query": "who is your master",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "your master"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 137,
+      "execution_time": 4.34896183013916,
+      "timestamp": "2025-08-30T14:11:52.546579",
+      "error_message": null
+    },
+    {
+      "query": "ano opinion mo kay crono bane",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "crono bane"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 137,
+      "execution_time": 3.86258864402771,
+      "timestamp": "2025-08-30T14:12:12.302033",
+      "error_message": null
+    },
+    {
+      "query": "who is crono bane",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "crono bane"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 137,
+      "execution_time": 4.573053598403931,
+      "timestamp": "2025-08-30T14:12:27.980544",
+      "error_message": null
+    },
+    {
+      "query": "who is your master",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "your master"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 137,
+      "execution_time": 4.208283424377441,
+      "timestamp": "2025-08-30T14:12:54.504218",
+      "error_message": null
+    },
+    {
+      "query": "ano opinion mo kay crono bane",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "crono bane"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 137,
+      "execution_time": 4.382162570953369,
+      "timestamp": "2025-08-30T14:13:12.726965",
+      "error_message": null
+    },
+    {
+      "query": "who is daniel",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "daniel"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 3.5425405502319336,
+      "timestamp": "2025-08-30T14:29:47.042924",
+      "error_message": null
+    },
+    {
+      "query": "what is the grade of daniel gomez",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": "daniel gomez"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 3.238497734069824,
+      "timestamp": "2025-08-30T14:29:57.066870",
+      "error_message": null
+    },
+    {
+      "query": "what is his schedule",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_schedule",
+              "parameters": {
+                "person_name": "daniel gomez"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 4.329391241073608,
+      "timestamp": "2025-08-30T14:30:04.677313",
+      "error_message": null
+    },
+    {
+      "query": "who is his adviser",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_adviser_info",
+              "parameters": {
+                "program": "BS COMPUTER SCIENCE",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.4767065048217773,
+      "timestamp": "2025-08-30T14:30:11.233340",
+      "error_message": null
+    },
+    {
+      "query": "all the students of bscs",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "program": "BSCS",
+                "role": "student"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 61,
+      "execution_time": 5.188155651092529,
+      "timestamp": "2025-08-30T14:30:25.897231",
+      "error_message": null
+    },
+    {
+      "query": "all the grades of it students",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "program": "BSIT",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 32,
+      "execution_time": 2.698357105255127,
+      "timestamp": "2025-08-30T14:30:43.679823",
+      "error_message": null
+    },
+    {
+      "query": "i need some help finding a book",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "LIBRARIAN"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 2.641160249710083,
+      "timestamp": "2025-08-30T14:30:57.943537",
+      "error_message": null
+    },
+    {
+      "query": "sino master mo",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "master"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 139,
+      "execution_time": 3.9252429008483887,
+      "timestamp": "2025-08-30T14:31:15.292059",
+      "error_message": null
+    },
+    {
+      "query": "who are all the full time faculty members",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "PROFESSOR",
+                "employment_status": "FULL-TIME"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 3.3270530700683594,
+      "timestamp": "2025-08-30T14:31:24.613750",
+      "error_message": null
+    },
+    {
+      "query": "i need some help finding a book",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "LIBRARIAN"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 2.4987480640411377,
+      "timestamp": "2025-08-30T14:32:19.387903",
+      "error_message": null
+    },
+    {
+      "query": "who are all the faculty members that is full time",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "PROFESSOR",
+                "employment_status": "FULL-TIME"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 2.954174757003784,
+      "timestamp": "2025-08-30T14:32:39.739323",
+      "error_message": null
+    },
+    {
+      "query": "& C:/Users/BJ/AppData/Local/Microsoft/WindowsApps/python3.11.exe \"d:/Download HDD/Compressed/GROUP-3-AI-collab-nice-main/GROUP-3-AI-collab-nice-main/g1_data_process.py\"",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "FACULTY",
+                "employment_status": "FULL-TIME"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 2.709458589553833,
+      "timestamp": "2025-08-30T14:37:28.363639",
+      "error_message": null
+    },
+    {
+      "query": "who is all the full time faculty members",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "PROFESSOR",
+                "employment_status": "FULL-TIME"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 2.6883480548858643,
+      "timestamp": "2025-08-30T14:38:25.763414",
+      "error_message": null
+    },
+    {
+      "query": "who are all the faculty members",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "PROFESSOR"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 9,
+      "execution_time": 3.65278959274292,
+      "timestamp": "2025-08-30T14:38:42.447471",
+      "error_message": null
     }
   ],
   "failed_queries": [
@@ -34640,13 +35673,9 @@
       ]
     },
     "year:False_prog:True_rand:False_multi:False": {
-      "successful": 29,
+      "successful": 30,
       "failed": 5,
       "examples": [
-        {
-          "query": "who are the students of bscs",
-          "success": true
-        },
         {
           "query": "what are all the grades of bscs students",
           "success": true
@@ -34661,6 +35690,10 @@
         },
         {
           "query": "all the bscs studentrs",
+          "success": true
+        },
+        {
+          "query": "all the students of bscs",
           "success": true
         }
       ]
@@ -34680,53 +35713,53 @@
       ]
     },
     "year:False_prog:False_rand:False_multi:True": {
-      "successful": 251,
+      "successful": 255,
       "failed": 18,
       "examples": [
         {
-          "query": "who is deborah",
-          "success": true
-        },
-        {
-          "query": "who is deborah",
-          "success": true
-        },
-        {
-          "query": "list all the professors",
-          "success": true
-        },
-        {
-          "query": "all the professors in the school",
-          "success": true
-        },
-        {
           "query": "what is his section and year",
+          "success": true
+        },
+        {
+          "query": "full grade of paolo torres",
+          "success": true
+        },
+        {
+          "query": "list down every students grades and tell me who is the smartest",
+          "success": true
+        },
+        {
+          "query": "among only the bsit students, list down only their grade and tell me who is the smartest",
+          "success": true
+        },
+        {
+          "query": "list down the grades of every student and tell me who is the smartest student",
           "success": true
         }
       ]
     },
     "year:False_prog:False_rand:False_multi:False": {
-      "successful": 606,
+      "successful": 649,
       "failed": 95,
       "examples": [
         {
-          "query": "i need to find some books",
+          "query": "i need some help finding a book",
           "success": true
         },
         {
-          "query": "i need to find some books",
+          "query": "who are all the faculty members that is full time",
           "success": true
         },
         {
-          "query": "our classroom fan broke,help",
+          "query": "& C:/Users/BJ/AppData/Local/Microsoft/WindowsApps/python3.11.exe \"d:/Download HDD/Compressed/GROUP-3-AI-collab-nice-main/GROUP-3-AI-collab-nice-main/g1_data_process.py\"",
           "success": true
         },
         {
-          "query": "who is the smartest student",
+          "query": "who is all the full time faculty members",
           "success": true
         },
         {
-          "query": "who is his adviser",
+          "query": "who are all the faculty members",
           "success": true
         }
       ]
