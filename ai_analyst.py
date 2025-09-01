@@ -258,7 +258,7 @@ PROMPT_TEMPLATES = {
         You are a **Planner AI**. Your only job is to map a user query to a single tool call from the available tools below. You MUST ALWAYS respond with a **single valid JSON object**.
 
         --- ABSOLUTE ROUTING RULE ---
-        1. If the user's query CONTAINS A PERSON'S NAME (e.g., "daniel", "daniel gomez"), you MUST use a tool from the "Name-Based Search" category.
+        1. If the user's query CONTAINS A PERSON'S NAME (e.g., partial name, full name), you MUST use a tool from the "Name-Based Search" category.
         2. If the user's query DOES NOT CONTAIN A PERSON'S NAME but uses filters (e.g., "all students", "bscs faculty"), you MUST use a tool from the "Filter-Based Search" category.
 
         You MUST evaluate the tools by these categories.
@@ -270,21 +270,21 @@ PROMPT_TEMPLATES = {
         - Available Staff Positions: {all_positions_list}
         - Available Employment Statuses: {all_statuses_list}
 
-        --- CATEGORY 1: Name-Based Search Tools (A name IS in the query) ---
-        - `get_person_profile(person_name: str)`: You **MUST** use this tool for **ANY** query that contains a person's name, whether it is a full name ("daniel gomez") or a partial/ambiguous name ("daniel"). This is your primary tool for all name-based searches.
-        - `answer_question_about_person(person_name: str, question: str)`: Use this if the query contains a name AND asks for a specific fact (e.g., "what is the contact number for daniel gomez?").
+        --- CATEGORY 1: Name-Based Search Tools (ONLY IF THE name IS in the query) ---
+        - `get_person_profile(person_name: str)`: You **MUST** use this tool for **ANY** query that contains a person's name, whether it is a full name or a partial/ambiguous name. This is your primary tool for all name-based searches.
+        - `answer_question_about_person(person_name: str, question: str)`: Use this if the query contains a name AND asks for a specific fact (e.g., "what is the contact number for -name-?").
 
 
         --- CATEGORY 2: Filter-Based Search Tools (NO name is in the query) ---
         - `find_people(role: str, program: str, year_level: int, department: str)`: You **MUST** use this tool **ONLY** when the user is searching for a group of people using **filters** like program, role, or department, and **NO name is provided** (e.g., "show me all bscs students"). or **when the user asks a general question about finding help or resources.** For help questions, extract keywords to search for a relevant role. (e.g., a query about 'books' should search for role 'Librarian'). Base it on Available Staff Positions.
-        - `find_faculty_by_class_count(find_most: bool)`: Use for finding faculty with the most/fewest classes overall.
 
 
         --- CATEGORY 3: Can Be Used with or Without a Name ---
+        
         - `get_person_schedule(person_name: str, program: str, year_level: int)`: You **MUST** use this for any query containing keywords like **'schedule', 'classes', or 'timetable'**. It works for a specific person by name or for a group by program/year. 
         - `get_student_grades(student_name: str, program: str, year_level: int)`: **Retrieves student grades.** You **MUST** use this for any query containing keywords like **'grades', 'GWA', 'performance'**, or questions like 'who is the smartest student'. For broad, analytical questions like "who is the smartest student?", you **MUST** call this tool with **empty parameters**. 
           **Use Cases for 'get_student_grades(student_name: str, program: str, year_level: int)':
-        - **By Name:** To find grades for a specific student, provide their name in the `student_name` parameter (e.g., 'grades of daniel gomez').
+        - **By Name:** To find grades for a specific student, provide their name in the `student_name` parameter (e.g., 'grades of -name-').
         - **By Group:** To find grades for a group, provide filters like `program` and `year_level` (e.g., 'grades for bscs 1st year').
         - **For Analysis:** For analytical queries like "who is the smartest student?", extract any available filters (like program or year) but leave the `student_name` parameter empty. If no filters are present in the query, call the tool with all parameters empty.
         - `get_adviser_info(program: str, year_level: int)`: Use for finding the adviser of a group defined by filters.
@@ -294,18 +294,20 @@ PROMPT_TEMPLATES = {
 
         - `compare_schedules(person_a_name: str, person_b_name: str)`: Use when comparing the schedules of two named people.
 
-        --- CATEGORY 5: General Academic System Tools (What about the school itself?) ---
+        --- CATEGORY 5: General School Tools (What about the school itself?) ---
         - `query_curriculum(program: str, year_level: int, subject_code: str, subject_type: str)`: **Provides information about the academic curriculum.** Use for general questions about **courses, subjects, or units** offered by the school. Do NOT use this for specific class schedules.
-
+        - `get_database_summary()`: 
+          **Function:** Provides a summary of the entire database, including all data collections and how many items are in each.
+          **Use Case:** Use this for meta-questions about the database itself. **This is the correct tool for queries like 'what data do you have?', 'show me all your data', or 'what can you tell me about?'.**
         --- EXAMPLES ---
         
         EXAMPLE 1 (Ambiguous Name -> get_person_profile):
-        User Query: "who is daniel"
+        User Query: "who is -name-"
         Your JSON Response:
         {{
             "tool_name": "get_person_profile",
             "parameters": {{
-                "person_name": "daniel"
+                "person_name": "-name"
             }}
         }}
         ---
@@ -338,14 +340,14 @@ PROMPT_TEMPLATES = {
         """,
     "final_synthesizer": r"""
         ROLE:
-        You are a precise and factual AI Data Analyst.
+        You are a precise and factual AI Data Analyst for a school named PDM or Pambayang Dalubhasaan ng Marilao.
 
         PRIMARY GOAL:
         Your goal is to directly answer the User's Query by analyzing and synthesizing the provided "Factual Documents".
 
         CORE INSTRUCTIONS:
 
-        1.  **FILTER ACCURATELY:** Before answering, you MUST mentally filter the documents to include ONLY those that strictly match the user's query constraints (e.g., 'full-time', 'professors'). Your answer must be based ONLY on this filtered data.
+        1.  **FILTER ACCURATELY:** Before answering, you MUST mentally filter the documents to include ONLY those that strictly match the user's query constraints (e.g., 'full-time',). Your answer must be based ONLY on this filtered data.
 
         2.  **LINK ENTITIES:** If documents refer to the same person with different names (e.g., 'Dr. Cruz' and 'Professor John Cruz'), combine their information.
 
@@ -367,8 +369,7 @@ PROMPT_TEMPLATES = {
 
         --- QUERY SPECIAL CASES: INDIRECT ANSWERS ---
         Sometimes, the Factual Documents do not directly answer the user's original question (e.g., about books, health, etc.), but instead provide information about a **person who can help**. This happens when the Planner has used the `find_people` tool as a general-purpose search. In this specific case, your primary goal changes:
-        1. State that you cannot directly answer the original request.
-        2. Introduce the person who was found and explain WHY they are relevant (e.g., "but I found a Librarian who may be able to help").
+        2. Introduce the person who was found and explain WHY they are relevant )
         3. Provide the details of that person from the Factual Documents.
 
 
@@ -379,10 +380,10 @@ PROMPT_TEMPLATES = {
         - You MUST explicitly state that a lower GWA is better in your reasoning and select the person with the LOWEST GWA as the "smartest". There are no exceptions to this rule.
         - For example : if we have gwa list of 3.1, 5.2, 1.5, 1.5 is the smartest.
 
-
-        EASTER EGG:
-        if the query is: "sino master mo"
-        always answer: "si earl ruzzle malofit"
+        NEW GUIDELINE ADDED:
+        If the Factual Documents are from the `get_database_summary` tool, your primary goal is to answer "what do you know?" in a natural, conversational way. Do NOT just list the raw collection names. Instead, you MUST interpret the collection names and fields to create a rich summary of your capabilities.
+        - **Synthesize Categories:** Group the collections into logical categories like "Student Information," "Faculty & Staff," "Schedules," and "Academic Programs."
+        - **Provide Specific Examples:** For each category, you MUST mention a few specific examples from the data to make your summary more helpful. For instance, mention a few actual program names (like 'BSCS' or 'BSIT') or staff positions (like 'Librarian' or 'Professor') that you see.
 
         ---
         HANDLING SPECIAL CASES:
@@ -476,6 +477,7 @@ class AIAnalyst:
 
         # Map tool names to their corresponding methods
         self.available_tools = {
+            "get_database_summary" : self.get_database_summary,
             "get_person_profile": self.get_person_profile,
             "get_person_schedule": self.get_person_schedule,
             "get_adviser_info": self.get_adviser_info,
@@ -557,12 +559,29 @@ class AIAnalyst:
         query_text = "academic program curriculum" 
 
         # Build metadata filters for precise collection matching
+        query_text = "academic program curriculum" 
+        if program:
+            query_text = f"curriculum for the {program} program"
+
+        # --- Build Metadata Filters (for precise matching on the collection) ---
         if program:
             filters['program'] = program
 
         # Build document content filters for searching within the document text
         if year_level:
-            doc_filters.append({"$contains": f"{year_level} Year"})
+            year_str = str(year_level)
+            if year_str.endswith('1') and not year_str.endswith('11'): suffix = 'st'
+            elif year_str.endswith('2') and not year_str.endswith('12'): suffix = 'nd'
+            elif year_str.endswith('3') and not year_str.endswith('13'): suffix = 'rd'
+            else: suffix = 'th'
+            
+            doc_filters.append({
+                "$or": [
+                    {"$contains": f"{year_str}{suffix} Year"}, # e.g., "1st Year"
+                    {"$contains": f"Year {year_str}"},          # e.g., "Year 1"
+                    {"$contains": f"{year_str} Year"}           # e.g., "1 Year"
+                ]
+            })
 
         if semester:
             semester_str = str(semester).lower()
@@ -683,6 +702,50 @@ class AIAnalyst:
             return results
 
         return [{"status": "error", "summary": "To find a person or group, please provide a name or filters like role, program, or department."}]
+    
+
+
+
+
+    def get_database_summary(self) -> List[dict]:
+        """
+        Provides a high-level summary of the database, including collection names, 
+        item counts, and a sample of the key data fields in each collection.
+        """
+        self.debug("🛠️ Running upgraded tool: get_database_summary")
+        summary_docs = []
+        
+        if not self.collections:
+            return [{"source_collection": "system_summary", "content": "The database has no collections loaded.", "metadata": {}}]
+
+        overall_summary = f"The database contains {len(self.collections)} collections. Here is a summary of each one:"
+        summary_docs.append({"source_collection": "system_summary", "content": overall_summary, "metadata": {}})
+
+        for name, coll in self.collections.items():
+            try:
+                count = coll.count()
+                # Retrieve a small sample of items to inspect the metadata
+                sample = coll.peek(limit=3)
+                
+                # Get the metadata keys from the first item, if it exists
+                sample_keys = list(sample['metadatas'][0].keys()) if sample['metadatas'] else []
+                
+                # Clean up the keys for better readability
+                keys_to_show = sorted([key for key in sample_keys if not key.endswith('_id')])[:5] # Show up to 5 keys
+                
+                summary_docs.append({
+                    "source_collection": "collection_info",
+                    "content": f"Collection '{name}' has {count} documents. Key information includes: {', '.join(keys_to_show)}.",
+                    "metadata": {
+                        "collection_name": name, 
+                        "item_count": count,
+                        "sample_fields": keys_to_show
+                    }
+                })
+            except Exception as e:
+                self.debug(f"⚠️ Could not get info for collection {name}: {e}")
+        
+        return summary_docs
     
     def get_student_grades(self, student_name: str = None, program: str = None, year_level: int = None) -> List[dict]:
         """
@@ -821,6 +884,18 @@ class AIAnalyst:
         filters = {}
         collection_filter = None
 
+
+
+        if isinstance(role, list) and len(role) == 1:
+            self.debug(f"-> Normalizing single-item role list {role} to a string.")
+            role = role[0]
+
+
+        # --- WILDCARD SEARCH: If no parameters are given, return all people ---
+        if not any([name, role, program, year_level, section, department, employment_status]):
+            self.debug("-> No parameters provided. Searching for all students and faculty.")
+            return self.search_database(query_text="*", collection_filter="students,faculty")
+
         # Intelligently determine if the search is for students or faculty
         is_student_query = False
         if isinstance(role, str) and role.lower() == 'student':
@@ -834,6 +909,13 @@ class AIAnalyst:
             if program: filters['program'] = program
             if year_level: filters['year_level'] = year_level
             if section: filters['section'] = section
+            if not filters and is_student_query:
+                return self.search_database(query_text="student", collection_filter=collection_filter)
+            
+            # If it's a student query but no specific filters were found, search all students.
+            if not filters and not name:
+                self.debug("-> No specific student filters. Searching for all students.")
+                return self.search_database(query_text="*", collection_filter="students")
         else:
             self.debug("-> Query identified as a FACULTY/STAFF search.")
             collection_filter = "faculty"
@@ -860,6 +942,11 @@ class AIAnalyst:
 
             if employment_status:
                 filters['employment_status'] = employment_status
+
+            # If it's a faculty query but no specific filters were found, search all faculty.
+            if not filters and not name:
+                self.debug("-> No specific faculty filters. Searching for all faculty.")
+                return self.search_database(query_text="*", collection_filter="faculty")
 
         # Enhance the search with entity resolution if a name is provided
         if name:
@@ -1432,7 +1519,7 @@ class AIAnalyst:
                 "BSTM": ["BSTM", "BS TOURISM MANAGEMENT", "BS Tourism Management"],
                 "BSOA": ["BSOA", "BS OFFICE ADMINISTRATION", "BS Office Administration"],
                 "BECED": ["BECED", "BACHELOR OF EARLY CHILDHOOD EDUCATION", "Bachelor of Early Childhood Education"],
-                "BSIT": ["BSIT", "BS INFORMATION TECHNOLOGY", "BS Information Technology"],
+                "BSIT": ["BSIT", "BS INFORMATION TECHNOLOGY", "BS Information Technology", "BSINFORMATION"],
                 "BSHM": ["BSHM", "BS HOSPITALITY MANAGEMENT", "BS Hospitality Management"],
                 "BTLE": ["BTLE", "BACHELOR OF TECHNOLOGY AND LIVELIHOOD EDUCATION", "Bachelor of Technology and Livelihood Education"]
             }
@@ -1531,9 +1618,9 @@ class AIAnalyst:
                 COURSE_ALIASES = {
                     "BSCS": ["BSCS", "BS COMPUTER SCIENCE", "BS Computer Science"],
                     "BSTM": ["BSTM", "BS TOURISM MANAGEMENT", "BS Tourism Management"],
-                    "BSOA": ["BSOA", "BS OFFICE ADMINISTRATION", "BS Office Administration"],
+                    "BSOA": ["BSOA", "BS OFFICE ADMINISTRATION", "BS Office Administration" , "BSOFFICE"],
                     "BECED": ["BECED", "BACHELOR OF EARLY CHILDHOOD EDUCATION", "Bachelor of Early Childhood Education"],
-                    "BSIT": ["BSIT", "BS INFORMATION TECHNOLOGY", "BS Information Technology"],
+                    "BSIT": ["BSIT", "BS INFORMATION TECHNOLOGY", "BS Information Technology" , "BS INFORMATION", "BSINFORMATION"],
                     "BSHM": ["BSHM", "BS HOSPITALITY MANAGEMENT", "BS Hospitality Management"],
                     "BTLE": ["BTLE", "BACHELOR OF TECHNOLOGY AND LIVELIHOOD EDUCATION", "Bachelor of Technology and Livelihood Education"]
                 }
@@ -1774,18 +1861,20 @@ class AIAnalyst:
                 raise ValueError(f"AI selected an unknown tool: '{tool_name}'")
 
             # Update the last referenced person for conversation context
-            try:
-                if collected_docs:
-                    for doc in collected_docs:
-                        meta = doc.get("metadata", {}) if isinstance(doc, dict) else {}
-                        name = meta.get("full_name") or meta.get("student_name") or meta.get("name")
-                        if name:
-                            self.last_referenced_person = name
-                            self.last_referenced_aliases = meta.get("aliases") or []
-                            self.debug(f"-> last_referenced_person set to: {self.last_referenced_person}")
-                            break
-            except Exception:
-                pass
+            
+            # try:
+            #     if collected_docs:
+            #         for doc in collected_docs:
+            #             meta = doc.get("metadata", {}) if isinstance(doc, dict) else {}
+            #             name = meta.get("full_name") or meta.get("student_name") or meta.get("name")
+            #             if name:
+            #                 self.last_referenced_person = name
+            #                 self.last_referenced_aliases = meta.get("aliases") or []
+            #                 self.debug(f"-> last_referenced_person set to: {self.last_referenced_person}")
+            #                 break
+            # except Exception:
+            #     pass
+
 
             # 3. Fallback Logic: If the primary tool fails, try a broad semantic search
             primary_tool_failed = not collected_docs or "error" in collected_docs[0].get("status", "") or "empty" in collected_docs[0].get("status", "")

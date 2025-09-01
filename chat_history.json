@@ -1,26 +1,26 @@
 [
   {
     "role": "user",
-    "content": "i need some help finding a book"
+    "content": "who has the higher grades between them"
   },
   {
     "role": "assistant",
-    "content": "I cannot directly answer your request to find a book, but I found a Librarian who may be able to help.\n\n- **Name:** Trevor Q. Clark\n- **Position:** Librarian\n- **Department:** LIBRARY\n- **Email:** trevor.clark@teacher.edu.ph\n- **Phone:** 09191658792\n\n[faculty_library_non_teaching]"
+    "content": "Daniel Gomez has higher grades than Daniel Rivera.\n\n- **Daniel Gomez:**\n  - Student Name: Daniel Gomez\n  - Student Number: PDM-2025-0001\n  - General Weighted Average (GWA): 1.45\n  - Total Subjects: 10\n  - Total Units: 17.0\n  - Passed Subjects: 10\n  - Failed Subjects: 0\n\n- **Daniel Rivera:**\n  - Student Name: Daniel Rivera\n  - Student Number: PDM-2025-0029\n  - General Weighted Average (GWA): 1.5\n  - Total Subjects: 10\n  - Total Units: 17.0\n  - Passed Subjects: 10\n  - Failed Subjects: 0\n\n[students_ccs_bscs_year1_seca_grades]"
   },
   {
     "role": "user",
-    "content": "who are all the faculty members that is full time"
+    "content": "what is the grade of daniel rivera"
   },
   {
     "role": "assistant",
-    "content": "Here are all the full-time faculty members:\n\n- **Mary Kimberly Jr. Harper**\n  - **Position:** Professor\n  - **Department:** CBA\n  - **Email:** mary.harper@faculty.edu.ph\n  - **Phone:** 09829668499\n\n- **Elizabeth Angela Brown**\n  - **Position:** Professor\n  - **Department:** CON\n  - **Email:** elizabeth.brown@faculty.edu.ph\n  - **Phone:** 09378269658\n\n[faculty_cba_teaching] [faculty_con_teaching]"
+    "content": "I couldn't find any grade information for Daniel Rivera."
   },
   {
     "role": "user",
-    "content": "& C:/Users/BJ/AppData/Local/Microsoft/WindowsApps/python3.11.exe \"d:/Download HDD/Compressed/GROUP-3-AI-collab-nice-main/GROUP-3-AI-collab-nice-main/g1_data_process.py\""
+    "content": "what are the subjects of bscs 1styear"
   },
   {
     "role": "assistant",
-    "content": "Here are all the full-time faculty members:\n\n- **Mary Kimberly Jr. Harper**\n  - **Position:** Professor\n  - **Department:** CBA\n  - **Email:** mary.harper@faculty.edu.ph\n  - **Phone:** 09829668499\n\n- **Elizabeth Angela Brown**\n  - **Position:** Professor\n  - **Department:** CON\n  - **Email:** elizabeth.brown@faculty.edu.ph\n  - **Phone:** 09378269658\n\n[faculty_cba_teaching] [faculty_con_teaching]"
+    "content": "The subjects for the BSCS 1st Year program are:\n\n- **1st Semester:**\n  - CS101 - Introduction To Computing\n  - CS102 - Fundamentals Of Programming\n  - MATH101 - College Algebra\n  - GE101 - Understanding The Self\n  - GE102 - Purposive Communication\n  - PE101 - Physical Education 1\n  - NSTP101 - National Service Training Program 1\n\n- **2nd Semester:**\n  - CS103 - Intermediate Programming\n  - CS104 - Computer Hardware Fundamentals\n  - MATH102 - Trigonometry\n  - GE103 - Readings In Philippine History\n  - GE104 - The Contemporary World\n  - PE102 - Physical Education 2\n  - NSTP102 - National Service Training Program 2\n\n[curriculum_ccs_bscs]"
   }
 ]

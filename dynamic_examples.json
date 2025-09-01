@@ -16,5 +16,34 @@
         "role": "LIBRARIAN"
       }
     }
+  },
+  {
+    "query": "who among the faculty members are muslim",
+    "plan": {
+      "tool_name": "find_people",
+      "parameters": {
+        "role": "PROFESSOR",
+        "religion": "MUSLIM"
+      }
+    }
+  },
+  {
+    "query": "all the faculty members",
+    "plan": {
+      "tool_name": "find_people",
+      "parameters": {
+        "role": "PROFESSOR"
+      }
+    }
+  },
+  {
+    "query": "what are the subjects of bscs 1styear",
+    "plan": {
+      "tool_name": "query_curriculum",
+      "parameters": {
+        "program": "BSCS",
+        "year_level": 1
+      }
+    }
   }
 ]
