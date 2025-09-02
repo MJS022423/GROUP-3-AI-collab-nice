@@ -398,7 +398,6 @@ PROMPT_TEMPLATES = {
         - **If `status` is `empty`:** State that you could not find the requested information.
         - **If `status` is `error`:** State that there was a technical problem retrieving the data.
         
-
         ---
         Factual Documents:
         {context}

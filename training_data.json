@@ -2993,6 +2993,111 @@
       "execution_time": 8.329829692840576,
       "timestamp": "2025-09-02T15:53:01.308636",
       "error_message": null
+    },
+    {
+      "query": "hanggang anong oras yung national id don sa munisipyo pre",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_schedule",
+              "parameters": {
+                "person_name": "national id don"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 142,
+      "execution_time": 5.151374816894531,
+      "timestamp": "2025-09-02T15:59:32.110209",
+      "error_message": null
+    },
+    {
+      "query": "who is daniel gomez",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "daniel gomez"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 4.404361009597778,
+      "timestamp": "2025-09-02T21:53:54.946933",
+      "error_message": null
+    },
+    {
+      "query": "grades of daniel gomez",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": "daniel gomez"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 3.298450231552124,
+      "timestamp": "2025-09-02T21:55:47.956476",
+      "error_message": null
+    },
+    {
+      "query": "who is PDM-2025-0001",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "PDM-2025-0001"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 141,
+      "execution_time": 7.694145917892456,
+      "timestamp": "2025-09-02T21:57:11.137945",
+      "error_message": null
+    },
+    {
+      "query": "whos student has the pdm id pdm-2025-0001",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "pdm-2025-0001"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 141,
+      "execution_time": 6.0922276973724365,
+      "timestamp": "2025-09-02T22:04:10.164984",
+      "error_message": null
     }
   ],
   "failed_queries": [
@@ -3123,27 +3228,27 @@
   ],
   "query_patterns": {
     "year:False_prog:False_rand:False_multi:False": {
-      "successful": 119,
+      "successful": 123,
       "failed": 3,
       "examples": [
         {
-          "query": "can you tell me anything about the school",
-          "success": true
-        },
-        {
-          "query": "what about their programs?",
-          "success": true
-        },
-        {
-          "query": "bsin couse",
-          "success": true
-        },
-        {
-          "query": "all the subjects of bsin",
-          "success": true
-        },
-        {
           "query": "bsin courses",
+          "success": true
+        },
+        {
+          "query": "who is daniel gomez",
+          "success": true
+        },
+        {
+          "query": "grades of daniel gomez",
+          "success": true
+        },
+        {
+          "query": "who is PDM-2025-0001",
+          "success": true
+        },
+        {
+          "query": "whos student has the pdm id pdm-2025-0001",
           "success": true
         }
       ]
@@ -3193,15 +3298,11 @@
       ]
     },
     "year:False_prog:False_rand:False_multi:True": {
-      "successful": 14,
+      "successful": 15,
       "failed": 2,
       "examples": [
         {
           "query": "im planning to take bsin, any tips you have for me?",
-          "success": false
-        },
-        {
-          "query": "im planning to take bsin, any tips you have for me?",
           "success": true
         },
         {
@@ -3214,6 +3315,10 @@
         },
         {
           "query": "full detailed information about all the courses in pdm",
+          "success": true
+        },
+        {
+          "query": "hanggang anong oras yung national id don sa munisipyo pre",
           "success": true
         }
       ]
