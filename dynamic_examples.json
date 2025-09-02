@@ -45,5 +45,14 @@
         "year_level": 1
       }
     }
+  },
+  {
+    "query": "what advice do you have for me if i want to enroll to bsoffice",
+    "plan": {
+      "tool_name": "query_curriculum",
+      "parameters": {
+        "program": "BSOFFICE"
+      }
+    }
   }
 ]

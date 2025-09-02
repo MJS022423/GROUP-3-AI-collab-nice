@@ -255,7 +255,7 @@ class LLMService:
 
 PROMPT_TEMPLATES = {
     "planner_agent": r"""
-        You are a **Planner AI**. Your only job is to map a user query to a single tool call from the available tools below. You MUST ALWAYS respond with a **single valid JSON object**.
+        You are a **Planner AI** of PDM or Pambayang Dalubhasaan ng Marilao. Your only job is to map a user query to a single tool call from the available tools below. You MUST ALWAYS respond with a **single valid JSON object**.
 
         --- ABSOLUTE ROUTING RULE ---
         1. If the user's query CONTAINS A PERSON'S NAME (e.g., partial name, full name), you MUST use a tool from the "Name-Based Search" category.
@@ -269,6 +269,7 @@ PROMPT_TEMPLATES = {
         - Available Departments: {all_departments_list}
         - Available Staff Positions: {all_positions_list}
         - Available Employment Statuses: {all_statuses_list}
+        - Available School Info Topics: {all_doc_types_list}
 
         --- CATEGORY 1: Name-Based Search Tools (ONLY IF THE name IS in the query) ---
         - `get_person_profile(person_name: str)`: You **MUST** use this tool for **ANY** query that contains a person's name, whether it is a full name or a partial/ambiguous name. This is your primary tool for all name-based searches.
@@ -295,11 +296,17 @@ PROMPT_TEMPLATES = {
         - `compare_schedules(person_a_name: str, person_b_name: str)`: Use when comparing the schedules of two named people.
 
         --- CATEGORY 5: General School Tools (What about the school itself?) ---
-        - `query_curriculum(program: str, year_level: int, subject_code: str, subject_type: str)`: **Provides information about the academic curriculum.** Use for general questions about **courses, subjects, or units** offered by the school. Do NOT use this for specific class schedules.
+        - `get_school_info(topic: str)`: 
+          **Function:** Retrieves core institutional identity documents.
+          **Use Case:** You **MUST** use this tool ONLY for queries about the school's **'mission', 'vision', 'history', or 'objectives'**. Anything about the school's identity itself.
+
         - `get_database_summary()`: 
-          **Function:** Provides a summary of the entire database, including all data collections and how many items are in each.
-          **Use Case:** Use this for meta-questions about the database itself. **This is the correct tool for queries like 'what data do you have?', 'show me all your data', or 'what can you tell me about?'.**
-        --- EXAMPLES ---
+          **Function:** Provides a summary of all data collections in the database.
+          **Use Case:** Use this ONLY for meta-questions about the database itself, such as **'what data do you have?'** or **'what can you tell me about?'**. Do NOT use this for mission, vision, or history.
+          
+        - `query_curriculum(program: str, year_level: int)`: 
+          **Function:** Provides information about academic programs This also includes the guides and tips for the programs and courses in the school.
+          **Use Case:** Use this ONLY for questions about **'courses', 'subjects', 'curriculum', or academic programs**. Do NOT use this for mission, vision, or history.
         
         EXAMPLE 1 (Ambiguous Name -> get_person_profile):
         User Query: "who is -name-"
@@ -463,12 +470,13 @@ class AIAnalyst:
         self.debug("Pre-loading dynamic filter values from database...")
         self.all_positions = self._get_unique_values_for_field(['position'])
         self.all_departments = self._get_unique_values_for_field(['department'])
-        self.all_programs = self._get_unique_values_for_field(['program', 'course'])
+        self.all_programs = self._get_unique_values_for_field(['program', 'course'], collection_filter="curriculum")
         self.all_statuses = self._get_unique_values_for_field(['employment_status'])
         self.debug(f"  -> Found {len(self.all_positions)} positions: {self.all_positions}")
         self.debug(f"  -> Found {len(self.all_departments)} departments: {self.all_departments}")
         self.debug(f"  -> Found {len(self.all_programs)} programs: {self.all_programs}")
         self.debug(f"  -> Found {len(self.all_statuses)} statuses: {self.all_statuses}")
+        self.all_doc_types = self._get_unique_document_types() # <-- ADD THIS
             
         self.training_system = TrainingSystem()
         self.dynamic_examples = self._load_dynamic_examples()
@@ -477,6 +485,7 @@ class AIAnalyst:
 
         # Map tool names to their corresponding methods
         self.available_tools = {
+            "get_school_info": self.get_school_info,
             "get_database_summary" : self.get_database_summary,
             "get_person_profile": self.get_person_profile,
             "get_person_schedule": self.get_person_schedule,
@@ -491,6 +500,14 @@ class AIAnalyst:
             "get_student_grades": self.get_student_grades,
             "query_curriculum": self.query_curriculum,
             }
+        
+        
+
+    def _get_unique_document_types(self) -> List[str]:
+        """Queries the database to get all unique, non-empty document types."""
+        self.debug("🔎 Discovering unique document types from the database...")
+        # This calls the existing helper method to find unique values for a specific field
+        return self._get_unique_values_for_field(['document_type'])
 
 
     def _get_unique_faculty_types(self) -> List[str]:
@@ -514,20 +531,35 @@ class AIAnalyst:
         self.debug(f"Found {len(found_types)} types: {found_types}")
         return found_types
 
-    def _get_unique_values_for_field(self, fields: List[str]) -> List[str]:
+    def _get_unique_values_for_field(self, fields: List[str], collection_filter: Optional[str] = None) -> List[str]:
         """
-        Queries the database to get all unique, non-empty values for a given list of field names.
-        Used to populate the planner prompt with available filter options.
+        [UPGRADED] Directly queries the database to get all unique, non-empty values
+        for a given list of field names, with an optional collection filter.
         """
         unique_values = set()
-        results = self.get_distinct_combinations(collection_filter=".", fields=fields, filters={})
         
-        if results.get("status") == "success":
-            for item in results.get("combinations", []):
-                for field in fields:
-                    if field in item and item[field]:
-                        unique_values.add(str(item[field]).strip().upper())
-        
+        # Create a reverse map for the fields we are interested in
+        field_map = {
+            std_field: list(set([std_field] + [orig for orig, std in self.REVERSE_SCHEMA_MAP.items() if std == std_field]))
+            for std_field in fields
+        }
+        all_possible_keys = [key for sublist in field_map.values() for key in sublist]
+
+        for name, coll in self.collections.items():
+            if collection_filter and collection_filter not in name:
+                continue
+            
+            try:
+                # Get all metadata from the collection
+                results = coll.get(include=["metadatas"])
+                for meta in results.get("metadatas", []):
+                    # Check for any of the possible keys
+                    for key in all_possible_keys:
+                        if key in meta and meta[key]:
+                            unique_values.add(str(meta[key]).strip().upper())
+            except Exception as e:
+                self.debug(f"⚠️ Error during _get_unique_values_for_field in {name}: {e}")
+
         return sorted(list(unique_values))
     
     def compare_schedules(self, person_a_name: str, person_b_name: str) -> List[dict]:
@@ -538,6 +570,34 @@ class AIAnalyst:
         docs_a = self.get_person_schedule(person_name=person_a_name)
         docs_b = self.get_person_schedule(person_name=person_b_name)
         return docs_a + docs_b
+    
+    def get_school_info(self, topic: str = None) -> List[dict]:
+        """
+        [UPGRADED] A tool for retrieving general school information.
+        If a topic is provided, it searches for that specific document type.
+        If no topic is provided, it performs a wildcard search for all institutional identity documents.
+        """
+        self.debug(f"🛠️ Running upgraded tool: get_school_info for topic: {topic}")
+
+        filters = {}
+        # --- ✨ WILDCARD LOGIC ---
+        # If no specific topic is given, search for all documents in this category.
+        if not topic:
+            self.debug("-> No topic provided. Performing wildcard search for Institutional Identity.")
+            filters = {'department': 'INSTITUTIONAL_IDENTITY'}
+            return self.search_database(filters=filters)
+
+        # --- Original logic for specific topic searches ---
+        doc_type_map = {
+            "mission": "mission_vision",
+            "vision": "mission_vision",
+            "objectives": "objectives",
+            "history": "history" # Assuming you add a 'history' document type
+        }
+        document_type_to_find = doc_type_map.get(topic.lower(), topic.lower())
+        
+        filters = {'document_type': document_type_to_find}
+        return self.search_database(filters=filters)
     
     def query_curriculum(
         self,
@@ -1809,7 +1869,9 @@ class AIAnalyst:
                     all_programs_list=self.all_programs,
                     all_departments_list=self.all_departments,
                     all_positions_list=self.all_positions,
+                    all_doc_types_list=self.all_doc_types,
                     all_statuses_list=self.all_statuses,
+                    
                     dynamic_examples=self.dynamic_examples
                 )
                 processed_query = query

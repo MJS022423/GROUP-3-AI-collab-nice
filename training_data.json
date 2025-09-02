@@ -1763,6 +1763,1236 @@
       "execution_time": 2.8717942237854004,
       "timestamp": "2025-09-01T17:08:33.895271",
       "error_message": null
+    },
+    {
+      "query": "who is daniel",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "daniel"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 3.9632158279418945,
+      "timestamp": "2025-09-01T17:45:54.634322",
+      "error_message": null
+    },
+    {
+      "query": "who among the faculty is muslim",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "PROFESSOR",
+                "religion": "MUSLIM"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 7,
+      "execution_time": 3.8218765258789062,
+      "timestamp": "2025-09-01T17:48:49.913229",
+      "error_message": null
+    },
+    {
+      "query": "who is dr smith",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "dr smith"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 136,
+      "execution_time": 4.923969268798828,
+      "timestamp": "2025-09-01T17:51:36.836137",
+      "error_message": null
+    },
+    {
+      "query": "who is deborah",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "deborah"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.5842223167419434,
+      "timestamp": "2025-09-01T17:51:56.513999",
+      "error_message": null
+    },
+    {
+      "query": "what is the department of trevor",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "trevor"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 2.707768678665161,
+      "timestamp": "2025-09-01T17:52:07.341599",
+      "error_message": null
+    },
+    {
+      "query": "what is the schedule of trevor",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_schedule",
+              "parameters": {
+                "person_name": "trevor"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 4,
+      "execution_time": 4.096522569656372,
+      "timestamp": "2025-09-01T17:52:19.875076",
+      "error_message": null
+    },
+    {
+      "query": "i need to find some books",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "LIBRARIAN"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.1735916137695312,
+      "timestamp": "2025-09-01T18:35:09.433468",
+      "error_message": null
+    },
+    {
+      "query": "all bscs studenrs",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "program": "BSCS",
+                "role": "STUDENT"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 61,
+      "execution_time": 5.021304607391357,
+      "timestamp": "2025-09-01T19:57:55.371840",
+      "error_message": null
+    },
+    {
+      "query": "all students",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "STUDENT"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 123,
+      "execution_time": 6.816628694534302,
+      "timestamp": "2025-09-01T19:58:13.741372",
+      "error_message": null
+    },
+    {
+      "query": "monday schedule",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_schedule",
+              "parameters": {
+                "day": "MONDAY"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 136,
+      "execution_time": 6.0316526889801025,
+      "timestamp": "2025-09-01T20:00:04.415998",
+      "error_message": null
+    },
+    {
+      "query": "what can i ask yuo",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 19,
+      "execution_time": 3.600029468536377,
+      "timestamp": "2025-09-01T20:06:45.316998",
+      "error_message": null
+    },
+    {
+      "query": "& C:/Users/BJ/AppData/Local/Microsoft/WindowsApps/python3.11.exe \"d:/Download HDD/Compressed/GROUP-3-AI-collab-nice-main/GROUP-3-AI-collab-nice-main/g1_data_process.py\"",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 19,
+      "execution_time": 4.018052577972412,
+      "timestamp": "2025-09-01T21:59:09.421869",
+      "error_message": null
+    },
+    {
+      "query": "mission vission",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 19,
+      "execution_time": 3.2400100231170654,
+      "timestamp": "2025-09-01T22:00:40.943436",
+      "error_message": null
+    },
+    {
+      "query": "vision",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 19,
+      "execution_time": 2.617034673690796,
+      "timestamp": "2025-09-01T22:00:51.737030",
+      "error_message": null
+    },
+    {
+      "query": "what do you know bro",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 19,
+      "execution_time": 3.860689401626587,
+      "timestamp": "2025-09-01T22:01:01.828770",
+      "error_message": null
+    },
+    {
+      "query": "all data you have",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 19,
+      "execution_time": 3.0708234310150146,
+      "timestamp": "2025-09-01T22:01:23.391422",
+      "error_message": null
+    },
+    {
+      "query": "what do you know",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 19,
+      "execution_time": 2.7761788368225098,
+      "timestamp": "2025-09-01T22:01:51.705970",
+      "error_message": null
+    },
+    {
+      "query": "curriculum",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 6,
+      "execution_time": 4.002007484436035,
+      "timestamp": "2025-09-01T22:02:31.254994",
+      "error_message": null
+    },
+    {
+      "query": "curriculum vision",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "subject_code": "VISION"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 2.819380283355713,
+      "timestamp": "2025-09-01T22:02:44.325682",
+      "error_message": null
+    },
+    {
+      "query": "vision of pdm",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "ADMINISTRATION",
+                "subject_code": "INSTITUTIONAL"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 79,
+      "execution_time": 5.543319225311279,
+      "timestamp": "2025-09-01T22:03:16.202469",
+      "error_message": null
+    },
+    {
+      "query": "whats the vision of pdm bro",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "subject_code": "vision"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.702850341796875,
+      "timestamp": "2025-09-01T22:03:41.155595",
+      "error_message": null
+    },
+    {
+      "query": "whats the mission",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "subject_code": "mission"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 79,
+      "execution_time": 4.4900734424591064,
+      "timestamp": "2025-09-01T22:06:03.786495",
+      "error_message": null
+    },
+    {
+      "query": "programs in pdm",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": ""
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 6,
+      "execution_time": 2.9406139850616455,
+      "timestamp": "2025-09-01T22:13:53.418811",
+      "error_message": null
+    },
+    {
+      "query": "programs in pdm",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "ALL"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 79,
+      "execution_time": 3.7605223655700684,
+      "timestamp": "2025-09-01T22:15:36.836880",
+      "error_message": null
+    },
+    {
+      "query": "all courses in pdm",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 6,
+      "execution_time": 2.704965829849243,
+      "timestamp": "2025-09-01T22:16:02.012259",
+      "error_message": null
+    },
+    {
+      "query": "all programs in pdm",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "PDM"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 79,
+      "execution_time": 4.417509078979492,
+      "timestamp": "2025-09-01T22:16:09.372264",
+      "error_message": null
+    },
+    {
+      "query": "all courses in pdm",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "PDM"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 79,
+      "execution_time": 4.415703535079956,
+      "timestamp": "2025-09-01T22:18:23.831180",
+      "error_message": null
+    },
+    {
+      "query": "all courses in school",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 6,
+      "execution_time": 9.135619401931763,
+      "timestamp": "2025-09-01T22:18:36.518980",
+      "error_message": null
+    },
+    {
+      "query": "all programs",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 6,
+      "execution_time": 2.5728564262390137,
+      "timestamp": "2025-09-01T22:18:41.620407",
+      "error_message": null
+    },
+    {
+      "query": "administration",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "department": "ADMINISTRATION"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 137,
+      "execution_time": 4.573097467422485,
+      "timestamp": "2025-09-01T22:20:36.816460",
+      "error_message": null
+    },
+    {
+      "query": "all the programs in pdm",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": ""
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 4,
+      "execution_time": 3.1596667766571045,
+      "timestamp": "2025-09-01T22:20:55.491022",
+      "error_message": null
+    },
+    {
+      "query": "all the courses in pdm",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 4,
+      "execution_time": 3.3277053833007812,
+      "timestamp": "2025-09-01T22:21:04.291057",
+      "error_message": null
+    },
+    {
+      "query": "whats our mission",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 19,
+      "execution_time": 2.916471004486084,
+      "timestamp": "2025-09-01T22:21:17.393232",
+      "error_message": null
+    },
+    {
+      "query": "can you tell me anything about the schoo",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 19,
+      "execution_time": 3.412510871887207,
+      "timestamp": "2025-09-01T22:21:37.986028",
+      "error_message": null
+    },
+    {
+      "query": "can you tell me anything about the school?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 19,
+      "execution_time": 3.539146661758423,
+      "timestamp": "2025-09-01T22:23:32.996047",
+      "error_message": null
+    },
+    {
+      "query": "institutional identity objectives",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "department": "INSTITUTIONAL_IDENTITY"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 4,
+      "execution_time": 3.7873423099517822,
+      "timestamp": "2025-09-02T00:24:45.154594",
+      "error_message": null
+    },
+    {
+      "query": "department institutional identity",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "department": "INSTITUTIONAL_IDENTITY"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 108,
+      "execution_time": 4.923951148986816,
+      "timestamp": "2025-09-02T00:25:10.138936",
+      "error_message": null
+    },
+    {
+      "query": "vision mision",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "subject_code": "vision mision"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 108,
+      "execution_time": 4.153889417648315,
+      "timestamp": "2025-09-02T00:25:20.409357",
+      "error_message": null
+    },
+    {
+      "query": "im new here, introduce me the school",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_school_info",
+              "parameters": {
+                "topic": "MISSION_VISION"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 3.8927969932556152,
+      "timestamp": "2025-09-02T15:11:30.359847",
+      "error_message": null
+    },
+    {
+      "query": "what about their programs",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 3,
+      "execution_time": 3.707939386367798,
+      "timestamp": "2025-09-02T15:11:40.911564",
+      "error_message": null
+    },
+    {
+      "query": "can you tell me anything about the school",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_school_info",
+              "parameters": {
+                "topic": "MISSION_VISION"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.505216121673584,
+      "timestamp": "2025-09-02T15:21:29.501915",
+      "error_message": null
+    },
+    {
+      "query": "what is their objectives",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_school_info",
+              "parameters": {
+                "topic": "OBJECTIVES"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.42940354347229,
+      "timestamp": "2025-09-02T15:21:42.506325",
+      "error_message": null
+    },
+    {
+      "query": "what about the programs they offer",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 4,
+      "execution_time": 3.5021791458129883,
+      "timestamp": "2025-09-02T15:22:03.716479",
+      "error_message": null
+    },
+    {
+      "query": "can you tell me anything about the school",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_school_info",
+              "parameters": {
+                "topic": "MISSION_VISION"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 2.892385721206665,
+      "timestamp": "2025-09-02T15:22:38.986670",
+      "error_message": null
+    },
+    {
+      "query": "what about their programs, what do pdm offer",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "",
+                "year_level": 0
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 4,
+      "execution_time": 3.3580002784729004,
+      "timestamp": "2025-09-02T15:23:03.213159",
+      "error_message": null
+    },
+    {
+      "query": "their goals?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_school_info",
+              "parameters": {
+                "topic": "OBJECTIVES"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.4726734161376953,
+      "timestamp": "2025-09-02T15:23:18.487921",
+      "error_message": null
+    },
+    {
+      "query": "what advice do you have for me if i want to enroll to the bscs program",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSCS"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 2.989880323410034,
+      "timestamp": "2025-09-02T15:26:13.666527",
+      "error_message": null
+    },
+    {
+      "query": "can you tell me anything about the school",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_school_info",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 2,
+      "execution_time": 37.23221755027771,
+      "timestamp": "2025-09-02T15:28:13.423503",
+      "error_message": null
+    },
+    {
+      "query": "what about their programs?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "",
+                "year_level": ""
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 4,
+      "execution_time": 17.302667140960693,
+      "timestamp": "2025-09-02T15:29:14.255451",
+      "error_message": null
+    },
+    {
+      "query": "what advice do you have for me? im planning to take bsoffice course",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_adviser_info",
+              "parameters": {
+                "program": "BSOFFICE",
+                "year_level": null
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 138,
+      "execution_time": 24.410101413726807,
+      "timestamp": "2025-09-02T15:33:38.364331",
+      "error_message": null
+    },
+    {
+      "query": "what advice do you have for me? im planning to take bscs",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "program": "BSCS"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 61,
+      "execution_time": 14.31143045425415,
+      "timestamp": "2025-09-02T15:34:06.810174",
+      "error_message": null
+    },
+    {
+      "query": "what advice do you have for me if i want to enroll to bsoffice",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSOFFICE"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.318495988845825,
+      "timestamp": "2025-09-02T15:40:13.133938",
+      "error_message": null
+    },
+    {
+      "query": "im planning to take bsin, any advice or tips you have for me?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "program": "BSCS",
+                "role": "student"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 61,
+      "execution_time": 48.60954666137695,
+      "timestamp": "2025-09-02T15:44:46.414676",
+      "error_message": null
+    },
+    {
+      "query": "im planning to take bsin, any tips you have for me?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSIN"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.2309212684631348,
+      "timestamp": "2025-09-02T15:46:26.136488",
+      "error_message": null
+    },
+    {
+      "query": "im planning to take bsin, any tips you have for me?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSIN"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 130.3348195552826,
+      "timestamp": "2025-09-02T15:51:00.164861",
+      "error_message": null
+    },
+    {
+      "query": "bsin couse",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSINFORMATION"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 2.899252414703369,
+      "timestamp": "2025-09-02T15:51:55.301231",
+      "error_message": null
+    },
+    {
+      "query": "all the subjects of bsin",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSINFORMATION"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.1992647647857666,
+      "timestamp": "2025-09-02T15:52:03.881417",
+      "error_message": null
+    },
+    {
+      "query": "bsin courses",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSINFORMATION"
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 2.532095432281494,
+      "timestamp": "2025-09-02T15:52:20.830748",
+      "error_message": null
+    },
+    {
+      "query": "full detailed information about all the courses in pdm",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BACHELOR OF EARLY CHILDHOOD EDUCATION",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "results_count": 1,
+      "execution_time": 3.436129331588745,
+      "timestamp": "2025-09-02T15:52:38.431151",
+      "error_message": null
+    },
+    {
+      "query": "full detailed information about all the courses in pdm",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 5,
+      "execution_time": 8.329829692840576,
+      "timestamp": "2025-09-02T15:53:01.308636",
+      "error_message": null
     }
   ],
   "failed_queries": [
@@ -1851,37 +3081,75 @@
       "execution_time": 107.21776700019836,
       "timestamp": "2025-09-01T15:31:31.306926",
       "error_message": "AIAnalyst.get_person_profile() missing 1 required positional argument: 'person_name'"
+    },
+    {
+      "query": "im planning to take bsin, any tips you have for me?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 0,
+      "execution_time": 21.49529719352722,
+      "timestamp": "2025-09-02T15:45:24.919509",
+      "error_message": "AI selected an unknown tool: ''"
+    },
+    {
+      "query": "im planning to take bsin, any tips you have for me?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": null,
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "results_count": 0,
+      "execution_time": 14.933277130126953,
+      "timestamp": "2025-09-02T15:45:51.885227",
+      "error_message": "AI selected an unknown tool: 'None'"
     }
   ],
   "query_patterns": {
     "year:False_prog:False_rand:False_multi:False": {
-      "successful": 72,
+      "successful": 119,
       "failed": 3,
       "examples": [
         {
-          "query": "among the faculty who is a muslim",
+          "query": "can you tell me anything about the school",
           "success": true
         },
         {
-          "query": "all the curriculum",
+          "query": "what about their programs?",
           "success": true
         },
         {
-          "query": "beced",
+          "query": "bsin couse",
           "success": true
         },
         {
-          "query": "what are the subjects of beced",
+          "query": "all the subjects of bsin",
           "success": true
         },
         {
-          "query": "& C:/Users/BJ/AppData/Local/Microsoft/WindowsApps/python3.11.exe \"d:/Download HDD/Compressed/GROUP-3-AI-collab-nice-main/GROUP-3-AI-collab-nice-main/g1_data_process.py\"",
+          "query": "bsin courses",
           "success": true
         }
       ]
     },
     "year:False_prog:True_rand:False_multi:False": {
-      "successful": 4,
+      "successful": 5,
       "failed": 0,
       "examples": [
         {
@@ -1898,6 +3166,10 @@
         },
         {
           "query": "BSCS",
+          "success": true
+        },
+        {
+          "query": "all bscs studenrs",
           "success": true
         }
       ]
@@ -1921,23 +3193,41 @@
       ]
     },
     "year:False_prog:False_rand:False_multi:True": {
-      "successful": 4,
+      "successful": 14,
+      "failed": 2,
+      "examples": [
+        {
+          "query": "im planning to take bsin, any tips you have for me?",
+          "success": false
+        },
+        {
+          "query": "im planning to take bsin, any tips you have for me?",
+          "success": true
+        },
+        {
+          "query": "im planning to take bsin, any tips you have for me?",
+          "success": true
+        },
+        {
+          "query": "full detailed information about all the courses in pdm",
+          "success": true
+        },
+        {
+          "query": "full detailed information about all the courses in pdm",
+          "success": true
+        }
+      ]
+    },
+    "year:False_prog:True_rand:False_multi:True": {
+      "successful": 2,
       "failed": 0,
       "examples": [
         {
-          "query": "what is bsinformation",
+          "query": "what advice do you have for me if i want to enroll to the bscs program",
           "success": true
         },
         {
-          "query": "bsinformation",
-          "success": true
-        },
-        {
-          "query": "BSINFORMATION",
-          "success": true
-        },
-        {
-          "query": "BSINFORMATION",
+          "query": "what advice do you have for me? im planning to take bscs",
           "success": true
         }
       ]
