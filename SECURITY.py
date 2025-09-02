@@ -119,6 +119,11 @@ class QAGenerator:
         # Step 3: Save the final JSON to a file
         print(f"3. Saving the output to '{OUTPUT_FILENAME}'...")
         try:
+            # --- ✨ FIX: Add these two lines to delete the old file first ---
+            if os.path.exists(OUTPUT_FILENAME):
+                os.remove(OUTPUT_FILENAME)
+
+            # The rest of the code is the same
             qa_json = json.loads(response_str)
             with open(OUTPUT_FILENAME, "w", encoding="utf-8") as f:
                 json.dump(qa_json, f, indent=2, ensure_ascii=False)
@@ -133,6 +138,9 @@ class QAGenerator:
         print("🎉 Process Complete.")
         print("="*50)
 
+# ==============================
+# Main Execution Block
+# ==============================
 def main():
     """Main function to set up and run the Q&A generation tool."""
     print("Initializing Standalone Q&A Generator...")
