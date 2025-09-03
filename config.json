@@ -1,7 +1,7 @@
 {
   "chat_settings": {
     "history_file": "chat_history.json",
-    "max_history_turns": 3
+    "max_history_turns": 0
   },
 
   "online": {

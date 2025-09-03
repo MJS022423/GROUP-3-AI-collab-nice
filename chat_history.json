@@ -1,26 +1,26 @@
 [
   {
     "role": "user",
-    "content": "who is deborah"
+    "content": "can you show them all to me"
   },
   {
     "role": "assistant",
-    "content": "Deborah K. Lewis is a Professor in the College of Computer Studies (CCS) at PDM or Pambayang Dalubhasaan ng Marilao.\n\n- She is a teaching faculty member.\n- Her employment status is contractual.\n- Her email address is deborah.lewis@teacher.edu.ph.\n- Her contact number is 09343614019.\n\n[faculty_ccs_teaching]"
+    "content": "Here is the answer:\n\nAll students in BSCS are:\n\n• Student ID: PDM-2025-0001, Full Name: Daniel Gomez, GWA: 1.45 [students_ccs_bscs_year1_seca_grades]\n• ...and 29 more students (filtered data not provided)\n\nNote that the above answer is based on a filtered dataset that matches the user's query constraint of \"all students in BSCS\"."
   },
   {
     "role": "user",
-    "content": "who is deborah"
+    "content": "“all the grades of it students"
   },
   {
     "role": "assistant",
-    "content": "Deborah K. Lewis is a Professor in the College of Computer Studies (CCS) at PDM or Pambayang Dalubhasaan ng Marilao.\n\n• She is a teaching faculty member.\n• Her employment status is contractual.\n• Her email address is deborah.lewis@teacher.edu.ph.\n• Her contact number is 09343614019.\n[source_collection_name: faculty_ccs_teaching]"
+    "content": "Here is the answer:\n\nAll the students in IT are:\n\n• Student Number: PDM-2025-1352, Student Name: Juan Villanueva, GWA: 2.62 [students_ccs_bsit_year1_seca_grades]\n• Student Number: PDM-2025-1359, Student Name: Paolo Torres, GWA: 2.16 [students_ccs_bsit_year1_seca_grades]\n\nNote that there is only one IT student in the provided data, so this list only includes those two students.\n\n[Citation: students_ccs_bsit_year1_seca_grades]"
   },
   {
     "role": "user",
-    "content": "who is religion here"
+    "content": "who are all the full time faculty members”"
   },
   {
     "role": "assistant",
-    "content": "The religion of Trevor Clark is Christian.\n\n• Surname: Clark\n• First Name: Trevor Q.\n• Religion: Christian [source_collection_name: faculty_library_non_teaching]"
+    "content": "Based on the provided data, there is no information that directly answers your query about the full-time faculty members. The data consists of various documents such as curriculum, institutional identity, and objectives, which do not contain a list of full-time faculty members.\n\nHowever, if we analyze the data, we can identify some relevant points:\n\n1. The curriculum documents (e.g., BSCS, BSIN) mention courses offered by different departments (e.g., CTE, CON).\n2. The institutional identity documents (e.g., mission and vision statement) do not explicitly mention full-time faculty members.\n3. There are no other documents that directly provide information on full-time faculty members.\n\nTherefore, based on the available data, it is not possible to determine who the full-time faculty members are."
   }
 ]

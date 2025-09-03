@@ -2115,9 +2115,8 @@ class AIAnalyst:
                         filters: Optional[dict] = None, document_filter: Optional[dict] = None,
                         collection_filter: Optional[str] = None, **kwargs) -> List[dict]:
         """
-        [HYBRID UPGRADE] The core database search function. It uses robust filter and alias
-        logic to retrieve candidates, then applies an AI-powered re-ranking step to
-        sort them by contextual relevance.
+        The core database search function. It can handle semantic queries, metadata filters,
+        and document content filters, with robust normalization for filter values.
         """
         qt = query or query_text
         final_query_texts: Optional[List[str]] = None
@@ -2129,8 +2128,6 @@ class AIAnalyst:
         self.debug(f"search_database | query(s)='{final_query_texts}' | filters={filters} | doc_filter={document_filter} | coll_filter='{collection_filter}'")
         all_hits: List[dict] = []
 
-        # --- STAGE 1: RETRIEVAL (Your Original, Strong Logic) ---
-        # This entire block for building the where_clause is preserved
         where_clause: Optional[dict] = None
         if filters:
             if '$or' in filters and isinstance(filters.get('$or'), list):
@@ -2145,14 +2142,14 @@ class AIAnalyst:
                     "BSHM": ["BSHM", "BS HOSPITALITY MANAGEMENT", "BS Hospitality Management"],
                     "BTLE": ["BTLE", "BACHELOR OF TECHNOLOGY AND LIVELIHOOD EDUCATION", "Bachelor of Technology and Livelihood Education"]
                 }
-                
+
                 and_conditions: List[dict] = []
                 for k, v in filters.items():
                     standard_key = self.REVERSE_SCHEMA_MAP.get(k, k)
                     possible_keys = list(set([standard_key] + [orig for orig, std in self.REVERSE_SCHEMA_MAP.items() if std == standard_key]))
-                    
+
                     filter_for_this_key = None
-                    
+
                     if standard_key == "program":
                         value_from_placeholder = v.get('$in') if isinstance(v, dict) else [v]
                         all_aliases = set(value_from_placeholder)
@@ -2164,7 +2161,7 @@ class AIAnalyst:
                                     break
                         or_list = [{key: {"$in": list(all_aliases)}} for key in possible_keys]
                         filter_for_this_key = {"$or": or_list} if len(or_list) > 1 else or_list[0]
-                    
+
                     elif standard_key == "year_level":
                         or_conditions_for_year = []
                         year_str = str(v)
@@ -2182,80 +2179,53 @@ class AIAnalyst:
                         query_value = v
                         if isinstance(v, str):
                             query_value = {"$in": list(set([v.lower(), v.upper(), v.title()]))}
-                        
+
                         if len(possible_keys) > 1:
                             or_list = [{key: query_value} for key in possible_keys]
                             filter_for_this_key = {"$or": or_list}
                         else:
                             filter_for_this_key = {possible_keys[0]: query_value}
-                            
+
                     and_conditions.append(filter_for_this_key)
 
                 if len(and_conditions) > 1:
                     where_clause = {"$and": and_conditions}
                 elif and_conditions:
                     where_clause = and_conditions[0]
-        
+
         if not final_query_texts and not where_clause and not document_filter:
             final_query_texts = ["*"]
+            self.debug("No query or filters provided. Using wildcard '*' to retrieve all documents.")
         elif (where_clause or document_filter) and not final_query_texts:
             final_query_texts = ["*"]
-        
+            self.debug("No query text provided with filters. Using wildcard '*' search.")
+
         if self.debug_mode:
             try: self.debug("Final where_clause:", json.dumps(where_clause, ensure_ascii=False))
             except Exception: self.debug("Final where_clause (non-serializable):", where_clause)
-        
+
         for name, coll in self.collections.items():
             if collection_filter and isinstance(collection_filter, str) and collection_filter not in name:
                 continue
             try:
-                # Retrieve a larger pool of candidates (n_results=50) for the re-ranker
                 res = coll.query(
                     query_texts=final_query_texts, n_results=50,
                     where=where_clause, where_document=document_filter
                 )
                 docs = (res.get("documents") or [[]])[0]
                 metas = (res.get("metadatas") or [[]])[0]
-                dists = (res.get("distances") or [[]])[0]
-
                 for i, doc in enumerate(docs):
                     all_hits.append({
-                        "source_collection": name, 
-                        "content": doc,
-                        "metadata": metas[i] if i < len(metas) else {},
-                        "distance": dists[i] if i < len(dists) else 1.0
+                        "source_collection": name, "content": doc,
+                        "metadata": metas[i] if i < len(metas) else {}
                     })
             except Exception as e:
                 self.debug(f"Query error in {name}: {e}")
                 if "hnsw segment reader" in str(e):
                     self.corruption_warnings.add(name)
 
-        # --- STAGE 2: RE-RANKING (Your New, Smart Logic) ---
-        self.debug(f"🔍 Retrieved {len(all_hits)} candidates for AI re-ranking...")
-        if not all_hits:
-            return []
+        return all_hits
 
-        # Simulate the 'query_intent' dictionary using the available information
-        primary_query = (query or query_text or "")
-        query_intent = self.analyze_query_intent(primary_query) # Use the helper you added
-        
-        scored_hits = []
-        for hit in all_hits:
-            relevance_score = self.calculate_ai_relevance(
-                query_intent=query_intent,
-                document=hit['content'],
-                metadata=hit['metadata'],
-                chroma_distance=hit.get('distance', 1.0)
-            )
-            hit['relevance'] = relevance_score # Add the smart score to the document
-            scored_hits.append(hit)
-        
-        # Sort all results based on the new, more intelligent relevance score
-        sorted_hits = sorted(scored_hits, key=lambda x: x.get('relevance', 0), reverse=True)
-        
-        self.debug(f"🏆 Top ranked result has relevance: {sorted_hits[0].get('relevance', 0) if sorted_hits else 'N/A'}")
-        
-        return sorted_hits
         
     def _validate_plan(self, plan_json: Optional[dict]) -> tuple[bool, Optional[str]]:
         """
@@ -2327,6 +2297,61 @@ class AIAnalyst:
             return False, "The plan must conclude with a 'finish_plan' step."
 
         return True, None
+
+
+
+    # Add this new function anywhere inside your AIAnalyst class
+
+    def _execute_smart_fallback_search(self, query: str) -> List[dict]:
+        """
+        A dedicated, AI-powered fallback search that uses intent analysis and relevance
+        scoring to find the best possible matches when a primary tool fails.
+        """
+        self.debug("🚀 Activating Smart Fallback Search...")
+        
+        # 1. Analyze intent and determine search strategy using your helpers
+        query_intent = self.analyze_query_intent(query)
+        search_strategy = self.determine_search_strategy(query_intent)
+        self.debug(f"   -> Fallback Strategy: {search_strategy['type']} | Threshold: {search_strategy['threshold']}")
+
+        all_results = []
+        for name, collection_obj in self.collections.items():
+            try:
+                where_clause = self.build_smart_filters(query_intent, name)
+                if where_clause and 'impossible_filter' in where_clause:
+                    continue
+
+                results = collection_obj.query(
+                    query_texts=[query],
+                    n_results=50, # Retrieve a large pool for re-ranking
+                    where=where_clause if where_clause else None
+                )
+
+                # 2. Score and collect results that meet the dynamic threshold
+                if results.get("documents") and results["documents"][0]:
+                    for i, doc in enumerate(results["documents"][0]):
+                        metadata = results["metadatas"][0][i]
+                        distance = results["distances"][0][i] if results.get("distances") else 1.0
+
+                        relevance_score = self.calculate_ai_relevance(query_intent, doc, metadata, distance)
+
+                        if relevance_score >= search_strategy['threshold']:
+                            all_results.append({
+                                "source_collection": name,
+                                "content": doc,
+                                "metadata": metadata,
+                                "relevance": relevance_score # Keep the score for ranking
+                            })
+            except Exception as e:
+                self.debug(f"   -> Smart search error in {name}: {e}")
+                if "hnsw segment reader" in str(e):
+                    self.corruption_warnings.add(name)
+        
+        # 3. Rank all collected results by their smart score
+        self.debug(f"   -> Re-ranking {len(all_results)} candidates from smart search.")
+        sorted_results = sorted(all_results, key=lambda x: x.get('relevance', 0), reverse=True)
+        
+        return sorted_results
         
     def execute_reasoning_plan(self, query: str, history: Optional[List[dict]] = None) -> tuple[str, Optional[dict]]:
         """
@@ -2423,7 +2448,7 @@ class AIAnalyst:
             if primary_tool_failed:
                 execution_mode = "fallback" # Update execution mode
                 self.debug(f"Primary tool '{tool_name}' failed or found nothing. Attempting fallback semantic search.")
-                fallback_docs = self.search_database(query_text=query)
+                fallback_docs = self._execute_smart_fallback_search(query)
                 if fallback_docs:
                     self.debug(f"Fallback search found {len(fallback_docs)} documents.")
                     summary_doc = {
