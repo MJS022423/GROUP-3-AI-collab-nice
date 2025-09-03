@@ -1,0 +1,4835 @@
+
+################################### START OF COLLECTION: curriculum_cte_bachelorofearlychildhoodeducation ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756131469.03282
+--------------------
+METADATA: {
+  "data_type": "curriculum_excel",
+  "department": "CTE",
+  "total_units": 40,
+  "subjects_by_year": "{'1': 14}",
+  "curriculum_type": "academic_program",
+  "total_subjects": 14,
+  "program": "BACHELOR OF EARLY CHILDHOOD EDUCATION"
+}
+--------------------
+CONTENT:
+ACADEMIC CURRICULUM
+
+        PROGRAM INFORMATION:
+        Program: BACHELOR OF EARLY CHILDHOOD EDUCATION
+        Year Level: 1st Year
+        Department: CTE
+        Total Subjects: 14
+        Total Units: 40
+
+        CURRICULUM STRUCTURE:
+        
+1ST SEMESTER:
+  • ECED101 - Child Development And Education
+    Type: Major, Units: 3, Hours/Week: 3
+  • ECED102 - Foundations Of Early Childhood Ed.
+    Type: Major, Units: 3, Hours/Week: 3
+  • GE101 - Understanding The Self
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE102 - Purposive Communication
+    Type: General Education, Units: 3, Hours/Week: 3
+  • MATH101 - College Algebra
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE101 - Physical Education 1
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP101 - National Service Training Program 1
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+2ND SEMESTER:
+  • ECED103 - Play And Developmentally Appropriate Practices
+    Type: Major, Units: 3, Hours/Week: 3
+  • ECED104 - Health, Nutrition, And Safety
+    Type: Major, Units: 3, Hours/Week: 3
+  • GE103 - Readings In Philippine History
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE104 - The Contemporary World
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE105 - Mathematics In The Modern World
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE102 - Physical Education 2
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP102 - National Service Training Program 2
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+SUBJECT DISTRIBUTION:
+• General Education: 6 subjects
+• Major: 4 subjects
+• NSTP: 2 subjects
+• Physical Education: 2 subjects
+
+################################### END OF COLLECTION: curriculum_cte_bachelorofearlychildhoodeducation ###################################
+
+
+################################### START OF COLLECTION: curriculum_ccs_bscs ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135659.647956
+--------------------
+METADATA: {
+  "subjects_by_year": "{'1': 14}",
+  "program": "BSCS",
+  "data_type": "curriculum_excel",
+  "total_subjects": 14,
+  "total_units": 40,
+  "department": "CCS",
+  "curriculum_type": "academic_program"
+}
+--------------------
+CONTENT:
+ACADEMIC CURRICULUM
+
+        PROGRAM INFORMATION:
+        Program: BSCS
+        Year Level: 1st Year
+        Department: CCS
+        Total Subjects: 14
+        Total Units: 40
+
+        CURRICULUM STRUCTURE:
+        
+1ST SEMESTER:
+  • CS101 - Introduction To Computing
+    Type: Major, Units: 3, Hours/Week: 3
+  • CS102 - Fundamentals Of Programming
+    Type: Major, Units: 3, Hours/Week: 3
+  • MATH101 - College Algebra
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE101 - Understanding The Self
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE102 - Purposive Communication
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE101 - Physical Education 1
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP101 - National Service Training Program 1
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+2ND SEMESTER:
+  • CS103 - Intermediate Programming
+    Type: Major, Units: 3, Hours/Week: 3
+  • CS104 - Computer Hardware Fundamentals
+    Type: Major, Units: 3, Hours/Week: 3
+  • MATH102 - Trigonometry
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE103 - Readings In Philippine History
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE104 - The Contemporary World
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE102 - Physical Education 2
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP102 - National Service Training Program 2
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+SUBJECT DISTRIBUTION:
+• General Education: 6 subjects
+• Major: 4 subjects
+• NSTP: 2 subjects
+• Physical Education: 2 subjects
+
+################################### END OF COLLECTION: curriculum_ccs_bscs ###################################
+
+
+################################### START OF COLLECTION: schedules_ccs_newcourse_year2_seca ###################################
+
+================================================================================
+DOCUMENT ID: BS Computer Science_A_0_1756135672.845043
+--------------------
+METADATA: {
+  "year_level": "2",
+  "adviser": "Dr. Deborah",
+  "section": "A",
+  "total_units": "18",
+  "subject_count": 11,
+  "subject_codes": "CS 201, CS 201, CS 201L, CS 202, CS 202, CS 203, CS 203L, CS 204, CS 204, CS 205, CS 205L",
+  "data_type": "student_cor_pdf",
+  "course": "BS Computer Science",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+STUDENT CERTIFICATE OF REGISTRATION (COR)
+
+    STUDENT PROGRAM INFORMATION:
+    Program: BS Computer Science
+    Year Level: 2
+    Section: A
+    Adviser: Dr. Deborah
+    Total Units: 18
+
+    ENROLLED SUBJECTS (11 subjects):
+    
+    Subject 1:
+    - Subject Code: CS 201
+    - Description: DS1
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Monday 8:00 AM-9:30 AM
+    
+    Subject 2:
+    - Subject Code: CS 201
+    - Description: DS1
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Wednesday 8:00 AM-9:30 AM
+    
+    Subject 3:
+    - Subject Code: CS 201L
+    - Description: DS1
+    - Type: Laboratory
+    - Units: 1
+    - Schedule: Friday 1:00 PM-4:00 PM
+    
+    Subject 4:
+    - Subject Code: CS 202
+    - Description: DM1
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Tuesday 9:00 AM-10:30 AM
+    
+    Subject 5:
+    - Subject Code: CS 202
+    - Description: DM1
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Thursday 9:00 AM-10:30 AM
+    
+    Subject 6:
+    - Subject Code: CS 203
+    - Description: CO1
+    - Type: Lecture
+    - Units: 3
+    - Schedule: Monday 1:00 PM-4:00 PM
+    
+    Subject 7:
+    - Subject Code: CS 203L
+    - Description: CO1
+    - Type: Laboratory
+    - Units: 1
+    - Schedule: Wednesday 1:00 PM-4:00 PM
+    
+    Subject 8:
+    - Subject Code: CS 204
+    - Description: Algorithms
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Tuesday 10:30 AM-12:00 PM
+    
+    Subject 9:
+    - Subject Code: CS 204
+    - Description: Algorithms
+    - Type: Lecture
+    - Units: 1.5
+    - Schedule: Friday 10:30 AM-12:00 PM
+    
+    Subject 10:
+    - Subject Code: CS 205
+    - Description: OOP1
+    - Type: Lecture
+    - Units: 3
+    - Schedule: Thursday 1:00 PM-4:00 PM
+    
+    Subject 11:
+    - Subject Code: CS 205L
+    - Description: OOP1
+    - Type: Laboratory
+    - Units: 1
+    - Schedule: Friday 8:00 AM-11:00 AM
+
+################################### END OF COLLECTION: schedules_ccs_newcourse_year2_seca ###################################
+
+
+################################### START OF COLLECTION: students_ccs_bsit_year2_seca ###################################
+
+================================================================================
+DOCUMENT ID: BSIT_A_0_1756135692.844069
+--------------------
+METADATA: {
+  "year_level": 2,
+  "full_name": "Maria Bautista",
+  "student_id": "PDM-2025-1366",
+  "data_type": "student_universal",
+  "course": "BSIT",
+  "section": "A",
+  "surname": "Bautista",
+  "first_name": "Maria",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1366
+Full Name: Maria Bautista
+Surname: Bautista
+First Name: Maria
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9771702384
+Guardian Name: Isabel Cruz
+Guardian Contact: 9165043529
+
+================================================================================
+DOCUMENT ID: BSIT_A_1_1756135693.202931
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1367",
+  "data_type": "student_universal",
+  "first_name": "Elena",
+  "year_level": 2,
+  "surname": "Ramos",
+  "section": "A",
+  "department": "CCS",
+  "course": "BSIT",
+  "full_name": "Elena Ramos"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1367
+Full Name: Elena Ramos
+Surname: Ramos
+First Name: Elena
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9766356595
+Guardian Name: Patricia Santos
+Guardian Contact: 9633951821
+
+================================================================================
+DOCUMENT ID: BSIT_A_2_1756135693.444943
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "surname": "Villanueva",
+  "data_type": "student_universal",
+  "section": "A",
+  "department": "CCS",
+  "student_id": "PDM-2025-1368",
+  "full_name": "Miguel Villanueva",
+  "first_name": "Miguel",
+  "year_level": 2
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1368
+Full Name: Miguel Villanueva
+Surname: Villanueva
+First Name: Miguel
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9798867211
+Guardian Name: Gloria Garcia
+Guardian Contact: 9218502367
+
+================================================================================
+DOCUMENT ID: BSIT_A_3_1756135693.644697
+--------------------
+METADATA: {
+  "section": "A",
+  "department": "CCS",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-1369",
+  "surname": "Cruz",
+  "course": "BSIT",
+  "first_name": "Sophia",
+  "year_level": 2,
+  "full_name": "Sophia Cruz"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1369
+Full Name: Sophia Cruz
+Surname: Cruz
+First Name: Sophia
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9982720162
+Guardian Name: Patricia Ramos
+Guardian Contact: 9433834178
+
+================================================================================
+DOCUMENT ID: BSIT_A_4_1756135693.8915
+--------------------
+METADATA: {
+  "surname": "Bautista",
+  "full_name": "Catherine Bautista",
+  "course": "BSIT",
+  "section": "A",
+  "year_level": 2,
+  "department": "CCS",
+  "data_type": "student_universal",
+  "first_name": "Catherine",
+  "student_id": "PDM-2025-1370"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1370
+Full Name: Catherine Bautista
+Surname: Bautista
+First Name: Catherine
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9084925401
+Guardian Name: Fernando Santos
+Guardian Contact: 9787965327
+
+================================================================================
+DOCUMENT ID: BSIT_A_5_1756135694.162977
+--------------------
+METADATA: {
+  "year_level": 2,
+  "data_type": "student_universal",
+  "first_name": "Victor",
+  "student_id": "PDM-2025-1371",
+  "department": "CCS",
+  "full_name": "Victor Reyes",
+  "surname": "Reyes",
+  "course": "BSIT",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1371
+Full Name: Victor Reyes
+Surname: Reyes
+First Name: Victor
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9797817396
+Guardian Name: Daniel Flores
+Guardian Contact: 9492940744
+
+================================================================================
+DOCUMENT ID: BSIT_A_6_1756135694.44695
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "section": "A",
+  "year_level": 2,
+  "first_name": "Maria",
+  "full_name": "Maria Castro",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-1372",
+  "surname": "Castro",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1372
+Full Name: Maria Castro
+Surname: Castro
+First Name: Maria
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9787707758
+Guardian Name: Alberto Reyes
+Guardian Contact: 9585174602
+
+================================================================================
+DOCUMENT ID: BSIT_A_7_1756135694.725793
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1373",
+  "full_name": "Carlo Mendoza",
+  "section": "A",
+  "surname": "Mendoza",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "first_name": "Carlo",
+  "course": "BSIT",
+  "year_level": 2
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1373
+Full Name: Carlo Mendoza
+Surname: Mendoza
+First Name: Carlo
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9263197064
+Guardian Name: Fernando Villanueva
+Guardian Contact: 9698512172
+
+================================================================================
+DOCUMENT ID: BSIT_A_8_1756135694.936617
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "year_level": 2,
+  "first_name": "Miguel",
+  "section": "A",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "full_name": "Miguel Castro",
+  "surname": "Castro",
+  "student_id": "PDM-2025-1374"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1374
+Full Name: Miguel Castro
+Surname: Castro
+First Name: Miguel
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9404839588
+Guardian Name: Ramon Bautista
+Guardian Contact: 9073430089
+
+================================================================================
+DOCUMENT ID: BSIT_A_9_1756135695.249774
+--------------------
+METADATA: {
+  "year_level": 2,
+  "course": "BSIT",
+  "full_name": "Angela Garcia",
+  "student_id": "PDM-2025-1375",
+  "first_name": "Angela",
+  "department": "CCS",
+  "section": "A",
+  "surname": "Garcia",
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1375
+Full Name: Angela Garcia
+Surname: Garcia
+First Name: Angela
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9458849137
+Guardian Name: Alberto Bautista
+Guardian Contact: 9688977534
+
+================================================================================
+DOCUMENT ID: BSIT_A_10_1756135695.553015
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1376",
+  "year_level": 2,
+  "full_name": "Ana Mendoza",
+  "section": "A",
+  "surname": "Mendoza",
+  "department": "CCS",
+  "data_type": "student_universal",
+  "course": "BSIT",
+  "first_name": "Ana"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1376
+Full Name: Ana Mendoza
+Surname: Mendoza
+First Name: Ana
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9440620219
+Guardian Name: Ramon Castro
+Guardian Contact: 9236002312
+
+================================================================================
+DOCUMENT ID: BSIT_A_11_1756135695.791205
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1377",
+  "full_name": "Angela Ramos",
+  "surname": "Ramos",
+  "data_type": "student_universal",
+  "course": "BSIT",
+  "first_name": "Angela",
+  "department": "CCS",
+  "section": "A",
+  "year_level": 2
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1377
+Full Name: Angela Ramos
+Surname: Ramos
+First Name: Angela
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9284264634
+Guardian Name: Fernando Mendoza
+Guardian Contact: 9412408168
+
+================================================================================
+DOCUMENT ID: BSIT_A_12_1756135696.01256
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1378",
+  "section": "A",
+  "course": "BSIT",
+  "first_name": "Paolo",
+  "department": "CCS",
+  "full_name": "Paolo Torres",
+  "data_type": "student_universal",
+  "surname": "Torres",
+  "year_level": 2
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1378
+Full Name: Paolo Torres
+Surname: Torres
+First Name: Paolo
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9840509677
+Guardian Name: Carmen Ramos
+Guardian Contact: 9432360752
+
+================================================================================
+DOCUMENT ID: BSIT_A_13_1756135696.229021
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1379",
+  "year_level": 2,
+  "surname": "Flores",
+  "course": "BSIT",
+  "department": "CCS",
+  "data_type": "student_universal",
+  "first_name": "Pedro",
+  "full_name": "Pedro Flores",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1379
+Full Name: Pedro Flores
+Surname: Flores
+First Name: Pedro
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9983359945
+Guardian Name: Lucia Garcia
+Guardian Contact: 9067115011
+
+================================================================================
+DOCUMENT ID: BSIT_A_14_1756135696.429473
+--------------------
+METADATA: {
+  "full_name": "Jose Garcia",
+  "surname": "Garcia",
+  "year_level": 2,
+  "section": "A",
+  "first_name": "Jose",
+  "data_type": "student_universal",
+  "course": "BSIT",
+  "department": "CCS",
+  "student_id": "PDM-2025-1380"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1380
+Full Name: Jose Garcia
+Surname: Garcia
+First Name: Jose
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9634985325
+Guardian Name: Patricia Castro
+Guardian Contact: 9936652944
+
+================================================================================
+DOCUMENT ID: BSIT_A_15_1756135696.678584
+--------------------
+METADATA: {
+  "full_name": "Carlo Garcia",
+  "year_level": 2,
+  "first_name": "Carlo",
+  "department": "CCS",
+  "course": "BSIT",
+  "student_id": "PDM-2025-1381",
+  "section": "A",
+  "surname": "Garcia",
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1381
+Full Name: Carlo Garcia
+Surname: Garcia
+First Name: Carlo
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9785278084
+Guardian Name: Carmen Villanueva
+Guardian Contact: 9179679030
+
+================================================================================
+DOCUMENT ID: BSIT_A_16_1756135697.037434
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "department": "CCS",
+  "surname": "Cruz",
+  "student_id": "PDM-2025-1382",
+  "year_level": 2,
+  "data_type": "student_universal",
+  "full_name": "Miguel Cruz",
+  "section": "A",
+  "first_name": "Miguel"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1382
+Full Name: Miguel Cruz
+Surname: Cruz
+First Name: Miguel
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9782335358
+Guardian Name: Teresa Torres
+Guardian Contact: 9826937018
+
+================================================================================
+DOCUMENT ID: BSIT_A_17_1756135697.273379
+--------------------
+METADATA: {
+  "year_level": 2,
+  "surname": "Castro",
+  "course": "BSIT",
+  "section": "A",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-1383",
+  "full_name": "Ana Castro",
+  "first_name": "Ana",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1383
+Full Name: Ana Castro
+Surname: Castro
+First Name: Ana
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9356345580
+Guardian Name: Ramon Ramos
+Guardian Contact: 9337063322
+
+================================================================================
+DOCUMENT ID: BSIT_A_18_1756135697.545397
+--------------------
+METADATA: {
+  "year_level": 2,
+  "course": "BSIT",
+  "department": "CCS",
+  "first_name": "Carlo",
+  "surname": "Flores",
+  "student_id": "PDM-2025-1384",
+  "data_type": "student_universal",
+  "full_name": "Carlo Flores",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1384
+Full Name: Carlo Flores
+Surname: Flores
+First Name: Carlo
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9778485748
+Guardian Name: Carmen Mendoza
+Guardian Contact: 9424649619
+
+================================================================================
+DOCUMENT ID: BSIT_A_19_1756135697.821991
+--------------------
+METADATA: {
+  "first_name": "Juan",
+  "surname": "Santos",
+  "section": "A",
+  "student_id": "PDM-2025-1385",
+  "year_level": 2,
+  "full_name": "Juan Santos",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "course": "BSIT"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1385
+Full Name: Juan Santos
+Surname: Santos
+First Name: Juan
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9244076616
+Guardian Name: Patricia Ramos
+Guardian Contact: 9071482114
+
+================================================================================
+DOCUMENT ID: BSIT_A_20_1756135698.046634
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "year_level": 2,
+  "first_name": "Mark",
+  "full_name": "Mark Castro",
+  "surname": "Castro",
+  "data_type": "student_universal",
+  "section": "A",
+  "student_id": "PDM-2025-1386",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1386
+Full Name: Mark Castro
+Surname: Castro
+First Name: Mark
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9814887032
+Guardian Name: Carmen Torres
+Guardian Contact: 9878248222
+
+================================================================================
+DOCUMENT ID: BSIT_A_21_1756135698.339121
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "section": "A",
+  "full_name": "Carlo Cruz",
+  "first_name": "Carlo",
+  "year_level": 2,
+  "department": "CCS",
+  "surname": "Cruz",
+  "student_id": "PDM-2025-1387",
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1387
+Full Name: Carlo Cruz
+Surname: Cruz
+First Name: Carlo
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9960417202
+Guardian Name: Carmen Aquino
+Guardian Contact: 9505457090
+
+================================================================================
+DOCUMENT ID: BSIT_A_22_1756135698.581854
+--------------------
+METADATA: {
+  "full_name": "Catherine Torres",
+  "department": "CCS",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-1388",
+  "first_name": "Catherine",
+  "course": "BSIT",
+  "year_level": 2,
+  "section": "A",
+  "surname": "Torres"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1388
+Full Name: Catherine Torres
+Surname: Torres
+First Name: Catherine
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9859939133
+Guardian Name: Alberto Garcia
+Guardian Contact: 9849273297
+
+================================================================================
+DOCUMENT ID: BSIT_A_23_1756135698.914749
+--------------------
+METADATA: {
+  "data_type": "student_universal",
+  "full_name": "Victor Cruz",
+  "surname": "Cruz",
+  "year_level": 2,
+  "department": "CCS",
+  "course": "BSIT",
+  "student_id": "PDM-2025-1389",
+  "section": "A",
+  "first_name": "Victor"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1389
+Full Name: Victor Cruz
+Surname: Cruz
+First Name: Victor
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9965633248
+Guardian Name: Carmen Santos
+Guardian Contact: 9681773650
+
+================================================================================
+DOCUMENT ID: BSIT_A_24_1756135699.19878
+--------------------
+METADATA: {
+  "full_name": "Miguel Reyes",
+  "course": "BSIT",
+  "first_name": "Miguel",
+  "student_id": "PDM-2025-1390",
+  "data_type": "student_universal",
+  "year_level": 2,
+  "section": "A",
+  "surname": "Reyes",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1390
+Full Name: Miguel Reyes
+Surname: Reyes
+First Name: Miguel
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9084767085
+Guardian Name: Lucia Reyes
+Guardian Contact: 9111277136
+
+================================================================================
+DOCUMENT ID: BSIT_A_25_1756135699.424308
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "full_name": "Angela Santos",
+  "year_level": 2,
+  "first_name": "Angela",
+  "surname": "Santos",
+  "section": "A",
+  "student_id": "PDM-2025-1391"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1391
+Full Name: Angela Santos
+Surname: Santos
+First Name: Angela
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9283644980
+Guardian Name: Daniel Torres
+Guardian Contact: 9954843775
+
+================================================================================
+DOCUMENT ID: BSIT_A_26_1756135699.724214
+--------------------
+METADATA: {
+  "surname": "Bautista",
+  "year_level": 2,
+  "course": "BSIT",
+  "department": "CCS",
+  "full_name": "Ana Bautista",
+  "student_id": "PDM-2025-1392",
+  "data_type": "student_universal",
+  "first_name": "Ana",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1392
+Full Name: Ana Bautista
+Surname: Bautista
+First Name: Ana
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9816512896
+Guardian Name: Alberto Bautista
+Guardian Contact: 9875982365
+
+================================================================================
+DOCUMENT ID: BSIT_A_27_1756135699.974444
+--------------------
+METADATA: {
+  "section": "A",
+  "department": "CCS",
+  "student_id": "PDM-2025-1393",
+  "first_name": "Luz",
+  "year_level": 2,
+  "surname": "Villanueva",
+  "data_type": "student_universal",
+  "full_name": "Luz Villanueva",
+  "course": "BSIT"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1393
+Full Name: Luz Villanueva
+Surname: Villanueva
+First Name: Luz
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9451767743
+Guardian Name: Lucia Aquino
+Guardian Contact: 9179669788
+
+================================================================================
+DOCUMENT ID: BSIT_A_28_1756135700.266121
+--------------------
+METADATA: {
+  "surname": "Flores",
+  "course": "BSIT",
+  "data_type": "student_universal",
+  "section": "A",
+  "student_id": "PDM-2025-1394",
+  "first_name": "Rosa",
+  "full_name": "Rosa Flores",
+  "year_level": 2,
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1394
+Full Name: Rosa Flores
+Surname: Flores
+First Name: Rosa
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9875351365
+Guardian Name: Patricia Aquino
+Guardian Contact: 9158854468
+
+================================================================================
+DOCUMENT ID: BSIT_A_29_1756135700.532739
+--------------------
+METADATA: {
+  "year_level": 2,
+  "course": "BSIT",
+  "department": "CCS",
+  "data_type": "student_universal",
+  "full_name": "Elena Reyes",
+  "section": "A",
+  "first_name": "Elena",
+  "surname": "Reyes",
+  "student_id": "PDM-2025-1395"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1395
+Full Name: Elena Reyes
+Surname: Reyes
+First Name: Elena
+Year: 2
+Course: BSIT
+Section: A
+Contact Number: 9050383483
+Guardian Name: Teresa Cruz
+Guardian Contact: 9748086372
+
+################################### END OF COLLECTION: students_ccs_bsit_year2_seca ###################################
+
+
+################################### START OF COLLECTION: curriculum_con_bsin ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135675.455934
+--------------------
+METADATA: {
+  "total_units": 40,
+  "curriculum_type": "academic_program",
+  "total_subjects": 14,
+  "data_type": "curriculum_excel",
+  "subjects_by_year": "{'1': 14}",
+  "program": "BSIN",
+  "department": "CON"
+}
+--------------------
+CONTENT:
+ACADEMIC CURRICULUM
+
+        PROGRAM INFORMATION:
+        Program: BSIN
+        Year Level: 1st Year
+        Department: CON
+        Total Subjects: 14
+        Total Units: 40
+
+        CURRICULUM STRUCTURE:
+        
+1ST SEMESTER:
+  • HM101 - Introduction To Hospitality Management
+    Type: Major, Units: 3, Hours/Week: 3
+  • HM102 - Principles Of Tourism
+    Type: Major, Units: 3, Hours/Week: 3
+  • GE101 - Understanding The Self
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE102 - Purposive Communication
+    Type: General Education, Units: 3, Hours/Week: 3
+  • MATH101 - College Algebra
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE101 - Physical Education 1
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP101 - National Service Training Program 1
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+2ND SEMESTER:
+  • HM103 - Food And Beverage Service Operations
+    Type: Major, Units: 3, Hours/Week: 3
+  • HM104 - Front Office Operations
+    Type: Major, Units: 3, Hours/Week: 3
+  • GE103 - Readings In Philippine History
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE104 - The Contemporary World
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE105 - Mathematics In The Modern World
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE102 - Physical Education 2
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP102 - National Service Training Program 2
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+SUBJECT DISTRIBUTION:
+• General Education: 6 subjects
+• Major: 4 subjects
+• NSTP: 2 subjects
+• Physical Education: 2 subjects
+
+################################### END OF COLLECTION: curriculum_con_bsin ###################################
+
+
+################################### START OF COLLECTION: faculty_ccs_schedule ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135721.146246
+--------------------
+METADATA: {
+  "faculty_type": "schedule",
+  "full_name": "Hodges, Kathryn Julie",
+  "adviser_name": "Hodges, Kathryn Julie",
+  "data_type": "teaching_faculty_schedule_excel",
+  "department": "CCS",
+  "total_subjects": 30,
+  "days_teaching": 6
+}
+--------------------
+CONTENT:
+TEACHING FACULTY CLASS SCHEDULE
+
+    FACULTY INFORMATION:
+    Name of Adviser: Hodges, Kathryn Julie
+    Department: INFORMATION TECHNOLOGY
+
+    WEEKLY TEACHING SCHEDULE (30 scheduled classes):
+    
+MONDAY:
+  • 01:00 - 01:30 - IT404 - Software Engineering (Section: IT404)
+  • 02:30 - 03:00 - IT404 - Software Engineering (Section: IT404)
+  • 03:30 - 04:00 - IT404 - Software Engineering (Section: IT404)
+  • 04:00 - 04:30 - IT101 - Programming 1 (Section: IT101)
+
+TUESDAY:
+  • 10:00 - 10:30 - IT404 - Software Engineering (Section: IT404)
+  • 11:30 - 12:00 - IT303 - Networking (Section: IT303)
+  • 03:30 - 04:00 - IT404 - Software Engineering (Section: IT404)
+  • 04:00 - 04:30 - IT101 - Programming 1 (Section: IT101)
+  • 04:30 - 05:00 - IT404 - Software Engineering (Section: IT404)
+
+WEDNESDAY:
+  • 08:00 - 08:30 - IT202 - Database Systems (Section: IT202)
+  • 08:30 - 09:00 - IT101 - Programming 1 (Section: IT101)
+  • 10:00 - 10:30 - IT404 - Software Engineering (Section: IT404)
+  • 11:00 - 11:30 - IT101 - Programming 1 (Section: IT101)
+  • 02:00 - 02:30 - IT101 - Programming 1 (Section: IT101)
+  • 02:30 - 03:00 - IT404 - Software Engineering (Section: IT404)
+  • 03:30 - 04:00 - IT404 - Software Engineering (Section: IT404)
+  • 04:30 - 05:00 - IT404 - Software Engineering (Section: IT404)
+
+THURSDAY:
+  • 08:00 - 08:30 - IT202 - Database Systems (Section: IT202)
+  • 09:00 - 09:30 - IT303 - Networking (Section: IT303)
+  • 10:00 - 10:30 - IT404 - Software Engineering (Section: IT404)
+  • 04:30 - 05:00 - IT404 - Software Engineering (Section: IT404)
+
+FRIDAY:
+  • 10:00 - 10:30 - IT404 - Software Engineering (Section: IT404)
+  • 11:00 - 11:30 - IT101 - Programming 1 (Section: IT101)
+  • 11:30 - 12:00 - IT303 - Networking (Section: IT303)
+  • 01:00 - 01:30 - IT404 - Software Engineering (Section: IT404)
+
+SATURDAY:
+  • 08:00 - 08:30 - IT202 - Database Systems (Section: IT202)
+  • 10:30 - 11:00 - IT101 - Programming 1 (Section: IT101)
+  • 11:30 - 12:00 - IT303 - Networking (Section: IT303)
+  • 02:30 - 03:00 - IT404 - Software Engineering (Section: IT404)
+  • 03:30 - 04:00 - IT404 - Software Engineering (Section: IT404)
+
+SUBJECTS TAUGHT (4 unique subjects):
+• IT101 - Programming 1 (Sections: IT101)
+• IT202 - Database Systems (Sections: IT202)
+• IT303 - Networking (Sections: IT303)
+• IT404 - Software Engineering (Sections: IT404)
+
+################################### END OF COLLECTION: faculty_ccs_schedule ###################################
+
+
+################################### START OF COLLECTION: students_ccs_bscs_year1_seca_grades ###################################
+
+================================================================================
+DOCUMENT ID: BSCS_unknown_0_1756135950.483009
+--------------------
+METADATA: {
+  "data_type": "student_grades_excel",
+  "existing_collection": "students_ccs_bscs_year1_seca",
+  "student_name": "Daniel Gomez",
+  "department": "CCS",
+  "total_subjects": 10,
+  "gwa": "1.45",
+  "student_number": "PDM-2025-0001",
+  "course": "BSCS"
+}
+--------------------
+CONTENT:
+STUDENT ACADEMIC RECORD
+
+    STUDENT INFORMATION:
+    Student Number: PDM-2025-0001
+    Student Name: Daniel Gomez
+    Course: BSCS
+    General Weighted Average (GWA): 1.45
+    Total Subjects: 10
+
+    ACADEMIC GRADES:
+    
+    Subject 1:
+    • Subject Code: CS101
+    • Subject Description: Introduction To Computing
+    • Units: 1.5
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 2:
+    • Subject Code: CS101
+    • Subject Description: Introduction To Computing
+    • Units: 1.5
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 3:
+    • Subject Code: CS101L
+    • Subject Description: Introduction To Computing Laboratory
+    • Units: 1
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 4:
+    • Subject Code: MATH101
+    • Subject Description: College Algebra
+    • Units: 1.5
+    • Grade: 1.5
+    • Remarks: PASSED
+    
+    Subject 5:
+    • Subject Code: MATH101
+    • Subject Description: College Algebra
+    • Units: 1.5
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 6:
+    • Subject Code: ENG101
+    • Subject Description: Communication Skills
+    • Units: 1.5
+    • Grade: 1.5
+    • Remarks: PASSED
+    
+    Subject 7:
+    • Subject Code: ENG101
+    • Subject Description: Communication Skills
+    • Units: 1.5
+    • Grade: 2
+    • Remarks: PASSED
+    
+    Subject 8:
+    • Subject Code: SCI101
+    • Subject Description: Physical Science
+    • Units: 3
+    • Grade: 1.5
+    • Remarks: PASSED
+    
+    Subject 9:
+    • Subject Code: SCI101L
+    • Subject Description: Physical Science Laboratory
+    • Units: 1
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 10:
+    • Subject Code: FIL101
+    • Subject Description: Filipino
+    • Units: 3
+    • Grade: 1.5
+    • Remarks: PASSED
+    
+    ACADEMIC SUMMARY:
+    • Total Subjects Enrolled: 10
+    • Total Units: 17.0
+    • Passed Subjects: 10
+    • Failed Subjects: 0
+
+################################### END OF COLLECTION: students_ccs_bscs_year1_seca_grades ###################################
+
+
+################################### START OF COLLECTION: faculty_maintenance_custodial_non_teaching ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135726.790521
+--------------------
+METADATA: {
+  "department": "MAINTENANCE_CUSTODIAL",
+  "first_name": "Jimmy",
+  "surname": "Neutron",
+  "full_name": "Neutron, Jimmy",
+  "email": "jimmy.neutron@example.com",
+  "faculty_type": "non_teaching",
+  "position": "Maintenance Tech",
+  "address": " Retroville, ST",
+  "phone": "(555) 987-6543",
+  "data_type": "non_teaching_faculty_resume_pdf"
+}
+--------------------
+CONTENT:
+NON-TEACHING FACULTY RESUME
+
+            PERSONAL INFORMATION:
+            Surname: Neutron
+            First Name: Jimmy
+            Position: Maintenance Tech
+            Email: jimmy.neutron@example.com
+            Phone: (555) 987-6543
+            Address:  Retroville, ST
+            
+            EDUCATIONAL BACKGROUND:
+            Cert. Building Maintenance
+2014
+            
+            PROFESSIONAL EXPERIENCE:
+            Lead Maintenance Tech
+2017-Present
+Retroville School District
+- Supervised 5 staff
+- Reduced downtime 30%
+- Preventive maintenance program
+- Maintained 15 buildings
+Maintenance Assistant
+2014-2017
+Community College District
+- Routine building repairs
+- Emergency response
+- HVAC system upgrades
+            
+            CERTIFICATIONS:
+            EPA Universal Cert | OSHA 30-Hour | CMT Certified | Electrical Safety Cert
+
+################################### END OF COLLECTION: faculty_maintenance_custodial_non_teaching ###################################
+
+
+################################### START OF COLLECTION: faculty_cba_teaching ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756131464.821471
+--------------------
+METADATA: {
+  "position": "Professor",
+  "phone": "09829668499",
+  "data_type": "teaching_faculty_excel",
+  "first_name": "Mary Kimberly Jr.",
+  "employment_status": "Full-Time",
+  "faculty_type": "teaching",
+  "surname": "Harper",
+  "department": "CBA",
+  "email": "mary.harper@faculty.edu.ph",
+  "full_name": "Harper, Mary Kimberly Jr."
+}
+--------------------
+CONTENT:
+TEACHING FACULTY INFORMATION
+
+    PERSONAL INFORMATION:
+    Surname: Harper
+    First Name: Mary Kimberly Jr.
+    Date of Birth: 11/19/1993
+    Place of Birth: East Staceyfort, Philippines
+    Citizenship: Filipino
+    Sex: Male
+    Height: 174 Cm
+    Weight: 78 Kg
+    Blood Type: O-
+    Religion: Christian
+    Civil Status: Widowed
+
+    CONTACT INFORMATION:
+    Address: 641 Jackson Meadow Suite 483, South Ruth
+    Zip Code: 64516
+    Phone: 09829668499
+    Email: mary.harper@faculty.edu.ph
+
+    PROFESSIONAL INFORMATION:
+    Position: Professor
+    Department: CBA
+    Employment Status: Full-Time
+
+    GOVERNMENT IDs:
+    GSIS: 204098993239
+    PhilHealth: 58-695136849-4
+
+################################### END OF COLLECTION: faculty_cba_teaching ###################################
+
+
+################################### START OF COLLECTION: institutional_identity_objectives ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756797670.597703
+--------------------
+METADATA: {
+  "total_objectives": 11,
+  "institution_name": "Pambayang Dalubhasaan ng Marilao (PDM)",
+  "document_type": "objectives",
+  "content_type": "institutional_policy",
+  "data_type": "objectives_pdf",
+  "department": "INSTITUTIONAL_IDENTITY"
+}
+--------------------
+CONTENT:
+INSTITUTIONAL OBJECTIVES
+
+    INSTITUTION: Pambayang Dalubhasaan ng Marilao (PDM)
+
+    OBJECTIVES (11 total):
+    Inculcate among students and all stakeholders a culture of excellence by
+communicating the school vision and mission across all sectors of the
+college;
+Impart knowledge through effective instruction delivered by a core of
+qualified and competent faculty;
+Offer relevant degree and non-degree programs that are responsive to
+the current needs;
+Instill social awareness among all stakeholders through relevant and
+worthwhile community extension programs;
+Nurture talents and skills of students through various social, cultural, and
+co-curricular activities;
+Assist students through provision of support services that will address
+varied needs and concerns;
+Tap and mold future leaders through active student involvement;
+Adapt to the changes in the society through continuing professional
+education of the teaching and non-teaching force;
+Contribute to the development of new knowledge through researches;
+Strengthen skills and capabilities of students through relevant exposure
+and establishment of linkages;
+Inculcate virtues of goodwill, integrity, nationalism, and pride in our
+heritage as a people.
+
+    DOCUMENT TYPE: Institutional Policy Document
+    CATEGORY: Strategic Planning & Governance
+
+################################### END OF COLLECTION: institutional_identity_objectives ###################################
+
+
+################################### START OF COLLECTION: faculty_ccs_teaching ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135740.178845
+--------------------
+METADATA: {
+  "phone": "09343614019",
+  "employment_status": "Contractual",
+  "department": "CCS",
+  "first_name": "Deborah K.",
+  "email": "deborah.lewis@teacher.edu.ph",
+  "data_type": "teaching_faculty_excel",
+  "faculty_type": "teaching",
+  "full_name": "Lewis, Deborah K.",
+  "position": "Professor",
+  "surname": "Lewis"
+}
+--------------------
+CONTENT:
+TEACHING FACULTY INFORMATION
+
+    PERSONAL INFORMATION:
+    Surname: Lewis
+    First Name: Deborah K.
+    Date of Birth: 11/05/1960
+    Place of Birth: Micheletown, Philippines
+    Citizenship: Filipino
+    Sex: Female
+    Height: 178 Cm
+    Weight: 74 Kg
+    Blood Type: Ab+
+    Religion: Catholic
+    Civil Status: Married
+
+    CONTACT INFORMATION:
+    Address: 458 Wang Isle, Mayoshire
+    Zip Code: 61716
+    Phone: 09343614019
+    Email: deborah.lewis@teacher.edu.ph
+
+    PROFESSIONAL INFORMATION:
+    Position: Professor
+    Department: CCS
+    Employment Status: Contractual
+
+    GOVERNMENT IDs:
+    GSIS: 608495043343
+    PhilHealth: 35-062749247-8
+
+################################### END OF COLLECTION: faculty_ccs_teaching ###################################
+
+
+################################### START OF COLLECTION: students_ccs_bscs_year2_seca ###################################
+
+================================================================================
+DOCUMENT ID: BSCS_A_0_1756135661.223544
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-00031",
+  "department": "CCS",
+  "first_name": "Michael",
+  "surname": "Carpenter",
+  "section": "A",
+  "full_name": "Carpenter, Michael",
+  "data_type": "student_universal",
+  "year_level": 2,
+  "course": "BSCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00031
+Full Name: Carpenter, Michael
+Surname: Carpenter
+First Name: Michael
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9211796807
+Guardian Name: Victor Martin
+Guardian Contact: 9294393815
+
+================================================================================
+DOCUMENT ID: BSCS_A_1_1756135661.630226
+--------------------
+METADATA: {
+  "course": "BSCS",
+  "section": "A",
+  "year_level": 2,
+  "data_type": "student_universal",
+  "full_name": "Ruiz, Erin",
+  "student_id": "PDM-2025-00032",
+  "first_name": "Erin",
+  "department": "CCS",
+  "surname": "Ruiz"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00032
+Full Name: Ruiz, Erin
+Surname: Ruiz
+First Name: Erin
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9263602462
+Guardian Name: Crystal Johnson
+Guardian Contact: 9550624213
+
+================================================================================
+DOCUMENT ID: BSCS_A_2_1756135661.849513
+--------------------
+METADATA: {
+  "data_type": "student_universal",
+  "year_level": 2,
+  "student_id": "PDM-2025-00033",
+  "full_name": "Martinez, Maria",
+  "course": "BSCS",
+  "surname": "Martinez",
+  "section": "A",
+  "first_name": "Maria",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00033
+Full Name: Martinez, Maria
+Surname: Martinez
+First Name: Maria
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9806732623
+Guardian Name: Abigail Lawrence
+Guardian Contact: 9675050767
+
+================================================================================
+DOCUMENT ID: BSCS_A_3_1756135662.07499
+--------------------
+METADATA: {
+  "first_name": "Logan",
+  "student_id": "PDM-2025-00034",
+  "course": "BSCS",
+  "year_level": 2,
+  "department": "CCS",
+  "section": "A",
+  "data_type": "student_universal",
+  "full_name": "Miller, Logan",
+  "surname": "Miller"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00034
+Full Name: Miller, Logan
+Surname: Miller
+First Name: Logan
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9991725464
+Guardian Name: Terry Schmidt
+Guardian Contact: 9199785545
+
+================================================================================
+DOCUMENT ID: BSCS_A_4_1756135662.283831
+--------------------
+METADATA: {
+  "surname": "Barnes",
+  "data_type": "student_universal",
+  "first_name": "Mark",
+  "course": "BSCS",
+  "year_level": 2,
+  "department": "CCS",
+  "section": "A",
+  "full_name": "Barnes, Mark",
+  "student_id": "PDM-2025-00035"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00035
+Full Name: Barnes, Mark
+Surname: Barnes
+First Name: Mark
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9295486387
+Guardian Name: Matthew Colon
+Guardian Contact: 9189492380
+
+================================================================================
+DOCUMENT ID: BSCS_A_5_1756135662.507969
+--------------------
+METADATA: {
+  "data_type": "student_universal",
+  "section": "A",
+  "course": "BSCS",
+  "surname": "Stone",
+  "full_name": "Stone, Rebecca",
+  "student_id": "PDM-2025-00036",
+  "first_name": "Rebecca",
+  "year_level": 2,
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00036
+Full Name: Stone, Rebecca
+Surname: Stone
+First Name: Rebecca
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9524683884
+Guardian Name: Kimberly Rodriguez
+Guardian Contact: 9510691065
+
+================================================================================
+DOCUMENT ID: BSCS_A_6_1756135662.883242
+--------------------
+METADATA: {
+  "year_level": 2,
+  "surname": "Pace",
+  "student_id": "PDM-2025-00037",
+  "section": "A",
+  "first_name": "Lee",
+  "full_name": "Pace, Lee",
+  "course": "BSCS",
+  "data_type": "student_universal",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00037
+Full Name: Pace, Lee
+Surname: Pace
+First Name: Lee
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9948747224
+Guardian Name: Jaime Fields
+Guardian Contact: 9061830160
+
+================================================================================
+DOCUMENT ID: BSCS_A_7_1756135663.182727
+--------------------
+METADATA: {
+  "year_level": 2,
+  "section": "A",
+  "data_type": "student_universal",
+  "course": "BSCS",
+  "student_id": "PDM-2025-00038",
+  "first_name": "Jaime",
+  "surname": "Ochoa",
+  "full_name": "Ochoa, Jaime",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00038
+Full Name: Ochoa, Jaime
+Surname: Ochoa
+First Name: Jaime
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9829905736
+Guardian Name: Rebecca Butler
+Guardian Contact: 9401343659
+
+================================================================================
+DOCUMENT ID: BSCS_A_8_1756135663.385321
+--------------------
+METADATA: {
+  "year_level": 2,
+  "section": "A",
+  "department": "CCS",
+  "first_name": "Rhonda",
+  "data_type": "student_universal",
+  "surname": "White",
+  "full_name": "White, Rhonda",
+  "student_id": "PDM-2025-00039",
+  "course": "BSCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00039
+Full Name: White, Rhonda
+Surname: White
+First Name: Rhonda
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9486019579
+Guardian Name: Heather Davis
+Guardian Contact: 9120156138
+
+================================================================================
+DOCUMENT ID: BSCS_A_9_1756135663.59725
+--------------------
+METADATA: {
+  "full_name": "Bright, Ryan",
+  "department": "CCS",
+  "year_level": 2,
+  "data_type": "student_universal",
+  "surname": "Bright",
+  "student_id": "PDM-2025-00040",
+  "first_name": "Ryan",
+  "course": "BSCS",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00040
+Full Name: Bright, Ryan
+Surname: Bright
+First Name: Ryan
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9750076283
+Guardian Name: Matthew Chapman
+Guardian Contact: 9234947251
+
+================================================================================
+DOCUMENT ID: BSCS_A_10_1756135663.843495
+--------------------
+METADATA: {
+  "section": "A",
+  "surname": "Williams",
+  "department": "CCS",
+  "course": "BSCS",
+  "first_name": "Chloe",
+  "student_id": "PDM-2025-00041",
+  "full_name": "Williams, Chloe",
+  "year_level": 2,
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00041
+Full Name: Williams, Chloe
+Surname: Williams
+First Name: Chloe
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9945427450
+Guardian Name: Anthony Carter
+Guardian Contact: 9930215291
+
+================================================================================
+DOCUMENT ID: BSCS_A_11_1756135664.109197
+--------------------
+METADATA: {
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-00042",
+  "year_level": 2,
+  "department": "CCS",
+  "first_name": "Jacob",
+  "full_name": "Clarke, Jacob",
+  "course": "BSCS",
+  "surname": "Clarke",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00042
+Full Name: Clarke, Jacob
+Surname: Clarke
+First Name: Jacob
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9715968207
+Guardian Name: Terry Moore
+Guardian Contact: 9192902169
+
+================================================================================
+DOCUMENT ID: BSCS_A_12_1756135664.318635
+--------------------
+METADATA: {
+  "surname": "Hodge",
+  "full_name": "Hodge, Karen",
+  "first_name": "Karen",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "student_id": "PDM-2025-00043",
+  "course": "BSCS",
+  "section": "A",
+  "year_level": 2
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00043
+Full Name: Hodge, Karen
+Surname: Hodge
+First Name: Karen
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9660074696
+Guardian Name: Sarah Clark
+Guardian Contact: 9846619998
+
+================================================================================
+DOCUMENT ID: BSCS_A_13_1756135664.527997
+--------------------
+METADATA: {
+  "section": "A",
+  "student_id": "PDM-2025-00044",
+  "first_name": "Karen",
+  "year_level": 2,
+  "course": "BSCS",
+  "surname": "Miles",
+  "department": "CCS",
+  "full_name": "Miles, Karen",
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00044
+Full Name: Miles, Karen
+Surname: Miles
+First Name: Karen
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9551470667
+Guardian Name: Teresa Jarvis
+Guardian Contact: 9023177229
+
+================================================================================
+DOCUMENT ID: BSCS_A_14_1756135664.755425
+--------------------
+METADATA: {
+  "full_name": "Bridges, Mary",
+  "surname": "Bridges",
+  "department": "CCS",
+  "data_type": "student_universal",
+  "course": "BSCS",
+  "student_id": "PDM-2025-00045",
+  "first_name": "Mary",
+  "section": "A",
+  "year_level": 2
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00045
+Full Name: Bridges, Mary
+Surname: Bridges
+First Name: Mary
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9707570785
+Guardian Name: Robert Lopez
+Guardian Contact: 9799145365
+
+================================================================================
+DOCUMENT ID: BSCS_A_15_1756135665.002199
+--------------------
+METADATA: {
+  "full_name": "Hudson, Samantha",
+  "section": "A",
+  "data_type": "student_universal",
+  "first_name": "Samantha",
+  "course": "BSCS",
+  "surname": "Hudson",
+  "year_level": 2,
+  "student_id": "PDM-2025-00046",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00046
+Full Name: Hudson, Samantha
+Surname: Hudson
+First Name: Samantha
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9246072598
+Guardian Name: Gail Boyer
+Guardian Contact: 9277544213
+
+================================================================================
+DOCUMENT ID: BSCS_A_16_1756135665.200495
+--------------------
+METADATA: {
+  "year_level": 2,
+  "department": "CCS",
+  "section": "A",
+  "surname": "Cox",
+  "full_name": "Cox, Susan",
+  "first_name": "Susan",
+  "student_id": "PDM-2025-00047",
+  "data_type": "student_universal",
+  "course": "BSCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00047
+Full Name: Cox, Susan
+Surname: Cox
+First Name: Susan
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9881949305
+Guardian Name: Scott French
+Guardian Contact: 9631493727
+
+================================================================================
+DOCUMENT ID: BSCS_A_17_1756135665.490967
+--------------------
+METADATA: {
+  "department": "CCS",
+  "section": "A",
+  "full_name": "Valdez, Elizabeth",
+  "surname": "Valdez",
+  "course": "BSCS",
+  "data_type": "student_universal",
+  "first_name": "Elizabeth",
+  "student_id": "PDM-2025-00048",
+  "year_level": 2
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00048
+Full Name: Valdez, Elizabeth
+Surname: Valdez
+First Name: Elizabeth
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9393149877
+Guardian Name: Sean Berry
+Guardian Contact: 9400219563
+
+================================================================================
+DOCUMENT ID: BSCS_A_18_1756135665.769986
+--------------------
+METADATA: {
+  "section": "A",
+  "full_name": "Ali, Charles",
+  "course": "BSCS",
+  "department": "CCS",
+  "first_name": "Charles",
+  "year_level": 2,
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-00049",
+  "surname": "Ali"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00049
+Full Name: Ali, Charles
+Surname: Ali
+First Name: Charles
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9778669996
+Guardian Name: Jessica Woodard
+Guardian Contact: 9871029927
+
+================================================================================
+DOCUMENT ID: BSCS_A_19_1756135666.042863
+--------------------
+METADATA: {
+  "first_name": "Mary",
+  "year_level": 2,
+  "full_name": "Gray, Mary",
+  "student_id": "PDM-2025-00050",
+  "department": "CCS",
+  "surname": "Gray",
+  "data_type": "student_universal",
+  "section": "A",
+  "course": "BSCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00050
+Full Name: Gray, Mary
+Surname: Gray
+First Name: Mary
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9285572911
+Guardian Name: Alicia Cobb
+Guardian Contact: 9613578248
+
+================================================================================
+DOCUMENT ID: BSCS_A_20_1756135666.289932
+--------------------
+METADATA: {
+  "course": "BSCS",
+  "department": "CCS",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-00051",
+  "section": "A",
+  "full_name": "Burton, Joe",
+  "first_name": "Joe",
+  "surname": "Burton",
+  "year_level": 2
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00051
+Full Name: Burton, Joe
+Surname: Burton
+First Name: Joe
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9766532627
+Guardian Name: Patrick Kirk
+Guardian Contact: 9756910529
+
+================================================================================
+DOCUMENT ID: BSCS_A_21_1756135666.500904
+--------------------
+METADATA: {
+  "full_name": "Walker, John",
+  "course": "BSCS",
+  "surname": "Walker",
+  "first_name": "John",
+  "section": "A",
+  "department": "CCS",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-00052",
+  "year_level": 2
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00052
+Full Name: Walker, John
+Surname: Walker
+First Name: John
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9192445008
+Guardian Name: Wanda Roberts
+Guardian Contact: 9718384197
+
+================================================================================
+DOCUMENT ID: BSCS_A_22_1756135666.7207
+--------------------
+METADATA: {
+  "department": "CCS",
+  "student_id": "PDM-2025-00053",
+  "year_level": 2,
+  "first_name": "Christopher",
+  "data_type": "student_universal",
+  "surname": "Sutton",
+  "section": "A",
+  "course": "BSCS",
+  "full_name": "Sutton, Christopher"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00053
+Full Name: Sutton, Christopher
+Surname: Sutton
+First Name: Christopher
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9064873166
+Guardian Name: Robert Smith
+Guardian Contact: 9539829162
+
+================================================================================
+DOCUMENT ID: BSCS_A_23_1756135666.968394
+--------------------
+METADATA: {
+  "full_name": "Brooks, Christina",
+  "course": "BSCS",
+  "year_level": 2,
+  "first_name": "Christina",
+  "student_id": "PDM-2025-00054",
+  "section": "A",
+  "department": "CCS",
+  "surname": "Brooks",
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00054
+Full Name: Brooks, Christina
+Surname: Brooks
+First Name: Christina
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9161784194
+Guardian Name: Susan Hernandez
+Guardian Contact: 9123897736
+
+================================================================================
+DOCUMENT ID: BSCS_A_24_1756135667.251797
+--------------------
+METADATA: {
+  "year_level": 2,
+  "surname": "Richard",
+  "section": "A",
+  "department": "CCS",
+  "course": "BSCS",
+  "full_name": "Richard, Jackie",
+  "student_id": "PDM-2025-00055",
+  "first_name": "Jackie",
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00055
+Full Name: Richard, Jackie
+Surname: Richard
+First Name: Jackie
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9592971387
+Guardian Name: Kristina Garner
+Guardian Contact: 9600278559
+
+================================================================================
+DOCUMENT ID: BSCS_A_25_1756135667.439655
+--------------------
+METADATA: {
+  "course": "BSCS",
+  "department": "CCS",
+  "year_level": 2,
+  "surname": "Walker",
+  "student_id": "PDM-2025-00056",
+  "first_name": "Megan",
+  "data_type": "student_universal",
+  "full_name": "Walker, Megan",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00056
+Full Name: Walker, Megan
+Surname: Walker
+First Name: Megan
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9655792439
+Guardian Name: Marcus Stafford
+Guardian Contact: 9661954113
+
+================================================================================
+DOCUMENT ID: BSCS_A_26_1756135667.670458
+--------------------
+METADATA: {
+  "first_name": "Steven",
+  "year_level": 2,
+  "course": "BSCS",
+  "student_id": "PDM-2025-00057",
+  "full_name": "Roberts, Steven",
+  "data_type": "student_universal",
+  "section": "A",
+  "surname": "Roberts",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00057
+Full Name: Roberts, Steven
+Surname: Roberts
+First Name: Steven
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9619121737
+Guardian Name: Craig Callahan
+Guardian Contact: 9309118435
+
+================================================================================
+DOCUMENT ID: BSCS_A_27_1756135667.932477
+--------------------
+METADATA: {
+  "data_type": "student_universal",
+  "surname": "Palmer",
+  "section": "A",
+  "first_name": "Brian",
+  "department": "CCS",
+  "year_level": 2,
+  "full_name": "Palmer, Brian",
+  "course": "BSCS",
+  "student_id": "PDM-2025-00058"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00058
+Full Name: Palmer, Brian
+Surname: Palmer
+First Name: Brian
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9589836425
+Guardian Name: Kathy Hunt
+Guardian Contact: 9648415868
+
+================================================================================
+DOCUMENT ID: BSCS_A_28_1756135668.274054
+--------------------
+METADATA: {
+  "section": "A",
+  "student_id": "PDM-2025-00059",
+  "year_level": 2,
+  "surname": "Miles",
+  "full_name": "Miles, David",
+  "data_type": "student_universal",
+  "first_name": "David",
+  "department": "CCS",
+  "course": "BSCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00059
+Full Name: Miles, David
+Surname: Miles
+First Name: David
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9650327898
+Guardian Name: Debbie Burton
+Guardian Contact: 9027475650
+
+================================================================================
+DOCUMENT ID: BSCS_A_29_1756135668.545966
+--------------------
+METADATA: {
+  "course": "BSCS",
+  "surname": "Castro",
+  "year_level": 2,
+  "section": "A",
+  "student_id": "PDM-2025-00060",
+  "first_name": "Mary",
+  "data_type": "student_universal",
+  "full_name": "Castro, Mary",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-00060
+Full Name: Castro, Mary
+Surname: Castro
+First Name: Mary
+Year: 2
+Course: BSCS
+Section: A
+Contact Number: 9571735838
+Guardian Name: George Howard
+Guardian Contact: 9581149835
+
+################################### END OF COLLECTION: students_ccs_bscs_year2_seca ###################################
+
+
+################################### START OF COLLECTION: faculty_cba_schedule ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135717.154741
+--------------------
+METADATA: {
+  "department": "CBA",
+  "days_teaching": 6,
+  "data_type": "teaching_faculty_schedule_excel",
+  "adviser_name": "Harper, Mary Kimberly Jr.",
+  "faculty_type": "schedule",
+  "total_subjects": 33,
+  "full_name": "Harper, Mary Kimberly Jr."
+}
+--------------------
+CONTENT:
+TEACHING FACULTY CLASS SCHEDULE
+
+    FACULTY INFORMATION:
+    Name of Adviser: Harper, Mary Kimberly Jr.
+    Department: COLLEGE OF BUSINESS ADMINISTRATION
+
+    WEEKLY TEACHING SCHEDULE (33 scheduled classes):
+    
+MONDAY:
+  • 09:00 - 09:30 - BUS303 - Financial Management (Section: BUS303)
+  • 10:30 - 11:00 - BUS202 - Marketing (Section: BUS202)
+  • 02:30 - 03:00 - BUS101 - Principles of Management (Section: BUS101)
+  • 03:30 - 04:00 - BUS202 - Marketing (Section: BUS202)
+  • 04:00 - 04:30 - BUS303 - Financial Management (Section: BUS303)
+
+TUESDAY:
+  • 07:30 - 08:00 - BUS404 - Business Policy (Section: BUS404)
+  • 08:00 - 08:30 - BUS303 - Financial Management (Section: BUS303)
+  • 08:30 - 09:00 - BUS404 - Business Policy (Section: BUS404)
+  • 09:00 - 09:30 - BUS303 - Financial Management (Section: BUS303)
+  • 09:30 - 10:00 - BUS404 - Business Policy (Section: BUS404)
+  • 10:00 - 10:30 - BUS303 - Financial Management (Section: BUS303)
+  • 11:00 - 11:30 - BUS202 - Marketing (Section: BUS202)
+  • 02:30 - 03:00 - BUS101 - Principles of Management (Section: BUS101)
+  • 03:00 - 03:30 - BUS303 - Financial Management (Section: BUS303)
+  • 03:30 - 04:00 - BUS202 - Marketing (Section: BUS202)
+  • 04:30 - 05:00 - BUS404 - Business Policy (Section: BUS404)
+
+WEDNESDAY:
+  • 11:00 - 11:30 - BUS202 - Marketing (Section: BUS202)
+  • 01:00 - 01:30 - BUS404 - Business Policy (Section: BUS404)
+  • 02:00 - 02:30 - BUS101 - Principles of Management (Section: BUS101)
+  • 02:30 - 03:00 - BUS101 - Principles of Management (Section: BUS101)
+
+THURSDAY:
+  • 01:00 - 01:30 - BUS404 - Business Policy (Section: BUS404)
+  • 04:00 - 04:30 - BUS303 - Financial Management (Section: BUS303)
+  • 04:30 - 05:00 - BUS404 - Business Policy (Section: BUS404)
+
+FRIDAY:
+  • 09:00 - 09:30 - BUS303 - Financial Management (Section: BUS303)
+  • 10:30 - 11:00 - BUS202 - Marketing (Section: BUS202)
+  • 01:30 - 02:00 - BUS404 - Business Policy (Section: BUS404)
+  • 03:30 - 04:00 - BUS202 - Marketing (Section: BUS202)
+  • 04:00 - 04:30 - BUS303 - Financial Management (Section: BUS303)
+
+SATURDAY:
+  • 08:00 - 08:30 - BUS303 - Financial Management (Section: BUS303)
+  • 09:00 - 09:30 - BUS303 - Financial Management (Section: BUS303)
+  • 11:00 - 11:30 - BUS202 - Marketing (Section: BUS202)
+  • 11:30 - 12:00 - BUS404 - Business Policy (Section: BUS404)
+  • 04:00 - 04:30 - BUS303 - Financial Management (Section: BUS303)
+
+SUBJECTS TAUGHT (4 unique subjects):
+• BUS101 - Principles of Management (Sections: BUS101)
+• BUS202 - Marketing (Sections: BUS202)
+• BUS303 - Financial Management (Sections: BUS303)
+• BUS404 - Business Policy (Sections: BUS404)
+
+################################### END OF COLLECTION: faculty_cba_schedule ###################################
+
+
+################################### START OF COLLECTION: faculty_library_non_teaching_schedule ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135734.99358
+--------------------
+METADATA: {
+  "full_name": "Clark Trevor",
+  "faculty_type": "non_teaching_schedule",
+  "department": "LIBRARY",
+  "staff_name": "Clark Trevor",
+  "data_type": "non_teaching_faculty_schedule_excel",
+  "total_shifts": 11,
+  "days_working": 4
+}
+--------------------
+CONTENT:
+NON-TEACHING FACULTY WORK SCHEDULE
+
+        STAFF INFORMATION:
+        Name of Staff: Clark Trevor
+        Department: LIBRARY
+
+        WEEKLY WORK SCHEDULE (11 scheduled assignments):
+        
+MONDAY:
+  • 08:00 - 08:30 - Task: Library (Assignment: Library)
+  • 11:30 - 12:00 - Task: Library (Assignment: Library)
+  • 03:00 - 03:30 - Task: Library (Assignment: Library)
+
+WEDNESDAY:
+  • 09:00 - 09:30 - Task: Library (Assignment: Library)
+  • 11:00 - 11:30 - Task: Library (Assignment: Library)
+  • 03:30 - 04:00 - Task: Library (Assignment: Library)
+
+FRIDAY:
+  • 10:30 - 11:00 - Task: Library (Assignment: Library)
+  • 01:00 - 01:30 - Task: Library (Assignment: Library)
+  • 02:30 - 03:00 - Task: Library (Assignment: Library)
+
+SATURDAY:
+  • 10:00 - 10:30 - Task: Library (Assignment: Library)
+  • 04:30 - 05:00 - Task: Library (Assignment: Library)
+
+DUTIES ASSIGNED (1 unique duties):
+• Task: Library (Assignments: Library)
+
+################################### END OF COLLECTION: faculty_library_non_teaching_schedule ###################################
+
+
+################################### START OF COLLECTION: institutional_identity_mission_vision ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756797675.941517
+--------------------
+METADATA: {
+  "content_type": "institutional_policy",
+  "department": "INSTITUTIONAL_IDENTITY",
+  "data_type": "mission_vision_pdf",
+  "document_type": "mission_vision",
+  "institution_name": "Pambayang Dalubhasaan ng Marilao (PDM)"
+}
+--------------------
+CONTENT:
+INSTITUTIONAL MISSION & VISION
+
+    INSTITUTION: Pambayang Dalubhasaan ng Marilao (PDM)
+
+    VISION:
+    The Pambayang Dalubhasaan ng Marilao (PDM), a premier higher education institution in the region in providing quality subsidized tertiary education and industry training programs committed to produce globally competent, competitive, capable, and skillful graduates who excel in their chosen field.
+
+    MISSION:
+    Cognizant of the importance of contributing to the realization of national development goals and right of every citizen to quality education, PDM commits itself to the provision of quality education, and mold its students into productive and responsible citizens who are imbued with virtues, aware of their national heritage, and proud of their local culture.
+
+    DOCUMENT TYPE: Institutional Policy Document
+    CATEGORY: Strategic Planning & Governance
+
+################################### END OF COLLECTION: institutional_identity_mission_vision ###################################
+
+
+################################### START OF COLLECTION: curriculum_con_bsinformation ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135686.683456
+--------------------
+METADATA: {
+  "data_type": "curriculum_excel",
+  "department": "CON",
+  "total_units": 40,
+  "curriculum_type": "academic_program",
+  "subjects_by_year": "{'1': 14}",
+  "total_subjects": 14,
+  "program": "BSINFORMATION"
+}
+--------------------
+CONTENT:
+ACADEMIC CURRICULUM
+
+        PROGRAM INFORMATION:
+        Program: BSINFORMATION
+        Year Level: 1st Year
+        Department: CON
+        Total Subjects: 14
+        Total Units: 40
+
+        CURRICULUM STRUCTURE:
+        
+1ST SEMESTER:
+  • IT101 - Introduction To Computing
+    Type: Major, Units: 3, Hours/Week: 3
+  • IT102 - Fundamentals Of Programming
+    Type: Major, Units: 3, Hours/Week: 3
+  • MATH101 - College Algebra
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE101 - Understanding The Self
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE102 - Purposive Communication
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE101 - Physical Education 1
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP101 - National Service Training Program 1
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+2ND SEMESTER:
+  • IT103 - Computer Programming 1
+    Type: Major, Units: 3, Hours/Week: 3
+  • IT104 - Computer Hardware Fundamentals
+    Type: Major, Units: 3, Hours/Week: 3
+  • MATH102 - Trigonometry
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE103 - Readings In Philippine History
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE104 - The Contemporary World
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE102 - Physical Education 2
+    Type: Physical Education, Units: 2, Hours/Week: 2
+  • NSTP102 - National Service Training Program 2
+    Type: NSTP, Units: 3, Hours/Week: 3
+
+SUBJECT DISTRIBUTION:
+• General Education: 6 subjects
+• Major: 4 subjects
+• NSTP: 2 subjects
+• Physical Education: 2 subjects
+
+################################### END OF COLLECTION: curriculum_con_bsinformation ###################################
+
+
+################################### START OF COLLECTION: faculty_school_admin_board_member ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135704.656828
+--------------------
+METADATA: {
+  "email": "kari.roberts@teacher.edu.ph",
+  "phone": "09965523374",
+  "data_type": "admin_excel",
+  "admin_type": "Board Member",
+  "employment_status": "Permanent",
+  "department": "SCHOOL_ADMIN",
+  "first_name": "Kari Miranda",
+  "position": "Board Member",
+  "surname": "Roberts",
+  "faculty_type": "admin",
+  "full_name": "Roberts, Kari Miranda"
+}
+--------------------
+CONTENT:
+ADMINISTRATIVE STAFF INFORMATION
+
+        PERSONAL INFORMATION:
+        Surname: Roberts
+        First Name: Kari Miranda
+        Date of Birth: 08/04/1981
+        Place of Birth: Autumntown, Philippines
+        Citizenship: Filipino
+        Sex: Male
+        Height: 182 Cm
+        Weight: 53 Kg
+        Blood Type: Ab+
+        Religion: Iglesia Ni Cristo
+        Civil Status: Married
+
+        CONTACT INFORMATION:
+        Address: 30464 Avila Parks, Clarkville
+        Zip Code: 96442
+        Phone: 09965523374
+        Email: kari.roberts@teacher.edu.ph
+
+        ADMINISTRATIVE INFORMATION:
+        Position: Board Member
+        Admin Type: Board Member
+        Department: Administration
+        Employment Status: Permanent
+
+        GOVERNMENT IDs:
+        GSIS: 328415666574
+        PhilHealth: 02-247738250-0
+
+################################### END OF COLLECTION: faculty_school_admin_board_member ###################################
+
+
+################################### START OF COLLECTION: students_ccs_bscs_year1_seca ###################################
+
+================================================================================
+DOCUMENT ID: BSCS_A_0_1756135644.284311
+--------------------
+METADATA: {
+  "first_name": "Daniel",
+  "year_level": 1,
+  "course": "BSCS",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-0001",
+  "full_name": "Daniel Gomez",
+  "surname": "Gomez",
+  "section": "A",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0001
+Full Name: Daniel Gomez
+Surname: Gomez
+First Name: Daniel
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09725334942
+Guardian Name: Carlos Reyes
+Guardian Contact: 09695521803
+
+================================================================================
+DOCUMENT ID: BSCS_A_1_1756135644.664006
+--------------------
+METADATA: {
+  "course": "BSCS",
+  "student_id": "PDM-2025-0002",
+  "surname": "Reyes",
+  "year_level": 1,
+  "department": "CCS",
+  "section": "A",
+  "data_type": "student_universal",
+  "first_name": "Liam",
+  "full_name": "Liam Reyes"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0002
+Full Name: Liam Reyes
+Surname: Reyes
+First Name: Liam
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09524347051
+Guardian Name: Rafael Mendoza
+Guardian Contact: 09203688010
+
+================================================================================
+DOCUMENT ID: BSCS_A_2_1756135644.859771
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-0003",
+  "department": "CCS",
+  "full_name": "Mia Gomez",
+  "surname": "Gomez",
+  "first_name": "Mia",
+  "section": "A",
+  "year_level": 1,
+  "course": "BSCS",
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0003
+Full Name: Mia Gomez
+Surname: Gomez
+First Name: Mia
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09559457122
+Guardian Name: Carlos Mendoza
+Guardian Contact: 09343375855
+
+================================================================================
+DOCUMENT ID: BSCS_A_3_1756135645.103256
+--------------------
+METADATA: {
+  "section": "A",
+  "full_name": "Chloe Cruz",
+  "course": "BSCS",
+  "student_id": "PDM-2025-0004",
+  "year_level": 1,
+  "surname": "Cruz",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "first_name": "Chloe"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0004
+Full Name: Chloe Cruz
+Surname: Cruz
+First Name: Chloe
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09282172282
+Guardian Name: Mario Cruz
+Guardian Contact: 09760169521
+
+================================================================================
+DOCUMENT ID: BSCS_A_4_1756135645.318741
+--------------------
+METADATA: {
+  "year_level": 1,
+  "data_type": "student_universal",
+  "course": "BSCS",
+  "full_name": "Jake Santos",
+  "department": "CCS",
+  "surname": "Santos",
+  "first_name": "Jake",
+  "student_id": "PDM-2025-0005",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0005
+Full Name: Jake Santos
+Surname: Santos
+First Name: Jake
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09997695938
+Guardian Name: Ana Gomez
+Guardian Contact: 09151571640
+
+================================================================================
+DOCUMENT ID: BSCS_A_5_1756135645.511839
+--------------------
+METADATA: {
+  "full_name": "Sofia Cruz",
+  "data_type": "student_universal",
+  "course": "BSCS",
+  "year_level": 1,
+  "student_id": "PDM-2025-0006",
+  "section": "A",
+  "surname": "Cruz",
+  "department": "CCS",
+  "first_name": "Sofia"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0006
+Full Name: Sofia Cruz
+Surname: Cruz
+First Name: Sofia
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09409247354
+Guardian Name: Luz Torres
+Guardian Contact: 09783418310
+
+================================================================================
+DOCUMENT ID: BSCS_A_6_1756135645.728685
+--------------------
+METADATA: {
+  "year_level": 1,
+  "department": "CCS",
+  "student_id": "PDM-2025-0007",
+  "section": "A",
+  "data_type": "student_universal",
+  "course": "BSCS",
+  "full_name": "Ella Torres",
+  "surname": "Torres",
+  "first_name": "Ella"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0007
+Full Name: Ella Torres
+Surname: Torres
+First Name: Ella
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09878973486
+Guardian Name: Nora Rivera
+Guardian Contact: 09016673484
+
+================================================================================
+DOCUMENT ID: BSCS_A_7_1756135645.959499
+--------------------
+METADATA: {
+  "year_level": 1,
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-0008",
+  "course": "BSCS",
+  "surname": "Mendoza",
+  "first_name": "Jake",
+  "full_name": "Jake Mendoza",
+  "department": "CCS",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0008
+Full Name: Jake Mendoza
+Surname: Mendoza
+First Name: Jake
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09172761428
+Guardian Name: Ana Gomez
+Guardian Contact: 09310925462
+
+================================================================================
+DOCUMENT ID: BSCS_A_8_1756135646.168771
+--------------------
+METADATA: {
+  "full_name": "Chloe Garcia",
+  "first_name": "Chloe",
+  "student_id": "PDM-2025-0009",
+  "data_type": "student_universal",
+  "surname": "Garcia",
+  "course": "BSCS",
+  "year_level": 1,
+  "department": "CCS",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0009
+Full Name: Chloe Garcia
+Surname: Garcia
+First Name: Chloe
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09172820254
+Guardian Name: Ernesto Torres
+Guardian Contact: 09234731592
+
+================================================================================
+DOCUMENT ID: BSCS_A_9_1756135646.445118
+--------------------
+METADATA: {
+  "department": "CCS",
+  "surname": "Cruz",
+  "first_name": "Chloe",
+  "student_id": "PDM-2025-0010",
+  "year_level": 1,
+  "full_name": "Chloe Cruz",
+  "data_type": "student_universal",
+  "course": "BSCS",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0010
+Full Name: Chloe Cruz
+Surname: Cruz
+First Name: Chloe
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09075903564
+Guardian Name: Nora Mendoza
+Guardian Contact: 09722385822
+
+================================================================================
+DOCUMENT ID: BSCS_A_10_1756135646.761903
+--------------------
+METADATA: {
+  "course": "BSCS",
+  "department": "CCS",
+  "full_name": "Mia Garcia",
+  "surname": "Garcia",
+  "data_type": "student_universal",
+  "first_name": "Mia",
+  "section": "A",
+  "student_id": "PDM-2025-0011",
+  "year_level": 1
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0011
+Full Name: Mia Garcia
+Surname: Garcia
+First Name: Mia
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09162610862
+Guardian Name: Carlos Reyes
+Guardian Contact: 09362417460
+
+================================================================================
+DOCUMENT ID: BSCS_A_11_1756135646.996605
+--------------------
+METADATA: {
+  "first_name": "Sofia",
+  "surname": "Torres",
+  "department": "CCS",
+  "course": "BSCS",
+  "data_type": "student_universal",
+  "year_level": 1,
+  "section": "A",
+  "student_id": "PDM-2025-0012",
+  "full_name": "Sofia Torres"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0012
+Full Name: Sofia Torres
+Surname: Torres
+First Name: Sofia
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09699725831
+Guardian Name: Mario Rivera
+Guardian Contact: 09509468801
+
+================================================================================
+DOCUMENT ID: BSCS_A_12_1756135647.20215
+--------------------
+METADATA: {
+  "section": "A",
+  "course": "BSCS",
+  "first_name": "Alex",
+  "full_name": "Alex Torres",
+  "surname": "Torres",
+  "department": "CCS",
+  "student_id": "PDM-2025-0013",
+  "year_level": 1,
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0013
+Full Name: Alex Torres
+Surname: Torres
+First Name: Alex
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09062875522
+Guardian Name: Nora Lopez
+Guardian Contact: 09253648843
+
+================================================================================
+DOCUMENT ID: BSCS_A_13_1756135647.402271
+--------------------
+METADATA: {
+  "year_level": 1,
+  "student_id": "PDM-2025-0014",
+  "section": "A",
+  "full_name": "Ella Bautista",
+  "department": "CCS",
+  "surname": "Bautista",
+  "first_name": "Ella",
+  "data_type": "student_universal",
+  "course": "BSCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0014
+Full Name: Ella Bautista
+Surname: Bautista
+First Name: Ella
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09236170538
+Guardian Name: Mario Gomez
+Guardian Contact: 09028490466
+
+================================================================================
+DOCUMENT ID: BSCS_A_14_1756135647.597085
+--------------------
+METADATA: {
+  "course": "BSCS",
+  "department": "CCS",
+  "surname": "Garcia",
+  "data_type": "student_universal",
+  "full_name": "Chloe Garcia",
+  "year_level": 1,
+  "student_id": "PDM-2025-0015",
+  "section": "A",
+  "first_name": "Chloe"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0015
+Full Name: Chloe Garcia
+Surname: Garcia
+First Name: Chloe
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09081857904
+Guardian Name: Luz Lopez
+Guardian Contact: 09101280621
+
+================================================================================
+DOCUMENT ID: BSCS_A_15_1756135647.863164
+--------------------
+METADATA: {
+  "surname": "Torres",
+  "department": "CCS",
+  "full_name": "John Torres",
+  "data_type": "student_universal",
+  "section": "A",
+  "student_id": "PDM-2025-0016",
+  "first_name": "John",
+  "course": "BSCS",
+  "year_level": 1
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0016
+Full Name: John Torres
+Surname: Torres
+First Name: John
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09315116411
+Guardian Name: Mario Torres
+Guardian Contact: 09614766806
+
+================================================================================
+DOCUMENT ID: BSCS_A_16_1756135648.144134
+--------------------
+METADATA: {
+  "year_level": 1,
+  "department": "CCS",
+  "full_name": "Jake Lopez",
+  "surname": "Lopez",
+  "section": "A",
+  "course": "BSCS",
+  "first_name": "Jake",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-0017"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0017
+Full Name: Jake Lopez
+Surname: Lopez
+First Name: Jake
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09691150318
+Guardian Name: Carlos Bautista
+Guardian Contact: 09210701564
+
+================================================================================
+DOCUMENT ID: BSCS_A_17_1756135648.421898
+--------------------
+METADATA: {
+  "department": "CCS",
+  "surname": "Bautista",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-0018",
+  "course": "BSCS",
+  "year_level": 1,
+  "first_name": "Jake",
+  "section": "A",
+  "full_name": "Jake Bautista"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0018
+Full Name: Jake Bautista
+Surname: Bautista
+First Name: Jake
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09535652511
+Guardian Name: Patricia Gomez
+Guardian Contact: 09867125215
+
+================================================================================
+DOCUMENT ID: BSCS_A_18_1756135648.621744
+--------------------
+METADATA: {
+  "year_level": 1,
+  "data_type": "student_universal",
+  "course": "BSCS",
+  "department": "CCS",
+  "first_name": "Sofia",
+  "surname": "Mendoza",
+  "student_id": "PDM-2025-0019",
+  "full_name": "Sofia Mendoza",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0019
+Full Name: Sofia Mendoza
+Surname: Mendoza
+First Name: Sofia
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09064501670
+Guardian Name: Mario Reyes
+Guardian Contact: 09576580520
+
+================================================================================
+DOCUMENT ID: BSCS_A_19_1756135648.870396
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-0020",
+  "surname": "Santos",
+  "year_level": 1,
+  "first_name": "Chloe",
+  "course": "BSCS",
+  "data_type": "student_universal",
+  "section": "A",
+  "department": "CCS",
+  "full_name": "Chloe Santos"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0020
+Full Name: Chloe Santos
+Surname: Santos
+First Name: Chloe
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09753837910
+Guardian Name: Nora Lopez
+Guardian Contact: 09104234645
+
+================================================================================
+DOCUMENT ID: BSCS_A_20_1756135649.155986
+--------------------
+METADATA: {
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-0021",
+  "course": "BSCS",
+  "full_name": "Alex Bautista",
+  "year_level": 1,
+  "department": "CCS",
+  "surname": "Bautista",
+  "first_name": "Alex",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0021
+Full Name: Alex Bautista
+Surname: Bautista
+First Name: Alex
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09674712070
+Guardian Name: Patricia Cruz
+Guardian Contact: 09560434882
+
+================================================================================
+DOCUMENT ID: BSCS_A_21_1756135649.429709
+--------------------
+METADATA: {
+  "course": "BSCS",
+  "first_name": "Sofia",
+  "department": "CCS",
+  "student_id": "PDM-2025-0022",
+  "surname": "Gomez",
+  "section": "A",
+  "data_type": "student_universal",
+  "full_name": "Sofia Gomez",
+  "year_level": 1
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0022
+Full Name: Sofia Gomez
+Surname: Gomez
+First Name: Sofia
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09000543240
+Guardian Name: Ana Gomez
+Guardian Contact: 09613680765
+
+================================================================================
+DOCUMENT ID: BSCS_A_22_1756135649.638746
+--------------------
+METADATA: {
+  "data_type": "student_universal",
+  "first_name": "Alex",
+  "section": "A",
+  "year_level": 1,
+  "full_name": "Alex Reyes",
+  "surname": "Reyes",
+  "department": "CCS",
+  "course": "BSCS",
+  "student_id": "PDM-2025-0023"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0023
+Full Name: Alex Reyes
+Surname: Reyes
+First Name: Alex
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09801549240
+Guardian Name: Oscar Gomez
+Guardian Contact: 09995167817
+
+================================================================================
+DOCUMENT ID: BSCS_A_23_1756135649.923023
+--------------------
+METADATA: {
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-0024",
+  "department": "CCS",
+  "full_name": "Mary Gomez",
+  "section": "A",
+  "surname": "Gomez",
+  "year_level": 1,
+  "course": "BSCS",
+  "first_name": "Mary"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0024
+Full Name: Mary Gomez
+Surname: Gomez
+First Name: Mary
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09424570955
+Guardian Name: Luz Torres
+Guardian Contact: 09056140461
+
+================================================================================
+DOCUMENT ID: BSCS_A_24_1756135650.112221
+--------------------
+METADATA: {
+  "first_name": "Sofia",
+  "section": "A",
+  "data_type": "student_universal",
+  "full_name": "Sofia Reyes",
+  "surname": "Reyes",
+  "student_id": "PDM-2025-0025",
+  "course": "BSCS",
+  "year_level": 1,
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0025
+Full Name: Sofia Reyes
+Surname: Reyes
+First Name: Sofia
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09659055310
+Guardian Name: Ana Mendoza
+Guardian Contact: 09449883405
+
+================================================================================
+DOCUMENT ID: BSCS_A_25_1756135650.314108
+--------------------
+METADATA: {
+  "section": "A",
+  "department": "CCS",
+  "first_name": "Mary",
+  "data_type": "student_universal",
+  "full_name": "Mary Torres",
+  "student_id": "PDM-2025-0026",
+  "course": "BSCS",
+  "surname": "Torres",
+  "year_level": 1
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0026
+Full Name: Mary Torres
+Surname: Torres
+First Name: Mary
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09315667675
+Guardian Name: Ana Torres
+Guardian Contact: 09383967696
+
+================================================================================
+DOCUMENT ID: BSCS_A_26_1756135650.555418
+--------------------
+METADATA: {
+  "full_name": "Ella Bautista",
+  "course": "BSCS",
+  "year_level": 1,
+  "data_type": "student_universal",
+  "surname": "Bautista",
+  "student_id": "PDM-2025-0027",
+  "department": "CCS",
+  "first_name": "Ella",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0027
+Full Name: Ella Bautista
+Surname: Bautista
+First Name: Ella
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09355670953
+Guardian Name: Luz Reyes
+Guardian Contact: 09355640921
+
+================================================================================
+DOCUMENT ID: BSCS_A_27_1756135650.754187
+--------------------
+METADATA: {
+  "first_name": "Jake",
+  "full_name": "Jake Lopez",
+  "student_id": "PDM-2025-0028",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "section": "A",
+  "year_level": 1,
+  "surname": "Lopez",
+  "course": "BSCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0028
+Full Name: Jake Lopez
+Surname: Lopez
+First Name: Jake
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09629101073
+Guardian Name: Ana Santos
+Guardian Contact: 09490426334
+
+================================================================================
+DOCUMENT ID: BSCS_A_28_1756135651.031143
+--------------------
+METADATA: {
+  "first_name": "Daniel",
+  "department": "CCS",
+  "student_id": "PDM-2025-0029",
+  "year_level": 1,
+  "section": "A",
+  "data_type": "student_universal",
+  "surname": "Rivera",
+  "full_name": "Daniel Rivera",
+  "course": "BSCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0029
+Full Name: Daniel Rivera
+Surname: Rivera
+First Name: Daniel
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09472477621
+Guardian Name: Carlos Garcia
+Guardian Contact: 09412648943
+
+================================================================================
+DOCUMENT ID: BSCS_A_29_1756135651.245492
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-0030",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "course": "BSCS",
+  "year_level": 1,
+  "section": "A",
+  "surname": "Cruz",
+  "full_name": "Chloe Cruz",
+  "first_name": "Chloe"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-0030
+Full Name: Chloe Cruz
+Surname: Cruz
+First Name: Chloe
+Year: 1
+Course: BSCS
+Section: A
+Contact Number: 09650302780
+Guardian Name: Ana Lopez
+Guardian Contact: 09712664199
+
+################################### END OF COLLECTION: students_ccs_bscs_year1_seca ###################################
+
+
+################################### START OF COLLECTION: faculty_con_teaching ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756131462.214126
+--------------------
+METADATA: {
+  "first_name": "Elizabeth Angela",
+  "email": "elizabeth.brown@faculty.edu.ph",
+  "employment_status": "Full-Time",
+  "position": "Professor",
+  "surname": "Brown",
+  "phone": "09378269658",
+  "data_type": "teaching_faculty_excel",
+  "full_name": "Brown, Elizabeth Angela",
+  "faculty_type": "teaching",
+  "department": "CON"
+}
+--------------------
+CONTENT:
+TEACHING FACULTY INFORMATION
+
+    PERSONAL INFORMATION:
+    Surname: Brown
+    First Name: Elizabeth Angela
+    Date of Birth: 08/07/1989
+    Place of Birth: Port Samantha, Philippines
+    Citizenship: Filipino
+    Sex: Female
+    Height: 152 Cm
+    Weight: 53 Kg
+    Blood Type: Ab+
+    Religion: Muslim
+    Civil Status: Single
+
+    CONTACT INFORMATION:
+    Address: 366 Tony Spring Apt. 947, Wardbury
+    Zip Code: 15703
+    Phone: 09378269658
+    Email: elizabeth.brown@faculty.edu.ph
+
+    PROFESSIONAL INFORMATION:
+    Position: Professor
+    Department: CON
+    Employment Status: Full-Time
+
+    GOVERNMENT IDs:
+    GSIS: 863806850389
+    PhilHealth: 81-350747407-6
+
+################################### END OF COLLECTION: faculty_con_teaching ###################################
+
+
+################################### START OF COLLECTION: schedules_ccs_newcourse_year1_seca ###################################
+
+================================================================================
+DOCUMENT ID: BS COMPUTER SCIENCE_A_0_1756135657.680907
+--------------------
+METADATA: {
+  "course": "BS COMPUTER SCIENCE",
+  "total_units": "17",
+  "year_level": "1",
+  "subject_count": 10,
+  "section": "A",
+  "department": "CCS",
+  "subject_codes": "CS 101, CS 101, CS 101L, MATH 101, MATH 101, ENG 101, ENG 101, SCI 101, SCI 101L, FIL 101",
+  "adviser": "Dr. Smith",
+  "data_type": "cor_excel"
+}
+--------------------
+CONTENT:
+COR (Certificate of Registration) - Class Schedule
+
+    STUDENT INFORMATION:
+    Program: BS COMPUTER SCIENCE
+    Year Level: 1
+    Section: A
+    Adviser: Dr. Smith
+    Total Units: 17
+
+    ENROLLED SUBJECTS (10 subjects):
+    
+    Subject 1:
+    • Subject Code: CS 101
+    • Description: Introduction to Computing
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Monday 7:30 AM-9:00 AM
+    • Room: RM 301
+    
+    Subject 2:
+    • Subject Code: CS 101
+    • Description: Introduction to Computing
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Wednesday 7:30 AM-9:00 AM
+    • Room: RM 301
+    
+    Subject 3:
+    • Subject Code: CS 101L
+    • Description: Introduction to Computing Laboratory
+    • Type: Laboratory
+    • Units: 1
+    • Schedule: Friday 1:00 PM-4:00 PM
+    • Room: COM LAB 2
+    
+    Subject 4:
+    • Subject Code: MATH 101
+    • Description: College Algebra
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Tuesday 9:00 AM-10:30 AM
+    • Room: RM 202
+    
+    Subject 5:
+    • Subject Code: MATH 101
+    • Description: College Algebra
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Thursday 9:00 AM-10:30 AM
+    • Room: RM 202
+    
+    Subject 6:
+    • Subject Code: ENG 101
+    • Description: Communication Skills
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Monday 10:30 AM-12:00 PM
+    • Room: RM 105
+    
+    Subject 7:
+    • Subject Code: ENG 101
+    • Description: Communication Skills
+    • Type: Lecture
+    • Units: 1.5
+    • Schedule: Thursday 10:30 AM-12:00 PM
+    • Room: RM 105
+    
+    Subject 8:
+    • Subject Code: SCI 101
+    • Description: Physical Science
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Tuesday 1:00 PM-4:00 PM
+    • Room: SCI LAB 1
+    
+    Subject 9:
+    • Subject Code: SCI 101L
+    • Description: Physical Science Laboratory
+    • Type: Laboratory
+    • Units: 1
+    • Schedule: Wednesday 8:00 AM-11:00 AM
+    • Room: SCI LAB 2
+    
+    Subject 10:
+    • Subject Code: FIL 101
+    • Description: Filipino
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Friday 9:00 AM-12:00 PM
+    • Room: RM 205
+
+================================================================================
+DOCUMENT ID: BS INFORMATION TECHNOLOGY_A_0_1756135690.992742
+--------------------
+METADATA: {
+  "data_type": "cor_excel",
+  "subject_count": 10,
+  "course": "BS INFORMATION TECHNOLOGY",
+  "adviser": "Dr.Santos",
+  "section": "A",
+  "subject_codes": "IT 101, IT 101, GE 101, GE 101, IT 102, IT 102, IT 103, IT 103, PE 101, NSTP 101",
+  "department": "CCS",
+  "total_units": "18",
+  "year_level": "1"
+}
+--------------------
+CONTENT:
+COR (Certificate of Registration) - Class Schedule
+
+    STUDENT INFORMATION:
+    Program: BS INFORMATION TECHNOLOGY
+    Year Level: 1
+    Section: A
+    Adviser: Dr.Santos
+    Total Units: 18
+
+    ENROLLED SUBJECTS (10 subjects):
+    
+    Subject 1:
+    • Subject Code: IT 101
+    • Description: IntroCom
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Monday 08:00:00-09:30:00
+    • Room: RM 101
+    
+    Subject 2:
+    • Subject Code: IT 101
+    • Description: IntroCom
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Wednesday 08:00:00-09:30:00
+    • Room: RM 101
+    
+    Subject 3:
+    • Subject Code: GE 101
+    • Description: PurCom
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Tuesday 10:00:00-11:30:00
+    • Room: RM 201
+    
+    Subject 4:
+    • Subject Code: GE 101
+    • Description: PurCom
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Thursday 10:00:00-11:30:00
+    • Room: RM 201
+    
+    Subject 5:
+    • Subject Code: IT 102
+    • Description: CompProg1
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Monday 13:00:00-14:30:00
+    • Room: RM 102
+    
+    Subject 6:
+    • Subject Code: IT 102
+    • Description: CompProg1
+    • Type: Lab
+    • Units: 1
+    • Schedule: Monday 14:45:00-16:15:00
+    • Room: COM LAB 1
+    
+    Subject 7:
+    • Subject Code: IT 103
+    • Description: Fund of Data
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Wednesday 13:00:00-14:30:00
+    • Room: RM 104
+    
+    Subject 8:
+    • Subject Code: IT 103
+    • Description: Fund of Data
+    • Type: Lab
+    • Units: 1
+    • Schedule: Wednesday 14:45:00-16:15:00
+    • Room: COM LAB 2
+    
+    Subject 9:
+    • Subject Code: PE 101
+    • Description: PE 1
+    • Type: Lecture
+    • Units: 2
+    • Schedule: Friday 09:00:00-11:00:00
+    • Room: RM 102
+    
+    Subject 10:
+    • Subject Code: NSTP 101
+    • Description: NSTP 1
+    • Type: Lecture
+    • Units: 3
+    • Schedule: Saturday 08:00:00-11:00:00
+    • Room: RM 202
+
+################################### END OF COLLECTION: schedules_ccs_newcourse_year1_seca ###################################
+
+
+################################### START OF COLLECTION: faculty_library_non_teaching ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135732.308957
+--------------------
+METADATA: {
+  "phone": "09191658792",
+  "employment_status": "Permanent",
+  "department": "LIBRARY",
+  "first_name": "Trevor Q.",
+  "surname": "Clark",
+  "position": "Librarian",
+  "full_name": "Clark, Trevor Q.",
+  "data_type": "non_teaching_faculty_excel",
+  "email": "trevor.clark@teacher.edu.ph",
+  "faculty_type": "non_teaching"
+}
+--------------------
+CONTENT:
+NON-TEACHING FACULTY INFORMATION
+
+        PERSONAL INFORMATION:
+        Surname: Clark
+        First Name: Trevor Q.
+        Date of Birth: 11/22/1993
+        Place of Birth: West Alexanderside, Philippines
+        Citizenship: Filipino
+        Sex: Male
+        Height: 164 Cm
+        Weight: 77 Kg
+        Blood Type: Ab-
+        Religion: Christian
+        Civil Status: Married
+
+        CONTACT INFORMATION:
+        Address: 660 Kathy Walk Suite 557, East Danaberg
+        Zip Code: 48920
+        Phone: 09191658792
+        Email: trevor.clark@teacher.edu.ph
+
+        PROFESSIONAL INFORMATION:
+        Position: Librarian
+        Department: LIBRARY
+        Employment Status: Permanent
+
+        GOVERNMENT IDs:
+        GSIS: 606735809337
+        PhilHealth: 80-679688238-9
+
+################################### END OF COLLECTION: faculty_library_non_teaching ###################################
+
+
+################################### START OF COLLECTION: students_ccs_bsit_year1_seca_grades ###################################
+
+================================================================================
+DOCUMENT ID: BSIT_unknown_0_1756135729.300808
+--------------------
+METADATA: {
+  "existing_collection": "students_ccs_bsit_year1_seca",
+  "data_type": "student_grades_excel",
+  "student_name": "Juan Villanueva",
+  "student_number": "PDM-2025-1352",
+  "gwa": "2.62",
+  "department": "CCS",
+  "total_subjects": 10,
+  "course": "BSIT"
+}
+--------------------
+CONTENT:
+STUDENT ACADEMIC RECORD
+
+    STUDENT INFORMATION:
+    Student Number: PDM-2025-1352
+    Student Name: Juan Villanueva
+    Course: BSIT
+    General Weighted Average (GWA): 2.62
+    Total Subjects: 10
+
+    ACADEMIC GRADES:
+    
+    Subject 1:
+    • Subject Code: IT101
+    • Subject Description: Intro To It
+    • Units: 3
+    • Grade: 2
+    • Remarks: PASSED
+    
+    Subject 2:
+    • Subject Code: IT102
+    • Subject Description: Programming 1
+    • Units: 3
+    • Grade: 5
+    • Remarks: FAILED
+    
+    Subject 3:
+    • Subject Code: IT103
+    • Subject Description: Discrete Math
+    • Units: 3
+    • Grade: 5
+    • Remarks: FAILED
+    
+    Subject 4:
+    • Subject Code: IT104
+    • Subject Description: Programming 2
+    • Units: 3
+    • Grade: 1
+    • Remarks: PASSED
+    
+    Subject 5:
+    • Subject Code: IT105
+    • Subject Description: Data Structures
+    • Units: 3
+    • Grade: 1.75
+    • Remarks: PASSED
+    
+    Subject 6:
+    • Subject Code: GE101
+    • Subject Description: Purposive Communication
+    • Units: 3
+    • Grade: 2.75
+    • Remarks: PASSED
+    
+    Subject 7:
+    • Subject Code: GE102
+    • Subject Description: Understanding The Self
+    • Units: 3
+    • Grade: 1.75
+    • Remarks: PASSED
+    
+    Subject 8:
+    • Subject Code: GE103
+    • Subject Description: Math In Modern World
+    • Units: 3
+    • Grade: 2.25
+    • Remarks: PASSED
+    
+    Subject 9:
+    • Subject Code: PE101
+    • Subject Description: Pe 1
+    • Units: 2
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 10:
+    • Subject Code: NSTP1
+    • Subject Description: Nstp 1
+    • Units: 3
+    • Grade: 3
+    • Remarks: PASSED
+    
+    ACADEMIC SUMMARY:
+    • Total Subjects Enrolled: 10
+    • Total Units: 29.0
+    • Passed Subjects: 8
+    • Failed Subjects: 2
+
+================================================================================
+DOCUMENT ID: BSIT_unknown_0_1756135738.189195
+--------------------
+METADATA: {
+  "department": "CCS",
+  "student_name": "Paolo Torres",
+  "course": "BSIT",
+  "data_type": "student_grades_excel",
+  "total_subjects": 10,
+  "existing_collection": "students_ccs_bsit_year1_seca",
+  "student_number": "PDM-2025-1359",
+  "gwa": "2.16"
+}
+--------------------
+CONTENT:
+STUDENT ACADEMIC RECORD
+
+    STUDENT INFORMATION:
+    Student Number: PDM-2025-1359
+    Student Name: Paolo Torres
+    Course: BSIT
+    General Weighted Average (GWA): 2.16
+    Total Subjects: 10
+
+    ACADEMIC GRADES:
+    
+    Subject 1:
+    • Subject Code: IT101
+    • Subject Description: Intro To It
+    • Units: 3
+    • Grade: 1.75
+    • Remarks: PASSED
+    
+    Subject 2:
+    • Subject Code: IT102
+    • Subject Description: Programming 1
+    • Units: 3
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 3:
+    • Subject Code: IT103
+    • Subject Description: Discrete Math
+    • Units: 3
+    • Grade: 1
+    • Remarks: PASSED
+    
+    Subject 4:
+    • Subject Code: IT104
+    • Subject Description: Programming 2
+    • Units: 3
+    • Grade: 5
+    • Remarks: FAILED
+    
+    Subject 5:
+    • Subject Code: IT105
+    • Subject Description: Data Structures
+    • Units: 3
+    • Grade: 5
+    • Remarks: FAILED
+    
+    Subject 6:
+    • Subject Code: GE101
+    • Subject Description: Purposive Communication
+    • Units: 3
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 7:
+    • Subject Code: GE102
+    • Subject Description: Understanding The Self
+    • Units: 3
+    • Grade: 1.75
+    • Remarks: PASSED
+    
+    Subject 8:
+    • Subject Code: GE103
+    • Subject Description: Math In Modern World
+    • Units: 3
+    • Grade: 3
+    • Remarks: PASSED
+    
+    Subject 9:
+    • Subject Code: PE101
+    • Subject Description: Pe 1
+    • Units: 2
+    • Grade: 1.25
+    • Remarks: PASSED
+    
+    Subject 10:
+    • Subject Code: NSTP1
+    • Subject Description: Nstp 1
+    • Units: 3
+    • Grade: 2.75
+    • Remarks: PASSED
+    
+    ACADEMIC SUMMARY:
+    • Total Subjects Enrolled: 10
+    • Total Units: 29.0
+    • Passed Subjects: 8
+    • Failed Subjects: 2
+
+################################### END OF COLLECTION: students_ccs_bsit_year1_seca_grades ###################################
+
+
+################################### START OF COLLECTION: curriculum_ccs_bsoffice ###################################
+
+================================================================================
+DOCUMENT ID: unknown_unknown_0_1756135702.631057
+--------------------
+METADATA: {
+  "department": "CCS",
+  "total_subjects": 12,
+  "total_units": 34,
+  "subjects_by_year": "{'1': 12}",
+  "program": "BSOFFICE",
+  "curriculum_type": "academic_program",
+  "data_type": "curriculum_excel"
+}
+--------------------
+CONTENT:
+ACADEMIC CURRICULUM
+
+        PROGRAM INFORMATION:
+        Program: BSOFFICE
+        Year Level: 2nd Year
+        Department: CCS
+        Total Subjects: 12
+        Total Units: 34
+
+        CURRICULUM STRUCTURE:
+        
+1ST SEMESTER:
+  • OA201 - Office Procedures And Practices
+    Type: Major, Units: 3, Hours/Week: 3
+  • OA202 - Human Behavior In Organization
+    Type: Major, Units: 3, Hours/Week: 3
+  • GE106 - Ethics
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE107 - Art Appreciation
+    Type: General Education, Units: 3, Hours/Week: 3
+  • MATH201 - Business Mathematics
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE201 - Physical Education 3
+    Type: Physical Education, Units: 2, Hours/Week: 2
+
+2ND SEMESTER:
+  • OA203 - Records Management
+    Type: Major, Units: 3, Hours/Week: 3
+  • OA204 - Principles Of Accounting
+    Type: Major, Units: 3, Hours/Week: 3
+  • OA205 - Business Software Applications
+    Type: Major, Units: 3, Hours/Week: 3
+  • GE108 - Science, Technology And Society
+    Type: General Education, Units: 3, Hours/Week: 3
+  • GE109 - Life And Works Of Rizal
+    Type: General Education, Units: 3, Hours/Week: 3
+  • PE202 - Physical Education 4
+    Type: Physical Education, Units: 2, Hours/Week: 2
+
+SUBJECT DISTRIBUTION:
+• General Education: 5 subjects
+• Major: 5 subjects
+• Physical Education: 2 subjects
+
+################################### END OF COLLECTION: curriculum_ccs_bsoffice ###################################
+
+
+################################### START OF COLLECTION: students_ccs_bsit_year1_seca ###################################
+
+================================================================================
+DOCUMENT ID: BSIT_A_0_1756135677.3461
+--------------------
+METADATA: {
+  "year_level": 1,
+  "student_id": "PDM-2025-1336",
+  "department": "CCS",
+  "surname": "Santos",
+  "first_name": "Catherine",
+  "full_name": "Catherine Santos",
+  "course": "BSIT",
+  "section": "A",
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1336
+Full Name: Catherine Santos
+Surname: Santos
+First Name: Catherine
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9142413168
+Guardian Name: Roberto Flores
+Guardian Contact: 9096098938
+
+================================================================================
+DOCUMENT ID: BSIT_A_1_1756135677.7882
+--------------------
+METADATA: {
+  "surname": "Ramos",
+  "data_type": "student_universal",
+  "full_name": "Angela Ramos",
+  "section": "A",
+  "year_level": 1,
+  "student_id": "PDM-2025-1337",
+  "department": "CCS",
+  "course": "BSIT",
+  "first_name": "Angela"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1337
+Full Name: Angela Ramos
+Surname: Ramos
+First Name: Angela
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9531374565
+Guardian Name: Daniel Villanueva
+Guardian Contact: 9093621434
+
+================================================================================
+DOCUMENT ID: BSIT_A_2_1756135678.019258
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1338",
+  "first_name": "Angela",
+  "surname": "Garcia",
+  "full_name": "Angela Garcia",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "year_level": 1,
+  "course": "BSIT",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1338
+Full Name: Angela Garcia
+Surname: Garcia
+First Name: Angela
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9272973348
+Guardian Name: Ramon Torres
+Guardian Contact: 9415390350
+
+================================================================================
+DOCUMENT ID: BSIT_A_3_1756135678.264079
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1339",
+  "first_name": "Jose",
+  "course": "BSIT",
+  "full_name": "Jose Ramos",
+  "section": "A",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "year_level": 1,
+  "surname": "Ramos"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1339
+Full Name: Jose Ramos
+Surname: Ramos
+First Name: Jose
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9320256688
+Guardian Name: Patricia Cruz
+Guardian Contact: 9752716598
+
+================================================================================
+DOCUMENT ID: BSIT_A_4_1756135678.466036
+--------------------
+METADATA: {
+  "department": "CCS",
+  "first_name": "Carlo",
+  "section": "A",
+  "data_type": "student_universal",
+  "surname": "Villanueva",
+  "full_name": "Carlo Villanueva",
+  "student_id": "PDM-2025-1340",
+  "course": "BSIT",
+  "year_level": 1
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1340
+Full Name: Carlo Villanueva
+Surname: Villanueva
+First Name: Carlo
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9406528266
+Guardian Name: Ramon Reyes
+Guardian Contact: 9167000013
+
+================================================================================
+DOCUMENT ID: BSIT_A_5_1756135678.747344
+--------------------
+METADATA: {
+  "full_name": "Ana Bautista",
+  "section": "A",
+  "first_name": "Ana",
+  "course": "BSIT",
+  "year_level": 1,
+  "surname": "Bautista",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-1341",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1341
+Full Name: Ana Bautista
+Surname: Bautista
+First Name: Ana
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9576403909
+Guardian Name: Carmen Bautista
+Guardian Contact: 9236090891
+
+================================================================================
+DOCUMENT ID: BSIT_A_6_1756135679.055004
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "section": "A",
+  "year_level": 1,
+  "data_type": "student_universal",
+  "first_name": "Pedro",
+  "student_id": "PDM-2025-1342",
+  "full_name": "Pedro Torres",
+  "department": "CCS",
+  "surname": "Torres"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1342
+Full Name: Pedro Torres
+Surname: Torres
+First Name: Pedro
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9214931682
+Guardian Name: Roberto Garcia
+Guardian Contact: 9619594063
+
+================================================================================
+DOCUMENT ID: BSIT_A_7_1756135679.28047
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "surname": "Torres",
+  "full_name": "Catherine Torres",
+  "data_type": "student_universal",
+  "first_name": "Catherine",
+  "department": "CCS",
+  "year_level": 1,
+  "student_id": "PDM-2025-1343",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1343
+Full Name: Catherine Torres
+Surname: Torres
+First Name: Catherine
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9035474266
+Guardian Name: Roberto Castro
+Guardian Contact: 9953018873
+
+================================================================================
+DOCUMENT ID: BSIT_A_8_1756135679.591737
+--------------------
+METADATA: {
+  "surname": "Reyes",
+  "section": "A",
+  "first_name": "Sophia",
+  "department": "CCS",
+  "data_type": "student_universal",
+  "course": "BSIT",
+  "student_id": "PDM-2025-1344",
+  "year_level": 1,
+  "full_name": "Sophia Reyes"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1344
+Full Name: Sophia Reyes
+Surname: Reyes
+First Name: Sophia
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9733675499
+Guardian Name: Antonio Flores
+Guardian Contact: 9296000542
+
+================================================================================
+DOCUMENT ID: BSIT_A_9_1756135679.808674
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1345",
+  "course": "BSIT",
+  "first_name": "Miguel",
+  "data_type": "student_universal",
+  "year_level": 1,
+  "full_name": "Miguel Reyes",
+  "surname": "Reyes",
+  "department": "CCS",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1345
+Full Name: Miguel Reyes
+Surname: Reyes
+First Name: Miguel
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9204527087
+Guardian Name: Antonio Ramos
+Guardian Contact: 9478646252
+
+================================================================================
+DOCUMENT ID: BSIT_A_10_1756135680.017354
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1346",
+  "section": "A",
+  "full_name": "Catherine Castro",
+  "department": "CCS",
+  "year_level": 1,
+  "first_name": "Catherine",
+  "course": "BSIT",
+  "surname": "Castro",
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1346
+Full Name: Catherine Castro
+Surname: Castro
+First Name: Catherine
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9427806207
+Guardian Name: Gloria Castro
+Guardian Contact: 9405418421
+
+================================================================================
+DOCUMENT ID: BSIT_A_11_1756135680.238913
+--------------------
+METADATA: {
+  "year_level": 1,
+  "surname": "Castro",
+  "full_name": "Juan Castro",
+  "data_type": "student_universal",
+  "course": "BSIT",
+  "first_name": "Juan",
+  "student_id": "PDM-2025-1347",
+  "section": "A",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1347
+Full Name: Juan Castro
+Surname: Castro
+First Name: Juan
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9868342721
+Guardian Name: Patricia Santos
+Guardian Contact: 9697954340
+
+================================================================================
+DOCUMENT ID: BSIT_A_12_1756135680.515969
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "department": "CCS",
+  "student_id": "PDM-2025-1348",
+  "first_name": "Maria",
+  "data_type": "student_universal",
+  "full_name": "Maria Villanueva",
+  "surname": "Villanueva",
+  "year_level": 1,
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1348
+Full Name: Maria Villanueva
+Surname: Villanueva
+First Name: Maria
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9689877414
+Guardian Name: Roberto Ramos
+Guardian Contact: 9792894131
+
+================================================================================
+DOCUMENT ID: BSIT_A_13_1756135680.806693
+--------------------
+METADATA: {
+  "department": "CCS",
+  "full_name": "Catherine Castro",
+  "first_name": "Catherine",
+  "student_id": "PDM-2025-1349",
+  "surname": "Castro",
+  "course": "BSIT",
+  "year_level": 1,
+  "section": "A",
+  "data_type": "student_universal"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1349
+Full Name: Catherine Castro
+Surname: Castro
+First Name: Catherine
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9504734177
+Guardian Name: Alberto Mendoza
+Guardian Contact: 9906410598
+
+================================================================================
+DOCUMENT ID: BSIT_A_14_1756135681.031958
+--------------------
+METADATA: {
+  "section": "A",
+  "surname": "Flores",
+  "department": "CCS",
+  "year_level": 1,
+  "data_type": "student_universal",
+  "course": "BSIT",
+  "student_id": "PDM-2025-1350",
+  "full_name": "Carlo Flores",
+  "first_name": "Carlo"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1350
+Full Name: Carlo Flores
+Surname: Flores
+First Name: Carlo
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9600835895
+Guardian Name: Roberto Mendoza
+Guardian Contact: 9031969840
+
+================================================================================
+DOCUMENT ID: BSIT_A_15_1756135681.256927
+--------------------
+METADATA: {
+  "surname": "Flores",
+  "course": "BSIT",
+  "section": "A",
+  "full_name": "Miguel Flores",
+  "department": "CCS",
+  "first_name": "Miguel",
+  "data_type": "student_universal",
+  "year_level": 1,
+  "student_id": "PDM-2025-1351"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1351
+Full Name: Miguel Flores
+Surname: Flores
+First Name: Miguel
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9148789591
+Guardian Name: Fernando Cruz
+Guardian Contact: 9417099022
+
+================================================================================
+DOCUMENT ID: BSIT_A_16_1756135681.509174
+--------------------
+METADATA: {
+  "department": "CCS",
+  "year_level": 1,
+  "section": "A",
+  "data_type": "student_universal",
+  "surname": "Villanueva",
+  "full_name": "Juan Villanueva",
+  "student_id": "PDM-2025-1352",
+  "course": "BSIT",
+  "first_name": "Juan"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1352
+Full Name: Juan Villanueva
+Surname: Villanueva
+First Name: Juan
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9623868338
+Guardian Name: Antonio Torres
+Guardian Contact: 9703850023
+
+================================================================================
+DOCUMENT ID: BSIT_A_17_1756135681.741965
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "department": "CCS",
+  "section": "A",
+  "data_type": "student_universal",
+  "first_name": "Sophia",
+  "surname": "Reyes",
+  "full_name": "Sophia Reyes",
+  "year_level": 1,
+  "student_id": "PDM-2025-1353"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1353
+Full Name: Sophia Reyes
+Surname: Reyes
+First Name: Sophia
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9017332158
+Guardian Name: Antonio Torres
+Guardian Contact: 9331692214
+
+================================================================================
+DOCUMENT ID: BSIT_A_18_1756135682.084322
+--------------------
+METADATA: {
+  "year_level": 1,
+  "full_name": "Mark Garcia",
+  "department": "CCS",
+  "first_name": "Mark",
+  "course": "BSIT",
+  "section": "A",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-1354",
+  "surname": "Garcia"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1354
+Full Name: Mark Garcia
+Surname: Garcia
+First Name: Mark
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9614411509
+Guardian Name: Roberto Cruz
+Guardian Contact: 9865544628
+
+================================================================================
+DOCUMENT ID: BSIT_A_19_1756135682.308184
+--------------------
+METADATA: {
+  "department": "CCS",
+  "student_id": "PDM-2025-1355",
+  "section": "A",
+  "year_level": 1,
+  "data_type": "student_universal",
+  "course": "BSIT",
+  "full_name": "Mark Bautista",
+  "surname": "Bautista",
+  "first_name": "Mark"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1355
+Full Name: Mark Bautista
+Surname: Bautista
+First Name: Mark
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9681502410
+Guardian Name: Daniel Reyes
+Guardian Contact: 9234214560
+
+================================================================================
+DOCUMENT ID: BSIT_A_20_1756135682.567114
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "surname": "Santos",
+  "first_name": "Carlo",
+  "section": "A",
+  "full_name": "Carlo Santos",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "student_id": "PDM-2025-1356",
+  "year_level": 1
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1356
+Full Name: Carlo Santos
+Surname: Santos
+First Name: Carlo
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9023904269
+Guardian Name: Fernando Garcia
+Guardian Contact: 9815697351
+
+================================================================================
+DOCUMENT ID: BSIT_A_21_1756135682.840077
+--------------------
+METADATA: {
+  "data_type": "student_universal",
+  "surname": "Mendoza",
+  "student_id": "PDM-2025-1357",
+  "department": "CCS",
+  "course": "BSIT",
+  "year_level": 1,
+  "first_name": "Mark",
+  "section": "A",
+  "full_name": "Mark Mendoza"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1357
+Full Name: Mark Mendoza
+Surname: Mendoza
+First Name: Mark
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9711320301
+Guardian Name: Lucia Santos
+Guardian Contact: 9364395972
+
+================================================================================
+DOCUMENT ID: BSIT_A_22_1756135683.057964
+--------------------
+METADATA: {
+  "section": "A",
+  "first_name": "Maria",
+  "full_name": "Maria Bautista",
+  "year_level": 1,
+  "student_id": "PDM-2025-1358",
+  "data_type": "student_universal",
+  "surname": "Bautista",
+  "department": "CCS",
+  "course": "BSIT"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1358
+Full Name: Maria Bautista
+Surname: Bautista
+First Name: Maria
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9271512129
+Guardian Name: Teresa Ramos
+Guardian Contact: 9582553727
+
+================================================================================
+DOCUMENT ID: BSIT_A_23_1756135683.383894
+--------------------
+METADATA: {
+  "year_level": 1,
+  "course": "BSIT",
+  "data_type": "student_universal",
+  "first_name": "Paolo",
+  "full_name": "Paolo Torres",
+  "department": "CCS",
+  "section": "A",
+  "surname": "Torres",
+  "student_id": "PDM-2025-1359"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1359
+Full Name: Paolo Torres
+Surname: Torres
+First Name: Paolo
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9516120757
+Guardian Name: Alberto Flores
+Guardian Contact: 9482830334
+
+================================================================================
+DOCUMENT ID: BSIT_A_24_1756135683.59348
+--------------------
+METADATA: {
+  "course": "BSIT",
+  "section": "A",
+  "surname": "Torres",
+  "first_name": "Elena",
+  "year_level": 1,
+  "department": "CCS",
+  "student_id": "PDM-2025-1360",
+  "data_type": "student_universal",
+  "full_name": "Elena Torres"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1360
+Full Name: Elena Torres
+Surname: Torres
+First Name: Elena
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9718018363
+Guardian Name: Teresa Villanueva
+Guardian Contact: 9458346558
+
+================================================================================
+DOCUMENT ID: BSIT_A_25_1756135683.826394
+--------------------
+METADATA: {
+  "surname": "Cruz",
+  "department": "CCS",
+  "course": "BSIT",
+  "year_level": 1,
+  "full_name": "Elena Cruz",
+  "student_id": "PDM-2025-1361",
+  "first_name": "Elena",
+  "data_type": "student_universal",
+  "section": "A"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1361
+Full Name: Elena Cruz
+Surname: Cruz
+First Name: Elena
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9449860210
+Guardian Name: Patricia Flores
+Guardian Contact: 9988791478
+
+================================================================================
+DOCUMENT ID: BSIT_A_26_1756135684.083246
+--------------------
+METADATA: {
+  "surname": "Bautista",
+  "data_type": "student_universal",
+  "student_id": "PDM-2025-1362",
+  "full_name": "Rosa Bautista",
+  "department": "CCS",
+  "year_level": 1,
+  "first_name": "Rosa",
+  "section": "A",
+  "course": "BSIT"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1362
+Full Name: Rosa Bautista
+Surname: Bautista
+First Name: Rosa
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9595330808
+Guardian Name: Patricia Bautista
+Guardian Contact: 9139523199
+
+================================================================================
+DOCUMENT ID: BSIT_A_27_1756135684.318354
+--------------------
+METADATA: {
+  "student_id": "PDM-2025-1363",
+  "surname": "Flores",
+  "first_name": "Ana",
+  "section": "A",
+  "course": "BSIT",
+  "data_type": "student_universal",
+  "year_level": 1,
+  "full_name": "Ana Flores",
+  "department": "CCS"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1363
+Full Name: Ana Flores
+Surname: Flores
+First Name: Ana
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9380184337
+Guardian Name: Teresa Santos
+Guardian Contact: 9584096171
+
+================================================================================
+DOCUMENT ID: BSIT_A_28_1756135684.645082
+--------------------
+METADATA: {
+  "full_name": "Maria Ramos",
+  "department": "CCS",
+  "data_type": "student_universal",
+  "section": "A",
+  "course": "BSIT",
+  "surname": "Ramos",
+  "student_id": "PDM-2025-1364",
+  "first_name": "Maria",
+  "year_level": 1
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1364
+Full Name: Maria Ramos
+Surname: Ramos
+First Name: Maria
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9283861630
+Guardian Name: Roberto Santos
+Guardian Contact: 9424473705
+
+================================================================================
+DOCUMENT ID: BSIT_A_29_1756135684.840794
+--------------------
+METADATA: {
+  "surname": "Santos",
+  "year_level": 1,
+  "first_name": "Miguel",
+  "data_type": "student_universal",
+  "department": "CCS",
+  "student_id": "PDM-2025-1365",
+  "course": "BSIT",
+  "section": "A",
+  "full_name": "Miguel Santos"
+}
+--------------------
+CONTENT:
+Student ID: PDM-2025-1365
+Full Name: Miguel Santos
+Surname: Santos
+First Name: Miguel
+Year: 1
+Course: BSIT
+Section: A
+Contact Number: 9858976615
+Guardian Name: Roberto Garcia
+Guardian Contact: 9990700840
+
+################################### END OF COLLECTION: students_ccs_bsit_year1_seca ###################################
+

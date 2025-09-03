@@ -1,7 +1,92 @@
 {
-  "successful_queries": [
+  "query_log": [
     {
-      "query": "who among the faculty members are tall",
+      "query": "Who is the student with ID PDM-2025-0001?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_data_by_id",
+              "parameters": {
+                "pdm_id": "PDM-2025-0001"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 3.3761215209960938,
+      "timestamp": "2025-09-03T17:15:06.515214",
+      "final_answer": "Daniel Gomez is the student with ID PDM-2025-0001.\n\n- **Full Name:** Daniel Gomez\n- **Year:** 1\n- **Course:** BSCS\n- **Section:** A\n- **Contact Number:** 09725334942\n- **Guardian Name:** Carlos Reyes\n- **Guardian Contact:** 09695521803\n\n[students_ccs_bscs_year1_seca]",
+      "error_message": null,
+      "corruption_details": null
+    },
+    {
+      "query": "What is the school's vision?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_school_info",
+              "parameters": {
+                "topic": "MISSION_VISION"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 1,
+      "execution_time": 2.9383649826049805,
+      "timestamp": "2025-09-03T17:15:20.662993",
+      "final_answer": "The Pambayang Dalubhasaan ng Marilao (PDM) aims to be a premier higher education institution in the region, providing quality subsidized tertiary education and industry training programs. The school is committed to producing globally competent, competitive, capable, and skillful graduates who excel in their chosen field.\n\n- **Vision:** The Pambayang Dalubhasaan ng Marilao (PDM), a premier higher education institution in the region in providing quality subsidized tertiary education and industry training programs committed to produce globally competent, competitive, capable, and skillful graduates who excel in their chosen field.\n\n[institutional_identity_mission_vision]",
+      "error_message": null,
+      "corruption_details": null
+    },
+    {
+      "query": "What subjects are in the first semester of the BSCS curriculum?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSCS",
+                "year_level": 1
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_FALLBACK",
+      "analyst_mode": "online",
+      "execution_mode": "fallback",
+      "results_count": 108,
+      "execution_time": 8.57390022277832,
+      "timestamp": "2025-09-03T17:15:47.545957",
+      "final_answer": "The first semester of the BSCS curriculum includes the following subjects:\n\n- **CS101 - Introduction To Computing**\n  - Type: Major\n  - Units: 1.5\n  - Hours/Week: 3\n\n- **MATH101 - College Algebra**\n  - Type: General Education\n  - Units: 1.5\n  - Hours/Week: 3\n\n- **ENG101 - Communication Skills**\n  - Type: General Education\n  - Units: 1.5\n  - Hours/Week: 3\n\n- **SCI101 - Physical Science**\n  - Type: General Education\n  - Units: 3\n  - Hours/Week: 3\n\n- **FIL101 - Filipino**\n  - Type: General Education\n  - Units: 3\n  - Hours/Week: 3\n\n- **CS101L - Introduction To Computing Laboratory**\n  - Type: Major\n  - Units: 1\n  - Hours/Week: 3\n\n- **SCI101L - Physical Science Laboratory**\n  - Type: General Education\n  - Units: 1\n  - Hours/Week: 3\n\n[curriculum_ccs_bscs]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
+    },
+    {
+      "query": "List all faculty members in the CCS department.",
       "plan": {
         "plan": [
           {
@@ -10,115 +95,31 @@
             "tool_call": {
               "tool_name": "find_people",
               "parameters": {
+                "department": "CCS",
                 "role": "PROFESSOR"
               }
             }
           }
         ]
       },
-      "results_count": 8,
-      "execution_time": 2.61433744430542,
-      "timestamp": "2025-09-01T14:58:34.636210",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are tall",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "program": null,
-                "role": [
-                  "PROFESSOR"
-                ],
-                "year_level": null,
-                "department": null
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 77,
-      "execution_time": 23.47667932510376,
-      "timestamp": "2025-09-01T15:01:01.596493",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are tall",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": [
-                  "BOARD MEMBER",
-                  "LIBRARIAN"
-                ],
-                "program": [],
-                "year_level": []
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 136,
-      "execution_time": 21.977993726730347,
-      "timestamp": "2025-09-01T15:05:44.826517",
-      "error_message": null
-    },
-    {
-      "query": "who is the smartest student",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "program": "",
-                "year_level": ""
-              }
-            }
-          }
-        ]
-      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
       "results_count": 2,
-      "execution_time": 17.52484393119812,
-      "timestamp": "2025-09-01T15:06:53.486863",
-      "error_message": null
+      "execution_time": 2.81954026222229,
+      "timestamp": "2025-09-03T17:16:06.184495",
+      "final_answer": "The CCS department has two faculty members:\n\n- **Hodges, Kathryn Julie**\n  - Position: Adviser\n  - Employment Status: Not specified\n  - Contact Information: Not provided\n\n- **Lewis, Deborah K.**\n  - Position: Professor\n  - Employment Status: Contractual\n  - Contact Information: 09343614019, deborah.lewis@teacher.edu.ph\n\n[faculty_ccs_schedule], [faculty_ccs_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
     },
     {
-      "query": "who among the faculty members are muslim",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "answer_question_about_person",
-              "parameters": {
-                "person_name": "[Person's Name with Muslim Affiliation]",
-                "question": "what is their religious affiliation?"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 136,
-      "execution_time": 22.913875102996826,
-      "timestamp": "2025-09-01T15:09:29.376986",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are muslim",
+      "query": "Show me all 2nd year BSIT students.",
       "plan": {
         "plan": [
           {
@@ -127,328 +128,32 @@
             "tool_call": {
               "tool_name": "find_people",
               "parameters": {
-                "role": "PROFESSOR",
-                "religion": "MUSLIM"
+                "program": "BSIT",
+                "year_level": 2,
+                "role": "student"
               }
             }
           }
         ]
       },
-      "results_count": 2,
-      "execution_time": 2.3387513160705566,
-      "timestamp": "2025-09-01T15:10:27.571748",
-      "error_message": null
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 30,
+      "execution_time": 9.373957633972168,
+      "timestamp": "2025-09-03T17:16:25.043187",
+      "final_answer": "There are 30 second-year BSIT students in the CCS department. Here are their details:\n\n- **Ana Bautista**\n  - Student ID: PDM-2025-1392\n  - Contact Number: 9816512896\n  - Guardian Name: Alberto Bautista\n  - Guardian Contact: 9875982365\n\n- **Paolo Torres**\n  - Student ID: PDM-2025-1378\n  - Contact Number: 9840509677\n  - Guardian Name: Carmen Ramos\n  - Guardian Contact: 9432360752\n\n- **Mark Castro**\n  - Student ID: PDM-2025-1386\n  - Contact Number: 9814887032\n  - Guardian Name: Carmen Torres\n  - Guardian Contact: 9878248222\n\n- **Angela Garcia**\n  - Student ID: PDM-2025-1375\n  - Contact Number: 9458849137\n  - Guardian Name: Alberto Bautista\n  - Guardian Contact: 9688977534\n\n- **Luz Villanueva**\n  - Student ID: PDM-2025-1393\n  - Contact Number: 9451767743\n  - Guardian Name: Lucia Aquino\n  - Guardian Contact: 9179669788\n\n- **Ana Castro**\n  - Student ID: PDM-2025-1383\n  - Contact Number: 9356345580\n  - Guardian Name: Ramon Ramos\n  - Guardian Contact: 9337063322\n\n- **Carlo Cruz**\n  - Student ID: PDM-2025-1387\n  - Contact Number: 9960417202\n  - Guardian Name: Carmen Aquino\n  - Guardian Contact: 9505457090\n\n- **Miguel Castro**\n  - Student ID: PDM-2025-1374\n  - Contact Number: 9404839588\n  - Guardian Name: Ramon Bautista\n  - Guardian Contact: 9073430089\n\n- **Ana Mendoza**\n  - Student ID: PDM-2025-1376\n  - Contact Number: 9440620219\n  - Guardian Name: Ramon Castro\n  - Guardian Contact: 9236002312\n\n- **Carlo Flores**\n  - Student ID: PDM-2025-1384\n  - Contact Number: 9778485748\n  - Guardian Name: Carmen Mendoza\n  - Guardian Contact: 9424649619\n\n- **Victor Cruz**\n  - Student ID: PDM-2025-1389\n  - Contact Number: 9965633248\n  - Guardian Name: Carmen Santos\n  - Guardian Contact: 9681773650\n\n- **Maria Bautista**\n  - Student ID: PDM-2025-1366\n  - Contact Number: 9771702384\n  - Guardian Name: Isabel Cruz\n  - Guardian Contact: 9165043529\n\n- **Rosa Flores**\n  - Student ID: PDM-2025-1394\n  - Contact Number: 9875351365\n  - Guardian Name: Patricia Aquino\n  - Guardian Contact: 9158854468\n\n- **Catherine Bautista**\n  - Student ID: PDM-2025-1370\n  - Contact Number: 9084925401\n  - Guardian Name: Fernando Santos\n  - Guardian Contact: 9787965327\n\n- **Elena Ramos**\n  - Student ID: PDM-2025-1367\n  - Contact Number: 9766356595\n  - Guardian Name: Patricia Santos\n  - Guardian Contact: 9633951821\n\n- **Angela Ramos**\n  - Student ID: PDM-2025-1377\n  - Contact Number: 9284264634\n  - Guardian Name: Fernando Mendoza\n  - Guardian Contact: 9412408168\n\n- **Angela Santos**\n  - Student ID: PDM-2025-1391\n  - Contact Number: 9283644980\n  - Guardian Name: Daniel Torres\n  - Guardian Contact: 9954843775\n\n- **Maria Castro**\n  - Student ID: PDM-2025-1372\n  - Contact Number: 9787707758\n  - Guardian Name: Alberto Reyes\n  - Guardian Contact: 9585174602\n\n- **Pedro Flores**\n  - Student ID: PDM-2025-1379\n  - Contact Number: 9983359945\n  - Guardian Name: Lucia Garcia\n  - Guardian Contact: 9067115011\n\n- **Catherine Torres**\n  - Student ID: PDM-2025-1388\n  - Contact Number: 9859939133\n  - Guardian Name: Alberto Garcia\n  - Guardian Contact: 9849273297\n\n- **Victor Reyes**\n  - Student ID: PDM-2025-1371\n  - Contact Number: 9797817396\n  - Guardian Name: Daniel Flores\n  - Guardian Contact: 9492940744\n\n- **Juan Santos**\n  - Student ID: PDM-2025-1385\n  - Contact Number: 9244076616\n  - Guardian Name: Patricia Ramos\n  - Guardian Contact: 9071482114\n\n- **Carlo Garcia**\n  - Student ID: PDM-2025-1381\n  - Contact Number: 9785278084\n  - Guardian Name: Carmen Villanueva\n  - Guardian Contact: 9179679030\n\n- **Carlo Mendoza**\n  - Student ID: PDM-2025-1373\n  - Contact Number: 9263197064\n  - Guardian Name: Fernando Villanueva\n  - Guardian Contact: 9698512172\n\n- **Sophia Cruz**\n  - Student ID: PDM-2025-1369\n  - Contact Number: 9982720162\n  - Guardian Name: Patricia Ramos\n  - Guardian Contact: 9433834178\n\n- **Elena Reyes**\n  - Student ID: PDM-2025-1395\n  - Contact Number: 9050383483\n  - Guardian Name: Teresa Cruz\n  - Guardian Contact: 9748086372\n\n- **Jose Garcia**\n  - Student ID: PDM-2025-1380\n  - Contact Number: 9634985325\n  - Guardian Name: Patricia Castro\n  - Guardian Contact: 9936652944\n\n- **Miguel Reyes**\n  - Student ID: PDM-2025-1390\n  - Contact Number: 9084767085\n  - Guardian Name: Lucia Reyes\n  - Guardian Contact: 9111277136\n\n- **Miguel Cruz**\n  - Student ID: PDM-2025-1382\n  - Contact Number: 9782335358\n  - Guardian Name: Teresa Torres\n  - Guardian Contact: 9826937018\n\n- **Miguel Villanueva**\n  - Student ID: PDM-2025-1368\n  - Contact Number: 9798867211\n  - Guardian Name: Gloria Garcia\n  - Guardian Contact: 9218502367\n\n[students_ccs_bsit_year2_seca]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
     },
     {
-      "query": "who among the faculty members are muslim",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "religion": "MUSLIM"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 2.5203142166137695,
-      "timestamp": "2025-09-01T15:12:52.085548",
-      "error_message": null
-    },
-    {
-      "query": "exi",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "exi"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 136,
-      "execution_time": 4.091333627700806,
-      "timestamp": "2025-09-01T15:13:27.672319",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are muslim",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "religion": "MUSLIM"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 2.656512975692749,
-      "timestamp": "2025-09-01T15:13:44.567265",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are muslim",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "religion": "MUSLIM"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 38.00687313079834,
-      "timestamp": "2025-09-01T15:14:29.204356",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are muslim",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "religion": "MUSLIM"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 2.479048490524292,
-      "timestamp": "2025-09-01T15:15:14.311996",
-      "error_message": null
-    },
-    {
-      "query": "all the faculty members",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 2.879272937774658,
-      "timestamp": "2025-09-01T15:16:00.418404",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are tall",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "height": "TALL"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 3,
-      "execution_time": 3.9317574501037598,
-      "timestamp": "2025-09-01T15:18:44.114322",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are tall",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "height": "TALL"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 7,
-      "execution_time": 139.44647765159607,
-      "timestamp": "2025-09-01T15:23:29.801957",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are tall",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "height": "TALL"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 7,
-      "execution_time": 4.71604061126709,
-      "timestamp": "2025-09-01T15:23:56.508397",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are tall",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "height": "TALL"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 7,
-      "execution_time": 4.74346923828125,
-      "timestamp": "2025-09-01T15:24:56.327700",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are tall",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "height": [
-                  "tall"
-                ]
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 7,
-      "execution_time": 35.18395662307739,
-      "timestamp": "2025-09-01T15:25:44.992696",
-      "error_message": null
-    },
-    {
-      "query": "who among the faculty members are tall",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "height": [
-                  "tall"
-                ]
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 7,
-      "execution_time": 126.38137364387512,
-      "timestamp": "2025-09-01T15:29:23.329630",
-      "error_message": null
-    },
-    {
-      "query": "all the faculty members",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 7,
-      "execution_time": 2.9685471057891846,
-      "timestamp": "2025-09-01T15:32:29.774134",
-      "error_message": null
-    },
-    {
-      "query": "all the faculty members",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 7,
-      "execution_time": 33.67350745201111,
-      "timestamp": "2025-09-01T15:33:18.575397",
-      "error_message": null
-    },
-    {
-      "query": "I need some help finding the book, alabaab",
+      "query": "Is there a librarian on staff?",
       "plan": {
         "plan": [
           {
@@ -463,97 +168,24 @@
           }
         ]
       },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
       "results_count": 1,
-      "execution_time": 93.0027482509613,
-      "timestamp": "2025-09-01T15:36:04.083138",
-      "error_message": null
+      "execution_time": 2.696835994720459,
+      "timestamp": "2025-09-03T17:16:30.822571",
+      "final_answer": "Yes, there is a librarian on staff. The librarian's name is Trevor Q. Clark. He is a permanent staff member in the LIBRARY department.\n\n- **Name:** Trevor Q. Clark\n- **Position:** Librarian\n- **Department:** LIBRARY\n- **Employment Status:** Permanent\n- **Contact Information:** 09191658792, trevor.clark@teacher.edu.ph\n\n[faculty_library_non_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
     },
     {
-      "query": "who is the smartest student out of everyone",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 3,
-      "execution_time": 87.82237100601196,
-      "timestamp": "2025-09-01T15:38:29.322314",
-      "error_message": null
-    },
-    {
-      "query": "who is the smartest student out of everyone",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "program": "",
-                "year_level": "",
-                "student_name": ""
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 3,
-      "execution_time": 195.84561133384705,
-      "timestamp": "2025-09-01T15:42:27.388848",
-      "error_message": null
-    },
-    {
-      "query": "i want his full complete grade",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "Daniel Gomez"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 115.67084217071533,
-      "timestamp": "2025-09-01T15:44:41.443472",
-      "error_message": null
-    },
-    {
-      "query": "HEY I TOLD YOU I WANT THE FULL COMPLETE GRADE. INCLUDE THE SUBJECTS",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "Daniel Gomez"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 276.6088707447052,
-      "timestamp": "2025-09-01T15:49:43.088581",
-      "error_message": null
-    },
-    {
-      "query": "WHAT IS HIS SCHEDULE",
+      "query": "What is the class schedule for the student Michael Carpenter?",
       "plan": {
         "plan": [
           {
@@ -562,1041 +194,30 @@
             "tool_call": {
               "tool_name": "get_person_schedule",
               "parameters": {
-                "program": "BSCS",
-                "year_level": 2,
-                "student_name": "Daniel Gomez"
+                "person_name": "Michael Carpenter"
               }
             }
           }
         ]
       },
-      "results_count": 1,
-      "execution_time": 389.57976055145264,
-      "timestamp": "2025-09-01T15:57:50.708369",
-      "error_message": null
+      "outcome": "SUCCESS_FALLBACK",
+      "analyst_mode": "online",
+      "execution_mode": "fallback",
+      "results_count": 108,
+      "execution_time": 4.982862234115601,
+      "timestamp": "2025-09-03T17:16:42.012349",
+      "final_answer": "I couldn't find the class schedule for Michael Carpenter. However, I can suggest contacting the CCS department or the school administration for more information. You may also want to check with the faculty members listed in the CCS department, such as Hodges, Kathryn Julie or Lewis, Deborah K., who might be able to provide the schedule.\n\n[faculty_ccs_schedule], [faculty_ccs_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
     },
     {
-      "query": "all grades of bscs",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "program": "BSCS"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 62,
-      "execution_time": 6.0695481300354,
-      "timestamp": "2025-09-01T16:04:41.427326",
-      "error_message": null
-    },
-    {
-      "query": "2nd year bscs studetns",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "program": "BSCS",
-                "year_level": 2,
-                "role": "STUDENT"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 30,
-      "execution_time": 5.975535154342651,
-      "timestamp": "2025-09-01T16:04:56.220739",
-      "error_message": null
-    },
-    {
-      "query": "what year is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 3,
-      "execution_time": 2.8140618801116943,
-      "timestamp": "2025-09-01T16:06:01.725250",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 3.1603920459747314,
-      "timestamp": "2025-09-01T16:06:08.960142",
-      "error_message": null
-    },
-    {
-      "query": "& C:/Users/BJ/AppData/Local/Microsoft/WindowsApps/python3.11.exe \"d:/Download HDD/Compressed/GROUP-3-AI-collab-nice-main/GROUP-3-AI-collab-nice-main/g1_data_process.py\"",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 4.623230695724487,
-      "timestamp": "2025-09-01T16:17:50.121217",
-      "error_message": null
-    },
-    {
-      "query": "what do you know",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 18,
-      "execution_time": 40.87859320640564,
-      "timestamp": "2025-09-01T16:20:04.149890",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 106,
-      "execution_time": 7.398451566696167,
-      "timestamp": "2025-09-01T16:39:46.666078",
-      "error_message": null
-    },
-    {
-      "query": "who is the smartest student",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "program": "BSCS",
-                "year_level": 2
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 31,
-      "execution_time": 3.827751874923706,
-      "timestamp": "2025-09-01T16:40:20.352535",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 106,
-      "execution_time": 4.627858877182007,
-      "timestamp": "2025-09-01T16:40:43.569460",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 3.7937941551208496,
-      "timestamp": "2025-09-01T16:41:41.152480",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 3.708026647567749,
-      "timestamp": "2025-09-01T16:43:43.239806",
-      "error_message": null
-    },
-    {
-      "query": "who is the smartest student",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "",
-                "program": "",
-                "year_level": ""
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 3,
-      "execution_time": 2.6000680923461914,
-      "timestamp": "2025-09-01T16:44:03.907525",
-      "error_message": null
-    },
-    {
-      "query": "provide his full 100% grade",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "Daniel Gomez"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 4.188179969787598,
-      "timestamp": "2025-09-01T16:44:19.240052",
-      "error_message": null
-    },
-    {
-      "query": "what is his schedule",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_schedule",
-              "parameters": {
-                "person_name": "Daniel Gomez"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 2.841287851333618,
-      "timestamp": "2025-09-01T16:44:33.004618",
-      "error_message": null
-    },
-    {
-      "query": "what is bsit",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSIT"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 137,
-      "execution_time": 6.744504928588867,
-      "timestamp": "2025-09-01T16:44:48.286140",
-      "error_message": null
-    },
-    {
-      "query": "what is bsinformation",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BS INFORMATION TECHNOLOGY"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 137,
-      "execution_time": 7.143956422805786,
-      "timestamp": "2025-09-01T16:45:19.390754",
-      "error_message": null
-    },
-    {
-      "query": "bscs",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSCS"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 4.141900300979614,
-      "timestamp": "2025-09-01T16:45:31.851996",
-      "error_message": null
-    },
-    {
-      "query": "bsin",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSIN"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 137,
-      "execution_time": 6.511612415313721,
-      "timestamp": "2025-09-01T16:45:40.350364",
-      "error_message": null
-    },
-    {
-      "query": "bstm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSTM",
-                "year_level": 1
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 137,
-      "execution_time": 3.958503007888794,
-      "timestamp": "2025-09-01T16:45:45.253025",
-      "error_message": null
-    },
-    {
-      "query": "all the courses",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": ""
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 4,
-      "execution_time": 3.797144651412964,
-      "timestamp": "2025-09-01T16:45:52.995983",
-      "error_message": null
-    },
-    {
-      "query": "all the courses",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 4,
-      "execution_time": 6.631181001663208,
-      "timestamp": "2025-09-01T16:46:14.534557",
-      "error_message": null
-    },
-    {
-      "query": "what is bsit",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSIT"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 137,
-      "execution_time": 5.189009666442871,
-      "timestamp": "2025-09-01T16:46:44.668805",
-      "error_message": null
-    },
-    {
-      "query": "bsinformation",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSIT"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 137,
-      "execution_time": 6.221864461898804,
-      "timestamp": "2025-09-01T16:47:10.430980",
-      "error_message": null
-    },
-    {
-      "query": "BSHM",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSHM"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 137,
-      "execution_time": 4.593533754348755,
-      "timestamp": "2025-09-01T16:47:21.955766",
-      "error_message": null
-    },
-    {
-      "query": "BSCS",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSCS"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.7085518836975098,
-      "timestamp": "2025-09-01T16:47:26.782740",
-      "error_message": null
-    },
-    {
-      "query": "ALL THE COURSES",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSCS",
-                "year_level": 1
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 137,
-      "execution_time": 4.867082357406616,
-      "timestamp": "2025-09-01T16:47:38.277124",
-      "error_message": null
-    },
-    {
-      "query": "ALL THE DATA YOU HAVE",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 20,
-      "execution_time": 4.278655290603638,
-      "timestamp": "2025-09-01T16:47:46.584971",
-      "error_message": null
-    },
-    {
-      "query": "BSINFORMATION",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSINFORMATION"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.618472099304199,
-      "timestamp": "2025-09-01T16:48:03.061330",
-      "error_message": null
-    },
-    {
-      "query": "BSIT",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSIT"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 137,
-      "execution_time": 7.266235113143921,
-      "timestamp": "2025-09-01T16:48:13.628819",
-      "error_message": null
-    },
-    {
-      "query": "ALL THE DATA YOU HAVE",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 20,
-      "execution_time": 3.552191972732544,
-      "timestamp": "2025-09-01T16:48:50.436954",
-      "error_message": null
-    },
-    {
-      "query": "BSINFORMATION",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BS INFORMATION TECHNOLOGY"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.6509690284729004,
-      "timestamp": "2025-09-01T16:49:41.904730",
-      "error_message": null
-    },
-    {
-      "query": "bsit",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSIT"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 2.483487844467163,
-      "timestamp": "2025-09-01T16:49:45.145693",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 3.679248809814453,
-      "timestamp": "2025-09-01T16:51:24.241358",
-      "error_message": null
-    },
-    {
-      "query": "who is the smartest student",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 3,
-      "execution_time": 2.885368585586548,
-      "timestamp": "2025-09-01T16:51:41.262031",
-      "error_message": null
-    },
-    {
-      "query": "what is the full grade of him",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "him"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 139,
-      "execution_time": 4.742518901824951,
-      "timestamp": "2025-09-01T16:51:51.665180",
-      "error_message": null
-    },
-    {
-      "query": "what is his full grade i mean",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "his"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 139,
-      "execution_time": 5.341420650482178,
-      "timestamp": "2025-09-01T16:52:05.054738",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 4.3708813190460205,
-      "timestamp": "2025-09-01T16:52:28.605961",
-      "error_message": null
-    },
-    {
-      "query": "who is the smartest student",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 3,
-      "execution_time": 3.3872640132904053,
-      "timestamp": "2025-09-01T16:52:35.229577",
-      "error_message": null
-    },
-    {
-      "query": "what is his schedule",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_schedule",
-              "parameters": {
-                "person_name": "his"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 139,
-      "execution_time": 8.108288764953613,
-      "timestamp": "2025-09-01T16:52:48.751875",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 3.532275438308716,
-      "timestamp": "2025-09-01T16:53:13.787433",
-      "error_message": null
-    },
-    {
-      "query": "what is his full grade",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "his"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 139,
-      "execution_time": 4.750173330307007,
-      "timestamp": "2025-09-01T16:53:21.682194",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 3.3392045497894287,
-      "timestamp": "2025-09-01T16:57:56.760489",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 3.086080551147461,
-      "timestamp": "2025-09-01T16:58:03.707326",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 4.285841703414917,
-      "timestamp": "2025-09-01T16:59:15.797569",
-      "error_message": null
-    },
-    {
-      "query": "who has the higher grades between them",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "Daniel Gomez"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 3.9712963104248047,
-      "timestamp": "2025-09-01T16:59:35.427367",
-      "error_message": null
-    },
-    {
-      "query": "what is the grade of daniel rivera",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "daniel rivera"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 2.9024713039398193,
-      "timestamp": "2025-09-01T16:59:56.991433",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 4.235323190689087,
-      "timestamp": "2025-09-01T17:01:42.607744",
-      "error_message": null
-    },
-    {
-      "query": "who is the smartest student",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 3,
-      "execution_time": 3.0501718521118164,
-      "timestamp": "2025-09-01T17:01:59.118622",
-      "error_message": null
-    },
-    {
-      "query": "what is his schedule",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_schedule",
-              "parameters": {
-                "person_name": "Daniel Gomez"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 5.930301666259766,
-      "timestamp": "2025-09-01T17:02:19.679281",
-      "error_message": null
-    },
-    {
-      "query": "who is his adviser",
+      "query": "Who is the adviser for 1st year BSCS students in Section A?",
       "plan": {
         "plan": [
           {
@@ -1606,19 +227,591 @@
               "tool_name": "get_adviser_info",
               "parameters": {
                 "program": "BSCS",
+                "year_level": 1,
+                "section": "A"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_FALLBACK",
+      "analyst_mode": "online",
+      "execution_mode": "fallback",
+      "results_count": 108,
+      "execution_time": 4.869986057281494,
+      "timestamp": "2025-09-03T17:16:52.932460",
+      "final_answer": "The adviser for 1st year BSCS students in Section A is Hodges, Kathryn Julie.\n\n- **Name:** Hodges, Kathryn Julie\n- **Position:** Professor\n- **Department:** CCS\n- **Employment Status:** Contractual\n- **Contact Information:** 09343614019, deborah.lewis@teacher.edu.ph\n\n[faculty_ccs_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
+    },
+    {
+      "query": "Among the students with available grades, who is the smartest?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 3,
+      "execution_time": 2.366130828857422,
+      "timestamp": "2025-09-03T17:17:26.101033",
+      "final_answer": "Daniel Gomez is the smartest student among those with available grades. He has the lowest General Weighted Average (GWA) of 1.45, which is better than the other students' GWAs.\n\n- **Name:** Daniel Gomez\n- **Course:** BSCS\n- **GWA:** 1.45\n\n[students_ccs_bscs_year1_seca_grades]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
+    },
+    {
+      "query": "What can you tell me about the data you have?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 20,
+      "execution_time": 4.52255654335022,
+      "timestamp": "2025-09-03T17:17:37.946040",
+      "final_answer": "I have access to a comprehensive database containing information about various aspects of PDM or Pambayang Dalubhasaan ng Marilao. Here's a summary of what I know:\n\n- **Student Information:**\n  - I have data on students enrolled in programs like BSCS (Bachelor of Science in Computer Science) and BSIT (Bachelor of Science in Information Technology) in different years and sections.\n  - For example, I know details about students in the CCS department, such as their full names, courses, and department.\n\n- **Faculty & Staff:**\n  - I have information about faculty members and staff, including their roles, departments, and contact details.\n  - For instance, I know about teaching faculty in the CCS department, non-teaching staff in the Library, and administrative board members.\n\n- **Schedules:**\n  - I have schedules for faculty members, including their teaching days and working hours.\n  - For example, I know the schedule of a faculty member who is an adviser in the CCS department.\n\n- **Academic Programs:**\n  - I have data on various academic programs and their curricula.\n  - For example, I know about the curriculum for the Bachelor of Early Childhood Education program in the CTE department.\n\n- **Institutional Identity:**\n  - I have information about the institution's mission, vision, and objectives.\n\n[system_summary], [collection_info]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
+    },
+    {
+      "query": "What is the GWA of Erin Ruiz?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_student_grades",
+              "parameters": {
+                "student_name": "Erin Ruiz"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_FALLBACK",
+      "analyst_mode": "online",
+      "execution_mode": "fallback",
+      "results_count": 108,
+      "execution_time": 5.0230584144592285,
+      "timestamp": "2025-09-03T17:17:46.062666",
+      "final_answer": "I'm sorry, but I couldn't find the GWA for Erin Ruiz in the provided data. It seems that the information you're looking for is not available in the current records. If you need further assistance, please let me know how I can help you better.\n\n[students_ccs_bsit_year2_seca_grades]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
+    },
+    {
+      "query": "Show me the curriculum for the BSTM program.",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSTM"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_FALLBACK",
+      "analyst_mode": "online",
+      "execution_mode": "fallback",
+      "results_count": 108,
+      "execution_time": 4.636420965194702,
+      "timestamp": "2025-09-03T17:17:59.020884",
+      "final_answer": "I'm sorry, but I couldn't find the curriculum for the BSTM program in the provided data. It seems that the information you're looking for is not available in the current records. If you need further assistance, please let me know how I can help you better.\n\n[system_note], [curriculum_cte_bachelorofearlychildhoodeducation], [curriculum_con_bsin], [curriculum_con_bsinformation], [curriculum_ccs_bsoffice]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
+    },
+    {
+      "query": "Who is the school president?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "BOARD MEMBER"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 1,
+      "execution_time": 2.548729181289673,
+      "timestamp": "2025-09-03T17:18:12.045324",
+      "final_answer": "The school president is Kari Miranda Roberts, who is a Board Member in the Administration department.\n\n- Kari Miranda Roberts is a Permanent Board Member in the SCHOOL_ADMIN department.\n- Her email is kari.roberts@teacher.edu.ph, and her phone number is 09965523374.\n\n[faculty_school_admin_board_member]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
+    },
+    {
+      "query": "What is the schedule for the faculty member Jimmy Neutron?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_schedule",
+              "parameters": {
+                "person_name": "Jimmy Neutron"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 3.534886121749878,
+      "timestamp": "2025-09-03T17:18:24.944059",
+      "final_answer": "I couldn't find the schedule for Jimmy Neutron. The system note indicates that while Jimmy Neutron's profile was found, there is no matching schedule available in the current records.\n\n[faculty_maintenance_custodial_non_teaching], [system_note]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
+    },
+    {
+      "query": "What are the objectives of the CBA department?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_school_info",
+              "parameters": {
+                "topic": "OBJECTIVES",
+                "department": "CBA"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 1,
+      "execution_time": 3.2843680381774902,
+      "timestamp": "2025-09-03T17:18:37.013073",
+      "final_answer": "I couldn't find any objectives specifically related to the CBA department in the provided documents. However, I can provide you with the institutional objectives of Pambayang Dalubhasaan ng Marilao (PDM), which may be relevant.\n\n- Inculcate among students and all stakeholders a culture of excellence by communicating the school vision and mission across all sectors of the college;\n- Impart knowledge through effective instruction delivered by a core of qualified and competent faculty;\n- Offer relevant degree and non-degree programs that are responsive to the current needs;\n- Instill social awareness among all stakeholders through relevant and worthwhile community extension programs;\n- Nurture talents and skills of students through various social, cultural, and co-curricular activities;\n- Assist students through provision of support services that will address varied needs and concerns;\n- Tap and mold future leaders through active student involvement;\n- Adapt to the changes in the society through continuing professional education of the teaching and non-teaching force;\n- Contribute to the development of new knowledge through researches;\n- Strengthen skills and capabilities of students through relevant exposure and establishment of linkages;\n- Inculcate virtues of goodwill, integrity, nationalism, and pride in our heritage as a people.\n\n[source_collection_name: institutional_identity_objectives]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "faculty_con_teaching",
+        "schedules_ccs_newcourse_year1_seca",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year2_seca"
+      ]
+    },
+    {
+      "query": "hey brooo",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 22,
+      "execution_time": 2.7711706161499023,
+      "timestamp": "2025-09-03T17:33:13.866761",
+      "final_answer": "I'm sorry, but I couldn't find any relevant information related to your query. I'm here to help with any questions you have about the school, such as schedules, student information, faculty details, or academic programs. If you have a specific question or need assistance with something else, please let me know!",
+      "error_message": null,
+      "corruption_details": null
+    },
+    {
+      "query": "how are you",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_database_summary",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 22,
+      "execution_time": 3.9788646697998047,
+      "timestamp": "2025-09-03T17:33:27.892086",
+      "final_answer": "I'm doing well, thank you for asking! I'm an AI Data Analyst for Pambayang Dalubhasaan ng Marilao (PDM). I can help you with information about students, faculty, schedules, and academic programs. Here's a summary of what I know:\n\n- **Student Information:** I have data on students in various programs like BSCS, BSIT, and BSOFFICE. For example, I know the names and courses of students in the CCS department.\n- **Faculty & Staff:** I have information about teaching and non-teaching faculty. For instance, I know about faculty in the CBA, CCS, and CON departments, as well as non-teaching staff like custodial and library personnel.\n- **Schedules:** I have schedules for different courses and sections. For example, I know the schedules for BSCS and BSIT students in the CCS department.\n- **Academic Programs:** I have data on various academic programs and their curricula. For example, I know about the Bachelor of Science in Computer Science (BSCS) and Bachelor of Science in Information Technology (BSIT) programs.\n\n[source_collection_name: system_summary, collection_info]",
+      "error_message": null,
+      "corruption_details": null
+    },
+    {
+      "query": "Who is the student with ID PDM-2025-0001?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_data_by_id",
+              "parameters": {
+                "pdm_id": "PDM-2025-0001"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 3.0782594680786133,
+      "timestamp": "2025-09-03T17:33:42.383180",
+      "final_answer": "Daniel Gomez is the student with ID PDM-2025-0001. Here are the details:\n\n- **Full Name:** Daniel Gomez\n- **Year:** 1\n- **Course:** BSCS\n- **Section:** A\n- **Contact Number:** 09725334942\n- **Guardian Name:** Carlos Reyes\n- **Guardian Contact:** 09695521803\n\n[source_collection_name: students_ccs_bscs_year1_seca]",
+      "error_message": null,
+      "corruption_details": null
+    },
+    {
+      "query": "What is the school's vision?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_school_info",
+              "parameters": {
+                "topic": "MISSION_VISION"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 1,
+      "execution_time": 3.4572691917419434,
+      "timestamp": "2025-09-03T17:34:01.763963",
+      "final_answer": "The Pambayang Dalubhasaan ng Marilao (PDM) aims to be a premier higher education institution in the region, providing quality subsidized tertiary education and industry training programs. The school is committed to producing globally competent, competitive, capable, and skillful graduates who excel in their chosen field.\n\n- **Vision:** The Pambayang Dalubhasaan ng Marilao (PDM), a premier higher education institution in the region in providing quality subsidized tertiary education and industry training programs committed to produce globally competent, competitive, capable, and skillful graduates who excel in their chosen field.\n\n[source_collection_name: institutional_identity_mission_vision]",
+      "error_message": null,
+      "corruption_details": null
+    },
+    {
+      "query": "What subjects are in the first semester of the BSCS curriculum?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSCS",
                 "year_level": 1
               }
             }
           }
         ]
       },
-      "results_count": 1,
-      "execution_time": 4.368641376495361,
-      "timestamp": "2025-09-01T17:02:27.005267",
-      "error_message": null
+      "outcome": "SUCCESS_FALLBACK",
+      "analyst_mode": "online",
+      "execution_mode": "fallback",
+      "results_count": 140,
+      "execution_time": 5.2278313636779785,
+      "timestamp": "2025-09-03T17:34:13.932933",
+      "final_answer": "The first semester of the BSCS curriculum includes the following subjects:\n\n- **Introduction To Computing** (CS101)\n- **Introduction To Computing Laboratory** (CS101L)\n- **College Algebra** (MATH101)\n- **Communication Skills** (ENG101)\n- **Physical Science** (SCI101)\n- **Physical Science Laboratory** (SCI101L)\n- **Filipino** (FIL101)\n\n[source_collection_name: curriculum_ccs_bscs]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "curriculum_con_bsinformation",
+        "faculty_ccs_schedule"
+      ]
     },
     {
-      "query": "among the faculty who is a muslim",
+      "query": "bscs curriculum",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSCS"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_FALLBACK",
+      "analyst_mode": "online",
+      "execution_mode": "fallback",
+      "results_count": 140,
+      "execution_time": 6.510111570358276,
+      "timestamp": "2025-09-03T17:34:59.377506",
+      "final_answer": "The BSCS curriculum includes the following subjects:\n\n- **1st Year, 1st Semester:**\n  - Introduction To Computing (CS101)\n  - Introduction To Computing Laboratory (CS101L)\n  - College Algebra (MATH101)\n  - Communication Skills (ENG101)\n  - Physical Science (SCI101)\n  - Physical Science Laboratory (SCI101L)\n  - Filipino (FIL101)\n\n- **1st Year, 2nd Semester:**\n  - Data Structures (CS102)\n  - Data Structures Laboratory (CS102L)\n  - Discrete Mathematics (CS103)\n  - Discrete Mathematics Laboratory (CS103L)\n  - Computer Programming 1 (CS104)\n  - Computer Programming 1 Laboratory (CS104L)\n  - Computer Programming 2 (CS105)\n  - Computer Programming 2 Laboratory (CS105L)\n\n- **2nd Year, 1st Semester:**\n  - Data Structures 1 (CS201)\n  - Data Structures 1 Laboratory (CS201L)\n  - Data Management 1 (CS202)\n  - Computer Organization 1 (CS203)\n  - Computer Organization 1 Laboratory (CS203L)\n  - Algorithms (CS204)\n  - Object-Oriented Programming 1 (CS205)\n  - Object-Oriented Programming 1 Laboratory (CS205L)\n\n[source_collection_name: curriculum_ccs_bscs]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "curriculum_con_bsinformation",
+        "faculty_ccs_schedule"
+      ]
+    },
+    {
+      "query": "fsdijfsdifjsdif",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "PROFESSOR"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 6,
+      "execution_time": 3.4189558029174805,
+      "timestamp": "2025-09-03T17:55:47.888662",
+      "final_answer": "I'm sorry, but I couldn't find any relevant information related to your query. It seems like your query might be incomplete or unclear. If you have any specific questions or need assistance with something else, please let me know. I'm here to help!",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching",
+        "faculty_maintenance_custodial_non_teaching"
+      ]
+    },
+    {
+      "query": "bscs curriculum",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSCS"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 1,
+      "execution_time": 3.722520351409912,
+      "timestamp": "2025-09-03T17:56:22.920794",
+      "final_answer": "The BSCS curriculum for 1st Year consists of 14 subjects with a total of 40 units.\n\n- **1st Semester:**\n  - CS101 - Introduction To Computing (Major, 3 units)\n  - CS102 - Fundamentals Of Programming (Major, 3 units)\n  - MATH101 - College Algebra (General Education, 3 units)\n  - GE101 - Understanding The Self (General Education, 3 units)\n  - GE102 - Purposive Communication (General Education, 3 units)\n  - PE101 - Physical Education 1 (Physical Education, 2 units)\n  - NSTP101 - National Service Training Program 1 (NSTP, 3 units)\n\n- **2nd Semester:**\n  - CS103 - Intermediate Programming (Major, 3 units)\n  - CS104 - Computer Hardware Fundamentals (Major, 3 units)\n  - MATH102 - Trigonometry (General Education, 3 units)\n  - GE103 - Readings In Philippine History (General Education, 3 units)\n  - GE104 - The Contemporary World (General Education, 3 units)\n  - PE102 - Physical Education 2 (Physical Education, 2 units)\n  - NSTP102 - National Service Training Program 2 (NSTP, 3 units)\n\n[source_collection_name: curriculum_ccs_bscs]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching",
+        "faculty_maintenance_custodial_non_teaching"
+      ]
+    },
+    {
+      "query": "something curriculum",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 5,
+      "execution_time": 3.244556427001953,
+      "timestamp": "2025-09-03T17:56:28.747549",
+      "final_answer": "The BSCS curriculum for 1st Year consists of 14 subjects with a total of 40 units.\n\n- **1st Semester:**\n  - CS101 - Introduction To Computing (Major, 3 units)\n  - CS102 - Fundamentals Of Programming (Major, 3 units)\n  - MATH101 - College Algebra (General Education, 3 units)\n  - GE101 - Understanding The Self (General Education, 3 units)\n  - GE102 - Purposive Communication (General Education, 3 units)\n  - PE101 - Physical Education 1 (Physical Education, 2 units)\n  - NSTP101 - National Service Training Program 1 (NSTP, 3 units)\n\n- **2nd Semester:**\n  - CS103 - Intermediate Programming (Major, 3 units)\n  - CS104 - Computer Hardware Fundamentals (Major, 3 units)\n  - MATH102 - Trigonometry (General Education, 3 units)\n  - GE103 - Readings In Philippine History (General Education, 3 units)\n  - GE104 - The Contemporary World (General Education, 3 units)\n  - PE102 - Physical Education 2 (Physical Education, 2 units)\n  - NSTP102 - National Service Training Program 2 (NSTP, 3 units)\n\n[source_collection_name: curriculum_ccs_bscs]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching",
+        "faculty_maintenance_custodial_non_teaching"
+      ]
+    },
+    {
+      "query": "bsph curriculum",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculum",
+              "parameters": {
+                "program": "BSPH"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_FALLBACK",
+      "analyst_mode": "online",
+      "execution_mode": "fallback",
+      "results_count": 140,
+      "execution_time": 4.7554755210876465,
+      "timestamp": "2025-09-03T17:58:47.406427",
+      "final_answer": "I couldn't find any information about the BSPH curriculum in the provided documents. However, I can provide you with the curricula for other programs that might be of interest.\n\n- Bachelor of Science in Information Technology (BSIT) - 1st Year\n- Bachelor of Science in Computer Science (BSCS) - 1st Year\n- Bachelor of Science in Information Systems (BSINFORMATION) - 1st Year\n- Bachelor of Science in Office Administration (BSOFFICE) - 2nd Year\n- Bachelor of Science in Hospitality Management (BSIN) - 1st Year\n- Bachelor of Early Childhood Education (BACHELOR OF EARLY CHILDHOOD EDUCATION) - 1st Year\n\n[curriculum_ccs_bscs], [curriculum_con_bsinformation], [curriculum_ccs_bsoffice], [curriculum_con_bsin], [curriculum_cte_bachelorofearlychildhoodeducation]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_cba_schedule",
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching"
+      ]
+    },
+    {
+      "query": "muslim",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "religion": "MUSLIM"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_FALLBACK",
+      "analyst_mode": "online",
+      "execution_mode": "fallback",
+      "results_count": 140,
+      "execution_time": 4.285584211349487,
+      "timestamp": "2025-09-03T18:02:57.774570",
+      "final_answer": "Trevor Clark is a Muslim.\n\n- Trevor Clark is a Librarian at PDM.\n- He is a non-teaching faculty member.\n- His email address is trevor.clark@teacher.edu.ph.\n\n[faculty_library_non_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_cba_schedule",
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching"
+      ]
+    },
+    {
+      "query": "all muslim",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "religion": "MUSLIM"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_FALLBACK",
+      "analyst_mode": "online",
+      "execution_mode": "fallback",
+      "results_count": 140,
+      "execution_time": 5.009008884429932,
+      "timestamp": "2025-09-03T18:05:17.606822",
+      "final_answer": "Elizabeth Angela Brown is a Muslim.\n\n- She is a Professor in the CON department.\n- Her email address is elizabeth.brown@faculty.edu.ph.\n\n[faculty_con_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_cba_schedule",
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching"
+      ]
+    },
+    {
+      "query": "all muslim faculty members",
       "plan": {
         "plan": [
           {
@@ -1634,138 +827,83 @@
           }
         ]
       },
-      "results_count": 7,
-      "execution_time": 2.6751930713653564,
-      "timestamp": "2025-09-01T17:02:37.256855",
-      "error_message": null
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 6,
+      "execution_time": 2.4166722297668457,
+      "timestamp": "2025-09-03T18:05:26.910796",
+      "final_answer": "Elizabeth Angela Brown is a Muslim faculty member.\n\n- She is a Professor in the CON department.\n- Her email address is elizabeth.brown@faculty.edu.ph.\n\n[faculty_con_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_cba_schedule",
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching"
+      ]
     },
     {
-      "query": "all the curriculum",
+      "query": "all the muslim faculty members",
       "plan": {
         "plan": [
           {
             "step": 1,
             "thought": "AI selected the best tool on attempt 1.",
             "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 3,
-      "execution_time": 6.685997247695923,
-      "timestamp": "2025-09-01T17:02:51.379968",
-      "error_message": null
-    },
-    {
-      "query": "beced",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
+              "tool_name": "find_people",
               "parameters": {
-                "program": "BACHELOR OF EARLY CHILDHOOD EDUCATION"
+                "role": "PROFESSOR",
+                "religion": "MUSLIM"
               }
             }
           }
         ]
       },
-      "results_count": 1,
-      "execution_time": 3.0342562198638916,
-      "timestamp": "2025-09-01T17:03:55.770252",
-      "error_message": null
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 6,
+      "execution_time": 2.5960679054260254,
+      "timestamp": "2025-09-03T18:05:36.017321",
+      "final_answer": "Elizabeth Angela Brown is a Muslim faculty member.\n\n- She is a Professor in the CON department.\n- Her email address is elizabeth.brown@faculty.edu.ph.\n\n[faculty_con_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_cba_schedule",
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching"
+      ]
     },
     {
-      "query": "what are the subjects of beced",
+      "query": "is trevor muslim",
       "plan": {
         "plan": [
           {
             "step": 1,
             "thought": "AI selected the best tool on attempt 1.",
             "tool_call": {
-              "tool_name": "query_curriculum",
+              "tool_name": "get_person_profile",
               "parameters": {
-                "program": "BACHELOR OF EARLY CHILDHOOD EDUCATION",
-                "year_level": 1
+                "person_name": "Trevor"
               }
             }
           }
         ]
       },
-      "results_count": 137,
-      "execution_time": 5.3170082569122314,
-      "timestamp": "2025-09-01T17:04:08.621667",
-      "error_message": null
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 3.1816837787628174,
+      "timestamp": "2025-09-03T18:05:44.891277",
+      "final_answer": "Trevor Clark is not a Muslim.\n\n- He is a Librarian in the LIBRARY department.\n- His email address is trevor.clark@teacher.edu.ph.\n- His religion is Christian.\n\n[faculty_library_non_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_cba_schedule",
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching"
+      ]
     },
     {
-      "query": "all the subjects of 1st year bscs",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSCS",
-                "year_level": 1
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 140,
-      "execution_time": 6.658481121063232,
-      "timestamp": "2025-09-01T17:06:34.103495",
-      "error_message": null
-    },
-    {
-      "query": "& C:/Users/BJ/AppData/Local/Microsoft/WindowsApps/python3.11.exe \"d:/Download HDD/Compressed/GROUP-3-AI-collab-nice-main/GROUP-3-AI-collab-nice-main/g1_data_process.py\"",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 22,
-      "execution_time": 3.8763651847839355,
-      "timestamp": "2025-09-01T17:07:52.652614",
-      "error_message": null
-    },
-    {
-      "query": "what are the subjects of bscs 1styear",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSCS",
-                "year_level": 1
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 2.8717942237854004,
-      "timestamp": "2025-09-01T17:08:33.895271",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel",
+      "query": "who is the guardian of daniel",
       "plan": {
         "plan": [
           {
@@ -1780,35 +918,22 @@
           }
         ]
       },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
       "results_count": 2,
-      "execution_time": 3.9632158279418945,
-      "timestamp": "2025-09-01T17:45:54.634322",
-      "error_message": null
+      "execution_time": 3.337540626525879,
+      "timestamp": "2025-09-03T18:06:05.552133",
+      "final_answer": "Carlos Garcia is the guardian of Daniel Rivera.\n\n- He is the guardian of Daniel Rivera.\n- His contact number is 09412648943.\n\n[students_ccs_bscs_year1_seca]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_cba_schedule",
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching"
+      ]
     },
     {
-      "query": "who among the faculty is muslim",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "PROFESSOR",
-                "religion": "MUSLIM"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 7,
-      "execution_time": 3.8218765258789062,
-      "timestamp": "2025-09-01T17:48:49.913229",
-      "error_message": null
-    },
-    {
-      "query": "who is dr smith",
+      "query": "what is the height of trevor",
       "plan": {
         "plan": [
           {
@@ -1817,16 +942,187 @@
             "tool_call": {
               "tool_name": "get_person_profile",
               "parameters": {
-                "person_name": "dr smith"
+                "person_name": "trevor"
               }
             }
           }
         ]
       },
-      "results_count": 136,
-      "execution_time": 4.923969268798828,
-      "timestamp": "2025-09-01T17:51:36.836137",
-      "error_message": null
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 3.1190052032470703,
+      "timestamp": "2025-09-03T18:06:19.477547",
+      "final_answer": "Trevor Clark is 164 cm tall.\n\n- He is a Librarian in the LIBRARY department.\n- His email address is trevor.clark@teacher.edu.ph.\n- His religion is Christian.\n\n[faculty_library_non_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_cba_schedule",
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching"
+      ]
+    },
+    {
+      "query": "what is the contact number of trevor",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "trevor"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 3.5874221324920654,
+      "timestamp": "2025-09-03T18:08:16.309381",
+      "final_answer": "Trevor Clark's contact number is 09191658792.\n\n- He is a Librarian in the LIBRARY department.\n- His email address is trevor.clark@teacher.edu.ph.\n- His religion is Christian.\n\n[faculty_library_non_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_cba_schedule",
+        "faculty_ccs_schedule",
+        "faculty_ccs_teaching"
+      ]
+    },
+    {
+      "query": "what is the religion of trevor",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_person_profile",
+              "parameters": {
+                "person_name": "trevor"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 3.4410219192504883,
+      "timestamp": "2025-09-03T18:18:30.660346",
+      "final_answer": "Trevor Clark's religion is Christian.\n\n- He is a Librarian in the LIBRARY department.\n- His email address is trevor.clark@teacher.edu.ph.\n- His contact number is 09191658792.\n\n[faculty_library_non_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "curriculum_cte_bachelorofearlychildhoodeducation",
+        "faculty_cba_schedule",
+        "institutional_identity_objectives",
+        "students_ccs_bscs_year1_seca",
+        "students_ccs_bsit_year2_seca"
+      ]
+    },
+    {
+      "query": "what is the religion of our librarian",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "role": "LIBRARIAN"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 1,
+      "execution_time": 2.287367820739746,
+      "timestamp": "2025-09-03T18:18:59.059955",
+      "final_answer": "The religion of our librarian is Christian.\n\n- He is a Librarian in the LIBRARY department.\n- His email address is trevor.clark@teacher.edu.ph.\n- His contact number is 09191658792.\n\n[faculty_library_non_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_ccs_bscs",
+        "curriculum_cte_bachelorofearlychildhoodeducation",
+        "faculty_cba_schedule",
+        "institutional_identity_objectives",
+        "students_ccs_bscs_year1_seca",
+        "students_ccs_bsit_year2_seca"
+      ]
+    },
+    {
+      "query": "what is the religion of trevor?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "answer_question_about_person",
+              "parameters": {
+                "person_name": "trevor",
+                "question": "what is the religion of trevor?"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 4.694749593734741,
+      "timestamp": "2025-09-03T18:24:50.076752",
+      "final_answer": "Trevor Clark's religion is Christian.\n\n- He is a Librarian in the LIBRARY department.\n- His email address is trevor.clark@teacher.edu.ph.\n- His contact number is 09191658792.\n\n[faculty_library_non_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_cte_bachelorofearlychildhoodeducation",
+        "faculty_library_non_teaching_schedule",
+        "faculty_school_admin_board_member",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year1_seca_grades"
+      ]
+    },
+    {
+      "query": "what is the religion of Trevor Clark",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "answer_question_about_person",
+              "parameters": {
+                "person_name": "Trevor Clark",
+                "question": "religion"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 3.8830759525299072,
+      "timestamp": "2025-09-03T18:25:11.065629",
+      "final_answer": "Christian.\n\n- He is a Librarian in the LIBRARY department.\n- His email address is trevor.clark@teacher.edu.ph.\n- His contact number is 09191658792.\n\n[faculty_library_non_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_cte_bachelorofearlychildhoodeducation",
+        "faculty_library_non_teaching_schedule",
+        "faculty_school_admin_board_member",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year1_seca_grades"
+      ]
     },
     {
       "query": "who is deborah",
@@ -1844,13 +1140,24 @@
           }
         ]
       },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "online",
+      "execution_mode": "primary",
       "results_count": 1,
-      "execution_time": 3.5842223167419434,
-      "timestamp": "2025-09-01T17:51:56.513999",
-      "error_message": null
+      "execution_time": 3.263897180557251,
+      "timestamp": "2025-09-03T18:25:24.951463",
+      "final_answer": "Deborah K. Lewis is a Professor in the College of Computer Studies (CCS) at PDM or Pambayang Dalubhasaan ng Marilao.\n\n- She is a teaching faculty member.\n- Her employment status is contractual.\n- Her email address is deborah.lewis@teacher.edu.ph.\n- Her contact number is 09343614019.\n\n[faculty_ccs_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_cte_bachelorofearlychildhoodeducation",
+        "faculty_library_non_teaching_schedule",
+        "faculty_school_admin_board_member",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year1_seca_grades"
+      ]
     },
     {
-      "query": "what is the department of trevor",
+      "query": "who is deborah",
       "plan": {
         "plan": [
           {
@@ -1859,40 +1166,30 @@
             "tool_call": {
               "tool_name": "get_person_profile",
               "parameters": {
-                "person_name": "trevor"
+                "person_name": "Deborah K Lewis"
               }
             }
           }
         ]
       },
-      "results_count": 2,
-      "execution_time": 2.707768678665161,
-      "timestamp": "2025-09-01T17:52:07.341599",
-      "error_message": null
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "offline",
+      "execution_mode": "primary",
+      "results_count": 1,
+      "execution_time": 126.71318697929382,
+      "timestamp": "2025-09-03T18:27:55.292481",
+      "final_answer": "Deborah K. Lewis is a Professor in the College of Computer Studies (CCS) at PDM or Pambayang Dalubhasaan ng Marilao.\n\n• She is a teaching faculty member.\n• Her employment status is contractual.\n• Her email address is deborah.lewis@teacher.edu.ph.\n• Her contact number is 09343614019.\n[source_collection_name: faculty_ccs_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_cte_bachelorofearlychildhoodeducation",
+        "faculty_library_non_teaching_schedule",
+        "faculty_school_admin_board_member",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year1_seca_grades"
+      ]
     },
     {
-      "query": "what is the schedule of trevor",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_schedule",
-              "parameters": {
-                "person_name": "trevor"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 4,
-      "execution_time": 4.096522569656372,
-      "timestamp": "2025-09-01T17:52:19.875076",
-      "error_message": null
-    },
-    {
-      "query": "i need to find some books",
+      "query": "who is religion here",
       "plan": {
         "plan": [
           {
@@ -1907,1439 +1204,26 @@
           }
         ]
       },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "offline",
+      "execution_mode": "primary",
       "results_count": 1,
-      "execution_time": 3.1735916137695312,
-      "timestamp": "2025-09-01T18:35:09.433468",
-      "error_message": null
-    },
-    {
-      "query": "all bscs studenrs",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "program": "BSCS",
-                "role": "STUDENT"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 61,
-      "execution_time": 5.021304607391357,
-      "timestamp": "2025-09-01T19:57:55.371840",
-      "error_message": null
-    },
-    {
-      "query": "all students",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "role": "STUDENT"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 123,
-      "execution_time": 6.816628694534302,
-      "timestamp": "2025-09-01T19:58:13.741372",
-      "error_message": null
-    },
-    {
-      "query": "monday schedule",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_schedule",
-              "parameters": {
-                "day": "MONDAY"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 136,
-      "execution_time": 6.0316526889801025,
-      "timestamp": "2025-09-01T20:00:04.415998",
-      "error_message": null
-    },
-    {
-      "query": "what can i ask yuo",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 3.600029468536377,
-      "timestamp": "2025-09-01T20:06:45.316998",
-      "error_message": null
-    },
-    {
-      "query": "& C:/Users/BJ/AppData/Local/Microsoft/WindowsApps/python3.11.exe \"d:/Download HDD/Compressed/GROUP-3-AI-collab-nice-main/GROUP-3-AI-collab-nice-main/g1_data_process.py\"",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 4.018052577972412,
-      "timestamp": "2025-09-01T21:59:09.421869",
-      "error_message": null
-    },
-    {
-      "query": "mission vission",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 3.2400100231170654,
-      "timestamp": "2025-09-01T22:00:40.943436",
-      "error_message": null
-    },
-    {
-      "query": "vision",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 2.617034673690796,
-      "timestamp": "2025-09-01T22:00:51.737030",
-      "error_message": null
-    },
-    {
-      "query": "what do you know bro",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 3.860689401626587,
-      "timestamp": "2025-09-01T22:01:01.828770",
-      "error_message": null
-    },
-    {
-      "query": "all data you have",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 3.0708234310150146,
-      "timestamp": "2025-09-01T22:01:23.391422",
-      "error_message": null
-    },
-    {
-      "query": "what do you know",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 2.7761788368225098,
-      "timestamp": "2025-09-01T22:01:51.705970",
-      "error_message": null
-    },
-    {
-      "query": "curriculum",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 6,
-      "execution_time": 4.002007484436035,
-      "timestamp": "2025-09-01T22:02:31.254994",
-      "error_message": null
-    },
-    {
-      "query": "curriculum vision",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "subject_code": "VISION"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 2.819380283355713,
-      "timestamp": "2025-09-01T22:02:44.325682",
-      "error_message": null
-    },
-    {
-      "query": "vision of pdm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "ADMINISTRATION",
-                "subject_code": "INSTITUTIONAL"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 79,
-      "execution_time": 5.543319225311279,
-      "timestamp": "2025-09-01T22:03:16.202469",
-      "error_message": null
-    },
-    {
-      "query": "whats the vision of pdm bro",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "subject_code": "vision"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.702850341796875,
-      "timestamp": "2025-09-01T22:03:41.155595",
-      "error_message": null
-    },
-    {
-      "query": "whats the mission",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "subject_code": "mission"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 79,
-      "execution_time": 4.4900734424591064,
-      "timestamp": "2025-09-01T22:06:03.786495",
-      "error_message": null
-    },
-    {
-      "query": "programs in pdm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": ""
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 6,
-      "execution_time": 2.9406139850616455,
-      "timestamp": "2025-09-01T22:13:53.418811",
-      "error_message": null
-    },
-    {
-      "query": "programs in pdm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "ALL"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 79,
-      "execution_time": 3.7605223655700684,
-      "timestamp": "2025-09-01T22:15:36.836880",
-      "error_message": null
-    },
-    {
-      "query": "all courses in pdm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 6,
-      "execution_time": 2.704965829849243,
-      "timestamp": "2025-09-01T22:16:02.012259",
-      "error_message": null
-    },
-    {
-      "query": "all programs in pdm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "PDM"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 79,
-      "execution_time": 4.417509078979492,
-      "timestamp": "2025-09-01T22:16:09.372264",
-      "error_message": null
-    },
-    {
-      "query": "all courses in pdm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "PDM"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 79,
-      "execution_time": 4.415703535079956,
-      "timestamp": "2025-09-01T22:18:23.831180",
-      "error_message": null
-    },
-    {
-      "query": "all courses in school",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 6,
-      "execution_time": 9.135619401931763,
-      "timestamp": "2025-09-01T22:18:36.518980",
-      "error_message": null
-    },
-    {
-      "query": "all programs",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 6,
-      "execution_time": 2.5728564262390137,
-      "timestamp": "2025-09-01T22:18:41.620407",
-      "error_message": null
-    },
-    {
-      "query": "administration",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "department": "ADMINISTRATION"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 137,
-      "execution_time": 4.573097467422485,
-      "timestamp": "2025-09-01T22:20:36.816460",
-      "error_message": null
-    },
-    {
-      "query": "all the programs in pdm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": ""
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 4,
-      "execution_time": 3.1596667766571045,
-      "timestamp": "2025-09-01T22:20:55.491022",
-      "error_message": null
-    },
-    {
-      "query": "all the courses in pdm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 4,
-      "execution_time": 3.3277053833007812,
-      "timestamp": "2025-09-01T22:21:04.291057",
-      "error_message": null
-    },
-    {
-      "query": "whats our mission",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 2.916471004486084,
-      "timestamp": "2025-09-01T22:21:17.393232",
-      "error_message": null
-    },
-    {
-      "query": "can you tell me anything about the schoo",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 3.412510871887207,
-      "timestamp": "2025-09-01T22:21:37.986028",
-      "error_message": null
-    },
-    {
-      "query": "can you tell me anything about the school?",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_database_summary",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 19,
-      "execution_time": 3.539146661758423,
-      "timestamp": "2025-09-01T22:23:32.996047",
-      "error_message": null
-    },
-    {
-      "query": "institutional identity objectives",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "department": "INSTITUTIONAL_IDENTITY"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 4,
-      "execution_time": 3.7873423099517822,
-      "timestamp": "2025-09-02T00:24:45.154594",
-      "error_message": null
-    },
-    {
-      "query": "department institutional identity",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "department": "INSTITUTIONAL_IDENTITY"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 108,
-      "execution_time": 4.923951148986816,
-      "timestamp": "2025-09-02T00:25:10.138936",
-      "error_message": null
-    },
-    {
-      "query": "vision mision",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "subject_code": "vision mision"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 108,
-      "execution_time": 4.153889417648315,
-      "timestamp": "2025-09-02T00:25:20.409357",
-      "error_message": null
-    },
-    {
-      "query": "im new here, introduce me the school",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_school_info",
-              "parameters": {
-                "topic": "MISSION_VISION"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 3.8927969932556152,
-      "timestamp": "2025-09-02T15:11:30.359847",
-      "error_message": null
-    },
-    {
-      "query": "what about their programs",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 3,
-      "execution_time": 3.707939386367798,
-      "timestamp": "2025-09-02T15:11:40.911564",
-      "error_message": null
-    },
-    {
-      "query": "can you tell me anything about the school",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_school_info",
-              "parameters": {
-                "topic": "MISSION_VISION"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.505216121673584,
-      "timestamp": "2025-09-02T15:21:29.501915",
-      "error_message": null
-    },
-    {
-      "query": "what is their objectives",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_school_info",
-              "parameters": {
-                "topic": "OBJECTIVES"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.42940354347229,
-      "timestamp": "2025-09-02T15:21:42.506325",
-      "error_message": null
-    },
-    {
-      "query": "what about the programs they offer",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 4,
-      "execution_time": 3.5021791458129883,
-      "timestamp": "2025-09-02T15:22:03.716479",
-      "error_message": null
-    },
-    {
-      "query": "can you tell me anything about the school",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_school_info",
-              "parameters": {
-                "topic": "MISSION_VISION"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 2.892385721206665,
-      "timestamp": "2025-09-02T15:22:38.986670",
-      "error_message": null
-    },
-    {
-      "query": "what about their programs, what do pdm offer",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "",
-                "year_level": 0
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 4,
-      "execution_time": 3.3580002784729004,
-      "timestamp": "2025-09-02T15:23:03.213159",
-      "error_message": null
-    },
-    {
-      "query": "their goals?",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_school_info",
-              "parameters": {
-                "topic": "OBJECTIVES"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.4726734161376953,
-      "timestamp": "2025-09-02T15:23:18.487921",
-      "error_message": null
-    },
-    {
-      "query": "what advice do you have for me if i want to enroll to the bscs program",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSCS"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 2.989880323410034,
-      "timestamp": "2025-09-02T15:26:13.666527",
-      "error_message": null
-    },
-    {
-      "query": "can you tell me anything about the school",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_school_info",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 37.23221755027771,
-      "timestamp": "2025-09-02T15:28:13.423503",
-      "error_message": null
-    },
-    {
-      "query": "what about their programs?",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "",
-                "year_level": ""
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 4,
-      "execution_time": 17.302667140960693,
-      "timestamp": "2025-09-02T15:29:14.255451",
-      "error_message": null
-    },
-    {
-      "query": "what advice do you have for me? im planning to take bsoffice course",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_adviser_info",
-              "parameters": {
-                "program": "BSOFFICE",
-                "year_level": null
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 138,
-      "execution_time": 24.410101413726807,
-      "timestamp": "2025-09-02T15:33:38.364331",
-      "error_message": null
-    },
-    {
-      "query": "what advice do you have for me? im planning to take bscs",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "program": "BSCS"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 61,
-      "execution_time": 14.31143045425415,
-      "timestamp": "2025-09-02T15:34:06.810174",
-      "error_message": null
-    },
-    {
-      "query": "what advice do you have for me if i want to enroll to bsoffice",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSOFFICE"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.318495988845825,
-      "timestamp": "2025-09-02T15:40:13.133938",
-      "error_message": null
-    },
-    {
-      "query": "im planning to take bsin, any advice or tips you have for me?",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "program": "BSCS",
-                "role": "student"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 61,
-      "execution_time": 48.60954666137695,
-      "timestamp": "2025-09-02T15:44:46.414676",
-      "error_message": null
-    },
-    {
-      "query": "im planning to take bsin, any tips you have for me?",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSIN"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.2309212684631348,
-      "timestamp": "2025-09-02T15:46:26.136488",
-      "error_message": null
-    },
-    {
-      "query": "im planning to take bsin, any tips you have for me?",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSIN"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 130.3348195552826,
-      "timestamp": "2025-09-02T15:51:00.164861",
-      "error_message": null
-    },
-    {
-      "query": "bsin couse",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSINFORMATION"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 2.899252414703369,
-      "timestamp": "2025-09-02T15:51:55.301231",
-      "error_message": null
-    },
-    {
-      "query": "all the subjects of bsin",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSINFORMATION"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.1992647647857666,
-      "timestamp": "2025-09-02T15:52:03.881417",
-      "error_message": null
-    },
-    {
-      "query": "bsin courses",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BSINFORMATION"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 2.532095432281494,
-      "timestamp": "2025-09-02T15:52:20.830748",
-      "error_message": null
-    },
-    {
-      "query": "full detailed information about all the courses in pdm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {
-                "program": "BACHELOR OF EARLY CHILDHOOD EDUCATION",
-                "year_level": 1
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 3.436129331588745,
-      "timestamp": "2025-09-02T15:52:38.431151",
-      "error_message": null
-    },
-    {
-      "query": "full detailed information about all the courses in pdm",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "query_curriculum",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 5,
-      "execution_time": 8.329829692840576,
-      "timestamp": "2025-09-02T15:53:01.308636",
-      "error_message": null
-    },
-    {
-      "query": "hanggang anong oras yung national id don sa munisipyo pre",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_schedule",
-              "parameters": {
-                "person_name": "national id don"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 142,
-      "execution_time": 5.151374816894531,
-      "timestamp": "2025-09-02T15:59:32.110209",
-      "error_message": null
-    },
-    {
-      "query": "who is daniel gomez",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "daniel gomez"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 1,
-      "execution_time": 4.404361009597778,
-      "timestamp": "2025-09-02T21:53:54.946933",
-      "error_message": null
-    },
-    {
-      "query": "grades of daniel gomez",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_student_grades",
-              "parameters": {
-                "student_name": "daniel gomez"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 2,
-      "execution_time": 3.298450231552124,
-      "timestamp": "2025-09-02T21:55:47.956476",
-      "error_message": null
-    },
-    {
-      "query": "who is PDM-2025-0001",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "PDM-2025-0001"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 141,
-      "execution_time": 7.694145917892456,
-      "timestamp": "2025-09-02T21:57:11.137945",
-      "error_message": null
-    },
-    {
-      "query": "whos student has the pdm id pdm-2025-0001",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "person_name": "pdm-2025-0001"
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 141,
-      "execution_time": 6.0922276973724365,
-      "timestamp": "2025-09-02T22:04:10.164984",
-      "error_message": null
+      "execution_time": 96.58860635757446,
+      "timestamp": "2025-09-03T18:32:42.100900",
+      "final_answer": "The religion of Trevor Clark is Christian.\n\n• Surname: Clark\n• First Name: Trevor Q.\n• Religion: Christian [source_collection_name: faculty_library_non_teaching]",
+      "error_message": null,
+      "corruption_details": [
+        "curriculum_cte_bachelorofearlychildhoodeducation",
+        "faculty_library_non_teaching_schedule",
+        "faculty_school_admin_board_member",
+        "schedules_ccs_newcourse_year2_seca",
+        "students_ccs_bscs_year1_seca_grades"
+      ]
     }
   ],
-  "failed_queries": [
-    {
-      "query": "eexit",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": null,
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 0,
-      "execution_time": 33.19271111488342,
-      "timestamp": "2025-09-01T14:59:28.973472",
-      "error_message": "AI selected an unknown tool: 'None'"
-    },
-    {
-      "query": "who among the faculty members are muslim",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "find_people",
-              "parameters": {
-                "department": [
-                  "CBA",
-                  "CCS",
-                  "CON",
-                  "CTE",
-                  "LIBRARY",
-                  "MAINTENANCE_CUSTODIAL",
-                  "SCHOOL_ADMIN"
-                ],
-                "role": [
-                  "PROFESSOR"
-                ],
-                "employment_status": [
-                  "FULL-TIME"
-                ],
-                "other_filters": [
-                  {
-                    "key": "religion",
-                    "value": "muslim"
-                  }
-                ]
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 0,
-      "execution_time": 76.82356262207031,
-      "timestamp": "2025-09-01T15:12:20.985156",
-      "error_message": "'list' object has no attribute 'lower'"
-    },
-    {
-      "query": "all the faculty members",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "get_person_profile",
-              "parameters": {
-                "program": [
-                  "BSCS"
-                ],
-                "role": [
-                  "BOARD MEMBER"
-                ]
-              }
-            }
-          }
-        ]
-      },
-      "results_count": 0,
-      "execution_time": 107.21776700019836,
-      "timestamp": "2025-09-01T15:31:31.306926",
-      "error_message": "AIAnalyst.get_person_profile() missing 1 required positional argument: 'person_name'"
-    },
-    {
-      "query": "im planning to take bsin, any tips you have for me?",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": "",
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 0,
-      "execution_time": 21.49529719352722,
-      "timestamp": "2025-09-02T15:45:24.919509",
-      "error_message": "AI selected an unknown tool: ''"
-    },
-    {
-      "query": "im planning to take bsin, any tips you have for me?",
-      "plan": {
-        "plan": [
-          {
-            "step": 1,
-            "thought": "AI selected the best tool on attempt 1.",
-            "tool_call": {
-              "tool_name": null,
-              "parameters": {}
-            }
-          }
-        ]
-      },
-      "results_count": 0,
-      "execution_time": 14.933277130126953,
-      "timestamp": "2025-09-02T15:45:51.885227",
-      "error_message": "AI selected an unknown tool: 'None'"
-    }
-  ],
-  "query_patterns": {
-    "year:False_prog:False_rand:False_multi:False": {
-      "successful": 123,
-      "failed": 3,
-      "examples": [
-        {
-          "query": "bsin courses",
-          "success": true
-        },
-        {
-          "query": "who is daniel gomez",
-          "success": true
-        },
-        {
-          "query": "grades of daniel gomez",
-          "success": true
-        },
-        {
-          "query": "who is PDM-2025-0001",
-          "success": true
-        },
-        {
-          "query": "whos student has the pdm id pdm-2025-0001",
-          "success": true
-        }
-      ]
-    },
-    "year:False_prog:True_rand:False_multi:False": {
-      "successful": 5,
-      "failed": 0,
-      "examples": [
-        {
-          "query": "all grades of bscs",
-          "success": true
-        },
-        {
-          "query": "bscs",
-          "success": true
-        },
-        {
-          "query": "bstm",
-          "success": true
-        },
-        {
-          "query": "BSCS",
-          "success": true
-        },
-        {
-          "query": "all bscs studenrs",
-          "success": true
-        }
-      ]
-    },
-    "year:True_prog:True_rand:False_multi:False": {
-      "successful": 3,
-      "failed": 0,
-      "examples": [
-        {
-          "query": "2nd year bscs studetns",
-          "success": true
-        },
-        {
-          "query": "all the subjects of 1st year bscs",
-          "success": true
-        },
-        {
-          "query": "what are the subjects of bscs 1styear",
-          "success": true
-        }
-      ]
-    },
-    "year:False_prog:False_rand:False_multi:True": {
-      "successful": 15,
-      "failed": 2,
-      "examples": [
-        {
-          "query": "im planning to take bsin, any tips you have for me?",
-          "success": true
-        },
-        {
-          "query": "im planning to take bsin, any tips you have for me?",
-          "success": true
-        },
-        {
-          "query": "full detailed information about all the courses in pdm",
-          "success": true
-        },
-        {
-          "query": "full detailed information about all the courses in pdm",
-          "success": true
-        },
-        {
-          "query": "hanggang anong oras yung national id don sa munisipyo pre",
-          "success": true
-        }
-      ]
-    },
-    "year:False_prog:True_rand:False_multi:True": {
-      "successful": 2,
-      "failed": 0,
-      "examples": [
-        {
-          "query": "what advice do you have for me if i want to enroll to the bscs program",
-          "success": true
-        },
-        {
-          "query": "what advice do you have for me? im planning to take bscs",
-          "success": true
-        }
-      ]
-    }
-  },
+  "query_patterns": {},
   "metadata": {
-    "created": "2025-09-01T14:58:30.535362",
+    "created": "2025-09-03T17:15:02.327814",
     "version": "1.0"
   }
 }

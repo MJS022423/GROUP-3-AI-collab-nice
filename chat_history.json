@@ -1,26 +1,26 @@
 [
   {
     "role": "user",
-    "content": "grades of daniel gomez"
+    "content": "who is deborah"
   },
   {
     "role": "assistant",
-    "content": "Daniel Gomez has a General Weighted Average (GWA) of 1.45, indicating excellent academic performance.\n\n- **GWA:** 1.45\n- **Total Subjects:** 10\n- **Total Units:** 17.0\n- **Passed Subjects:** 10\n- **Failed Subjects:** 0\n\n[students_ccs_bscs_year1_seca_grades]"
+    "content": "Deborah K. Lewis is a Professor in the College of Computer Studies (CCS) at PDM or Pambayang Dalubhasaan ng Marilao.\n\n- She is a teaching faculty member.\n- Her employment status is contractual.\n- Her email address is deborah.lewis@teacher.edu.ph.\n- Her contact number is 09343614019.\n\n[faculty_ccs_teaching]"
   },
   {
     "role": "user",
-    "content": "who is PDM-2025-0001"
+    "content": "who is deborah"
   },
   {
     "role": "assistant",
-    "content": "Daniel Gomez is a first-year student in the Bachelor of Science in Computer Science (BSCS) program, Section A. He is part of the College of Computer Studies (CCS) at PDM.\n\n- **Student ID:** PDM-2025-0001\n- **Full Name:** Daniel Gomez\n- **Year Level:** 1\n- **Course:** BSCS\n- **Section:** A\n- **Contact Number:** 09725334942\n- **Guardian Name:** Carlos Reyes\n- **Guardian Contact:** 09695521803\n\n[students_ccs_bscs_year1_seca]"
+    "content": "Deborah K. Lewis is a Professor in the College of Computer Studies (CCS) at PDM or Pambayang Dalubhasaan ng Marilao.\n\n• She is a teaching faculty member.\n• Her employment status is contractual.\n• Her email address is deborah.lewis@teacher.edu.ph.\n• Her contact number is 09343614019.\n[source_collection_name: faculty_ccs_teaching]"
   },
   {
     "role": "user",
-    "content": "whos student has the pdm id pdm-2025-0001"
+    "content": "who is religion here"
   },
   {
     "role": "assistant",
-    "content": "Daniel Gomez is a first-year student in the Bachelor of Science in Computer Science (BSCS) program, Section A. He is part of the College of Computer Studies (CCS) at PDM.\n\n- **Student ID:** PDM-2025-0001\n- **Full Name:** Daniel Gomez\n- **Year Level:** 1\n- **Course:** BSCS\n- **Section:** A\n- **Contact Number:** 09725334942\n- **Guardian Name:** Carlos Reyes\n- **Guardian Contact:** 09695521803\n\n[students_ccs_bscs_year1_seca]"
+    "content": "The religion of Trevor Clark is Christian.\n\n• Surname: Clark\n• First Name: Trevor Q.\n• Religion: Christian [source_collection_name: faculty_library_non_teaching]"
   }
 ]
