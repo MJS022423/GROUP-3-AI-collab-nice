@@ -2572,7 +2572,10 @@ class AIAnalyst:
             chat_history.append({"role": "assistant", "content": final_answer})
 
             history_limit = self.max_history_turns * 2 
-            if len(chat_history) > history_limit:
+            if history_limit == 0:
+                self.debug("History is disabled. Clearing chat history for next turn.")
+                chat_history.clear() # Explicitly clear the list
+            elif len(chat_history) > history_limit:
                 self.debug(f"History limit reached. Trimming to last {self.max_history_turns} turns.")
                 chat_history = chat_history[-history_limit:]
 

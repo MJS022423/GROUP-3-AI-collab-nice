@@ -1,26 +1,34 @@
 [
   {
     "role": "user",
-    "content": "can you show them all to me"
+    "content": "Who is the student with ID PDM-2025-0001?"
   },
   {
     "role": "assistant",
-    "content": "Here is the answer:\n\nAll students in BSCS are:\n\n• Student ID: PDM-2025-0001, Full Name: Daniel Gomez, GWA: 1.45 [students_ccs_bscs_year1_seca_grades]\n• ...and 29 more students (filtered data not provided)\n\nNote that the above answer is based on a filtered dataset that matches the user's query constraint of \"all students in BSCS\"."
+    "content": "The student with ID PDM-2025-0001 is Daniel Gomez, a BSCS student in his first year and Section A. [students_ccs_bscs_year1_seca]"
   },
   {
     "role": "user",
-    "content": "“all the grades of it students"
+    "content": "What is the school's vision?"
   },
   {
     "role": "assistant",
-    "content": "Here is the answer:\n\nAll the students in IT are:\n\n• Student Number: PDM-2025-1352, Student Name: Juan Villanueva, GWA: 2.62 [students_ccs_bsit_year1_seca_grades]\n• Student Number: PDM-2025-1359, Student Name: Paolo Torres, GWA: 2.16 [students_ccs_bsit_year1_seca_grades]\n\nNote that there is only one IT student in the provided data, so this list only includes those two students.\n\n[Citation: students_ccs_bsit_year1_seca_grades]"
+    "content": "The student with ID PDM-2025-0001 is not directly mentioned in the provided factual documents. However, I can provide information on the school's vision.\n\n**Answer:**\nThe vision of Pambayang Dalubhasaan ng Marilao (PDM) is \"to produce globally competent, competitive, capable, and skillful graduates who excel in their chosen field.\"\n\n**Supporting Details:**\n\n* The document highlights the importance of contributing to national development goals and providing quality education.\n* The vision emphasizes molding students into productive and responsible citizens with virtues, awareness of national heritage, and pride in local culture.\n\n**Source Citation:** [source_collection_name]"
   },
   {
     "role": "user",
-    "content": "who are all the full time faculty members”"
+    "content": "What subjects are in the first semester of the BSCS curriculum?"
   },
   {
     "role": "assistant",
-    "content": "Based on the provided data, there is no information that directly answers your query about the full-time faculty members. The data consists of various documents such as curriculum, institutional identity, and objectives, which do not contain a list of full-time faculty members.\n\nHowever, if we analyze the data, we can identify some relevant points:\n\n1. The curriculum documents (e.g., BSCS, BSIN) mention courses offered by different departments (e.g., CTE, CON).\n2. The institutional identity documents (e.g., mission and vision statement) do not explicitly mention full-time faculty members.\n3. There are no other documents that directly provide information on full-time faculty members.\n\nTherefore, based on the available data, it is not possible to determine who the full-time faculty members are."
+    "content": "Unfortunately, I cannot provide the answer to your query because the Factual Documents indicate an error status. The AI selected an unknown tool: 'query_curriculim'. This means that the information required to answer your question is not available.\n\nPlease consult with a suitable faculty member or check the official school website for more information on the BSCS curriculum and its subjects."
+  },
+  {
+    "role": "user",
+    "content": "List all faculty members in the CCS department."
+  },
+  {
+    "role": "assistant",
+    "content": "Who is the student with ID PDM-2025-0001?\n\nBased on the Factual Documents, I could not find any information about a student with ID PDM-2025-0001.\n\n**Source Citation:** [source_collection_name]\n\n**Supporting Details:**\n\n* The provided documents do not contain any information about students with specific IDs.\n* If you need assistance finding this student or their details, please consult with the suitable faculty member or check the official school website for more information."
   }
 ]
