@@ -1,0 +1,230 @@
+{
+  "query_log": [
+    {
+      "query": "Who is the student with ID PDM-2025-0001?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_data_by_id",
+              "parameters": {
+                "pdm_id": "PDM-2025-0001"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "offline",
+      "execution_mode": "primary",
+      "results_count": 1,
+      "execution_time": 129.96787977218628,
+      "timestamp": "2025-09-04T17:47:46.683236",
+      "final_answer": "The student with ID PDM-2025-0001 is Daniel Gomez, a BSCS student in his first year and Section A. [students_ccs_bscs_year1_seca]",
+      "error_message": null,
+      "corruption_details": [
+        "students_ccs_bscs_year1_seca_grades"
+      ]
+    },
+    {
+      "query": "What is the school's vision?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "get_school_info",
+              "parameters": {
+                "topic": "MISSION_VISION"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "offline",
+      "execution_mode": "primary",
+      "results_count": 1,
+      "execution_time": 158.25685501098633,
+      "timestamp": "2025-09-04T17:50:41.485736",
+      "final_answer": "The student with ID PDM-2025-0001 is not directly mentioned in the provided factual documents. However, I can provide information on the school's vision.\n\n**Answer:**\nThe vision of Pambayang Dalubhasaan ng Marilao (PDM) is \"to produce globally competent, competitive, capable, and skillful graduates who excel in their chosen field.\"\n\n**Supporting Details:**\n\n* The document highlights the importance of contributing to national development goals and providing quality education.\n* The vision emphasizes molding students into productive and responsible citizens with virtues, awareness of national heritage, and pride in local culture.\n\n**Source Citation:** [source_collection_name]",
+      "error_message": null,
+      "corruption_details": [
+        "students_ccs_bscs_year1_seca_grades"
+      ]
+    },
+    {
+      "query": "What subjects are in the first semester of the BSCS curriculum?",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "query_curriculim",
+              "parameters": {
+                "program": "BSCS"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "FAIL_EXECUTION",
+      "analyst_mode": "offline",
+      "execution_mode": "primary",
+      "results_count": 0,
+      "execution_time": 133.2363305091858,
+      "timestamp": "2025-09-04T17:53:25.939323",
+      "final_answer": "Unfortunately, I cannot provide the answer to your query because the Factual Documents indicate an error status. The AI selected an unknown tool: 'query_curriculim'. This means that the information required to answer your question is not available.\n\nPlease consult with a suitable faculty member or check the official school website for more information on the BSCS curriculum and its subjects.",
+      "error_message": "AI selected an unknown tool: 'query_curriculim'",
+      "corruption_details": [
+        "students_ccs_bscs_year1_seca_grades"
+      ]
+    },
+    {
+      "query": "List all faculty members in the CCS department.",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "department": "CCS"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "offline",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 225.4255931377411,
+      "timestamp": "2025-09-04T17:57:51.385986",
+      "final_answer": "Who is the student with ID PDM-2025-0001?\n\nBased on the Factual Documents, I could not find any information about a student with ID PDM-2025-0001.\n\n**Source Citation:** [source_collection_name]\n\n**Supporting Details:**\n\n* The provided documents do not contain any information about students with specific IDs.\n* If you need assistance finding this student or their details, please consult with the suitable faculty member or check the official school website for more information.",
+      "error_message": null,
+      "corruption_details": [
+        "students_ccs_bscs_year1_seca_grades"
+      ]
+    },
+    {
+      "query": "List all faculty members in the CCS department.",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "department": "CCS"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "offline",
+      "execution_mode": "primary",
+      "results_count": 1,
+      "execution_time": 168.77438473701477,
+      "timestamp": "2025-09-04T18:18:12.409429",
+      "final_answer": "Based on the provided Factual Documents, I can answer your query as follows:\n\nThe faculty member listed is:\n\n* Hodges, Kathryn Julie [source_collection_name: faculty_ccs_schedule]\n\nDetails about this faculty member include their full name, department (CCS), and subjects taught, which are:\n• IT101 - Programming 1\n• IT202 - Database Systems\n• IT303 - Networking\n• IT404 - Software Engineering\n\nThe teaching schedule for Hodges, Kathryn Julie is also provided, indicating the classes they teach on each day of the week.\n\nPlease note that there may be other faculty members in the CCS department who are not listed in this particular document.",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_ccs_teaching"
+      ]
+    },
+    {
+      "query": "Show me all 2nd year BSIT students.",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "program": "BSCS",
+                "role": "student",
+                "year_level": 2
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "FAIL_EMPTY",
+      "analyst_mode": "offline",
+      "execution_mode": "fallback",
+      "results_count": 0,
+      "execution_time": 118.98712229728699,
+      "timestamp": "2025-09-04T18:22:19.269210",
+      "final_answer": "Unfortunately, I couldn't find any relevant documents to answer your query. The Factual Documents provided indicate that the search was unsuccessful, with a status of \"empty\" and a summary stating that no relevant documents were found.\n\nPlease try refining your query or contacting the faculty office for further assistance.",
+      "error_message": null,
+      "corruption_details": [
+        "faculty_ccs_teaching",
+        "students_ccs_bscs_year2_seca"
+      ]
+    },
+    {
+      "query": "List all faculty members in the CCS department.",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": "find_people",
+              "parameters": {
+                "department": "CCS"
+              }
+            }
+          }
+        ]
+      },
+      "outcome": "SUCCESS_DIRECT",
+      "analyst_mode": "offline",
+      "execution_mode": "primary",
+      "results_count": 2,
+      "execution_time": 175.29379749298096,
+      "timestamp": "2025-09-04T18:31:16.795918",
+      "final_answer": "The smartest faculty member is the one with the lowest General Weighted Average (GWA). According to the provided documents, there are two relevant documents: \"faculty_ccs_schedule\" and \"faculty_ccs_teaching\". \n\nFrom the \"teaching_faculty_schedule\" document, we can infer that Professor Hodges has a GWA of 1.5, which is the lowest among all faculty members. Therefore, Professor Hodges is the smartest.\n\nHere are the supporting details:\n\n• Faculty Information: Hodges, Kathryn Julie\n• Position: Professor\n• Department: CCS\n\n[source_collection_name]",
+      "error_message": null,
+      "corruption_details": null
+    },
+    {
+      "query": "a",
+      "plan": {
+        "plan": [
+          {
+            "step": 1,
+            "thought": "AI selected the best tool on attempt 1.",
+            "tool_call": {
+              "tool_name": null,
+              "parameters": {}
+            }
+          }
+        ]
+      },
+      "outcome": "FAIL_EXECUTION",
+      "analyst_mode": "offline",
+      "execution_mode": "primary",
+      "results_count": 0,
+      "execution_time": 117.17746353149414,
+      "timestamp": "2025-09-04T18:34:15.326037",
+      "final_answer": "Unfortunately, I cannot provide an answer because the Factual Documents contain an error. The status is \"error\" and there was a technical problem retrieving the data. Please try again or check with the relevant faculty member to clarify any questions you may have.",
+      "error_message": "AI selected an unknown tool: 'None'",
+      "corruption_details": null
+    }
+  ],
+  "query_patterns": {},
+  "metadata": {
+    "created": "2025-09-04T17:45:31.913002",
+    "version": "1.0"
+  }
+}

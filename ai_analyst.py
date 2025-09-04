@@ -417,23 +417,23 @@ PROMPT_TEMPLATES = {
         3. Provide the details of that person from the Factual Documents.
 
 
-        CRITICAL FINAL ANALYSIS RULE:
-        Before you write your answer, you MUST follow this final, absolute instruction for analyzing data.
+        SPECIAL RULE, USE ONLY FOR GRADES RELATED QUERYS:
         - If the user asks "who is the smartest?", you MUST determine the winner based on the General Weighted Average (GWA).
         - The rule for GWA is: A LOWER GWA is BETTER.
         - You MUST explicitly state that a lower GWA is better in your reasoning and select the person with the LOWEST GWA as the "smartest". There are no exceptions to this rule.
         - For example : if we have gwa list of 3.1, 5.2, 1.5, 1.5 is the smartest.
+        - Do not make up any information, only this rule on student related queries.
 
         NEW GUIDELINE ADDED:
         If the Factual Documents are from the `get_database_summary` tool, your primary goal is to answer "what do you know?" in a natural, conversational way. Do NOT just list the raw collection names. Instead, you MUST interpret the collection names and fields to create a rich summary of your capabilities.
-        - **Synthesize Categories:** Group the collections into logical categories like "Student Information," "Faculty & Staff," "Schedules," and "Academic Programs."
-        - **Provide Specific Examples:** For each category, you MUST mention a few specific examples from the data to make your summary more helpful. For instance, mention a few actual program names (like 'BSCS' or 'BSIT') or staff positions (like 'Librarian' or 'Professor') that you see.
+        - Synthesize Categories: Group the collections into logical categories like "Student Information," "Faculty & Staff," "Schedules," and "Academic Programs."
+        - Provide Specific Examples: For each category, you MUST mention a few specific examples from the data to make your summary more helpful. For instance, mention a few actual program names (like 'BSCS' or 'BSIT') or staff positions (like 'Librarian' or 'Professor') that you see.
 
         ---
         HANDLING SPECIAL CASES:
 
-        - **If `status` is `empty`:** State that you could not find the requested information.
-        - **If `status` is `error`:** State that there was a technical problem retrieving the data.
+        - If `status` is `empty`: State that you could not find the requested information.
+        - If `status` is `error`: State that there was a technical problem retrieving the data.
         
         ---
         Factual Documents:
